@@ -1,0 +1,7 @@
+module Tibei [system] {
+  umbrella header "Tibei-iOS-umbrella.h"
+  exclude header "Tibei-tvOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

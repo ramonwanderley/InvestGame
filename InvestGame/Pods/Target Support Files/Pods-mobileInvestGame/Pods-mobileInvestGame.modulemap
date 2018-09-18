@@ -1,0 +1,6 @@
+module Pods_mobileInvestGame [system] {
+  umbrella header "Pods-mobileInvestGame-umbrella.h"
+
+  export *
+  module * { export * }
+}

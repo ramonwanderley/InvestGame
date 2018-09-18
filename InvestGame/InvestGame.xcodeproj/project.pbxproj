@@ -1,0 +1,1537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001D6E4955BAA6B70BC8B350 /* libPods-mobileInvestGameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1678CD7C51EE7109BACF122 /* libPods-mobileInvestGameUITests.a */; };
+		2F3F91BC01CC6FA803D10AF2 /* libPods-InvestGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8935A3EBF72D5538A310418B /* libPods-InvestGame.a */; };
+		4A870C911E8685C66CD9B93F /* libPods-InvestGameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E913249A7178C06C195676 /* libPods-InvestGameUITests.a */; };
+		7825684F9CA39F50A5272404 /* libPods-InvestGameiOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 906DE287F674D52DF8E5291A /* libPods-InvestGameiOSTests.a */; };
+		803D72252151746100B13BB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D72242151746100B13BB0 /* AppDelegate.m */; };
+		803D72272151746100B13BB0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 803D72262151746100B13BB0 /* GameScene.sks */; };
+		803D72292151746100B13BB0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 803D72282151746100B13BB0 /* Actions.sks */; };
+		803D722C2151746100B13BB0 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D722B2151746100B13BB0 /* GameScene.m */; };
+		803D722F2151746100B13BB0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D722E2151746100B13BB0 /* GameViewController.m */; };
+		803D72322151746100B13BB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803D72302151746100B13BB0 /* Main.storyboard */; };
+		803D72342151746300B13BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803D72332151746300B13BB0 /* Assets.xcassets */; };
+		803D72372151746300B13BB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D72362151746300B13BB0 /* main.m */; };
+		803D72412151746300B13BB0 /* InvestGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D72402151746300B13BB0 /* InvestGameTests.m */; };
+		803D724C2151746300B13BB0 /* InvestGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D724B2151746300B13BB0 /* InvestGameUITests.m */; };
+		806BFDEE215186EA000BA5A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFDED215186EA000BA5A7 /* AppDelegate.m */; };
+		806BFDF1215186EA000BA5A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFDF0215186EA000BA5A7 /* ViewController.m */; };
+		806BFDF4215186EA000BA5A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806BFDF2215186EA000BA5A7 /* Main.storyboard */; };
+		806BFDF6215186EA000BA5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806BFDF5215186EA000BA5A7 /* Assets.xcassets */; };
+		806BFDF9215186EB000BA5A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806BFDF7215186EA000BA5A7 /* LaunchScreen.storyboard */; };
+		806BFDFC215186EB000BA5A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFDFB215186EB000BA5A7 /* main.m */; };
+		806BFE06215186EB000BA5A7 /* mobileInvestGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFE05215186EB000BA5A7 /* mobileInvestGameTests.m */; };
+		806BFE11215186EB000BA5A7 /* mobileInvestGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFE10215186EB000BA5A7 /* mobileInvestGameUITests.m */; };
+		88BCA213DD4818AAE9277B82 /* libPods-mobileInvestGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF914DC535A37795AAA9B870 /* libPods-mobileInvestGameTests.a */; };
+		90C4EF7D3B94D41E0260ABF5 /* libPods-mobileInvestGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F799332A250D28557E75575C /* libPods-mobileInvestGame.a */; };
+		BFBB892B6728FBC277200C63 /* libPods-InvestGameiOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 879C7709C2CDB7ADFF6E623C /* libPods-InvestGameiOSUITests.a */; };
+		D22B0A0B0CAF837E4D4A968B /* libPods-InvestGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF112FBFF7B1A74EE893B00E /* libPods-InvestGameTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		803D723D2151746300B13BB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803D72182151746100B13BB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 803D721F2151746100B13BB0;
+			remoteInfo = InvestGame;
+		};
+		803D72482151746300B13BB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803D72182151746100B13BB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 803D721F2151746100B13BB0;
+			remoteInfo = InvestGame;
+		};
+		806BFDCC2151844B000BA5A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803D72182151746100B13BB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 806BFDB621518448000BA5A7;
+			remoteInfo = InvestGameiOS;
+		};
+		806BFDD72151844B000BA5A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803D72182151746100B13BB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 806BFDB621518448000BA5A7;
+			remoteInfo = InvestGameiOS;
+		};
+		806BFE02215186EB000BA5A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803D72182151746100B13BB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 806BFDE9215186EA000BA5A7;
+			remoteInfo = mobileInvestGame;
+		};
+		806BFE0D215186EB000BA5A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803D72182151746100B13BB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 806BFDE9215186EA000BA5A7;
+			remoteInfo = mobileInvestGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13D8D341D23A5A71C3BF95FC /* Pods-mobileInvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGame/Pods-mobileInvestGame.release.xcconfig"; sourceTree = "<group>"; };
+		2877D49A9114F7608E7D32A2 /* libPods-InvestGameiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A85D2DDB35CF4A175776AC0 /* Pods-mobileInvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameTests/Pods-mobileInvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B521EB21091A6729FD5C0A1 /* Pods-InvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameTests/Pods-InvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		39334330F523E87BBE9A45B6 /* Pods-InvestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGame/Pods-InvestGame.debug.xcconfig"; sourceTree = "<group>"; };
+		5435B0774DB8AA8B359F37F0 /* Pods-InvestGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameTests/Pods-InvestGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		78223C9E41D762072B50BD1B /* Pods-InvestGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameUITests/Pods-InvestGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		79CB19E568F6B5AE63C850EF /* Pods-mobileInvestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGame/Pods-mobileInvestGame.debug.xcconfig"; sourceTree = "<group>"; };
+		7A5EA6330DF4F27E4F26A999 /* Pods-InvestGameiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameiOSTests/Pods-InvestGameiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E920C713D0898370ACE6791 /* Pods-InvestGameiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameiOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameiOSUITests/Pods-InvestGameiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		803D72202151746100B13BB0 /* InvestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		803D72232151746100B13BB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		803D72242151746100B13BB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		803D72262151746100B13BB0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		803D72282151746100B13BB0 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		803D722A2151746100B13BB0 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		803D722B2151746100B13BB0 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		803D722D2151746100B13BB0 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		803D722E2151746100B13BB0 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		803D72312151746100B13BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		803D72332151746300B13BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		803D72352151746300B13BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803D72362151746300B13BB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		803D723C2151746300B13BB0 /* InvestGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		803D72402151746300B13BB0 /* InvestGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestGameTests.m; sourceTree = "<group>"; };
+		803D72422151746300B13BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803D72472151746300B13BB0 /* InvestGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		803D724B2151746300B13BB0 /* InvestGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestGameUITests.m; sourceTree = "<group>"; };
+		803D724D2151746300B13BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806BFDB721518448000BA5A7 /* InvestGameiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestGameiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BFDCB2151844B000BA5A7 /* InvestGameiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestGameiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BFDD62151844B000BA5A7 /* InvestGameiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestGameiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BFDEA215186EA000BA5A7 /* mobileInvestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobileInvestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BFDEC215186EA000BA5A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		806BFDED215186EA000BA5A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		806BFDEF215186EA000BA5A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		806BFDF0215186EA000BA5A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		806BFDF3215186EA000BA5A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		806BFDF5215186EA000BA5A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		806BFDF8215186EB000BA5A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		806BFDFA215186EB000BA5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806BFDFB215186EB000BA5A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		806BFE01215186EB000BA5A7 /* mobileInvestGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobileInvestGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BFE05215186EB000BA5A7 /* mobileInvestGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mobileInvestGameTests.m; sourceTree = "<group>"; };
+		806BFE07215186EB000BA5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806BFE0C215186EB000BA5A7 /* mobileInvestGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobileInvestGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		806BFE10215186EB000BA5A7 /* mobileInvestGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mobileInvestGameUITests.m; sourceTree = "<group>"; };
+		806BFE12215186EB000BA5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879C7709C2CDB7ADFF6E623C /* libPods-InvestGameiOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8935A3EBF72D5538A310418B /* libPods-InvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A3B9461FC1506B9115B313 /* Pods-InvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameUITests/Pods-InvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		906DE287F674D52DF8E5291A /* libPods-InvestGameiOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3985D75597F4939DD1F152A /* Pods-mobileInvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameUITests/Pods-mobileInvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1351DCFA869609C0CE4D543 /* Pods-InvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGame/Pods-InvestGame.release.xcconfig"; sourceTree = "<group>"; };
+		B1678CD7C51EE7109BACF122 /* libPods-mobileInvestGameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24AAD719159A5B333589232 /* Pods-mobileInvestGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameUITests/Pods-mobileInvestGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9E913249A7178C06C195676 /* libPods-InvestGameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF112FBFF7B1A74EE893B00E /* libPods-InvestGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF914DC535A37795AAA9B870 /* libPods-mobileInvestGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DB3ACC745FB5B5E561DFBC /* Pods-InvestGameiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameiOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameiOSUITests/Pods-InvestGameiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F799332A250D28557E75575C /* libPods-mobileInvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B77F23E513E38783A370AF /* Pods-mobileInvestGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameTests/Pods-mobileInvestGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE9AB327BE49E1DD453CC312 /* Pods-InvestGameiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameiOSTests/Pods-InvestGameiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		803D721D2151746100B13BB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3F91BC01CC6FA803D10AF2 /* libPods-InvestGame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803D72392151746300B13BB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22B0A0B0CAF837E4D4A968B /* libPods-InvestGameTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803D72442151746300B13BB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A870C911E8685C66CD9B93F /* libPods-InvestGameUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDB421518448000BA5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDC82151844B000BA5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7825684F9CA39F50A5272404 /* libPods-InvestGameiOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDD32151844B000BA5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBB892B6728FBC277200C63 /* libPods-InvestGameiOSUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDE7215186EA000BA5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C4EF7D3B94D41E0260ABF5 /* libPods-mobileInvestGame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDFE215186EB000BA5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BCA213DD4818AAE9277B82 /* libPods-mobileInvestGameTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFE09215186EB000BA5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001D6E4955BAA6B70BC8B350 /* libPods-mobileInvestGameUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00271EE95D5E3D6DCD6F6D7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8935A3EBF72D5538A310418B /* libPods-InvestGame.a */,
+				EF112FBFF7B1A74EE893B00E /* libPods-InvestGameTests.a */,
+				E9E913249A7178C06C195676 /* libPods-InvestGameUITests.a */,
+				2877D49A9114F7608E7D32A2 /* libPods-InvestGameiOS.a */,
+				906DE287F674D52DF8E5291A /* libPods-InvestGameiOSTests.a */,
+				879C7709C2CDB7ADFF6E623C /* libPods-InvestGameiOSUITests.a */,
+				F799332A250D28557E75575C /* libPods-mobileInvestGame.a */,
+				EF914DC535A37795AAA9B870 /* libPods-mobileInvestGameTests.a */,
+				B1678CD7C51EE7109BACF122 /* libPods-mobileInvestGameUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		700D1528AE5638FCC7F6E7DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39334330F523E87BBE9A45B6 /* Pods-InvestGame.debug.xcconfig */,
+				B1351DCFA869609C0CE4D543 /* Pods-InvestGame.release.xcconfig */,
+				2B521EB21091A6729FD5C0A1 /* Pods-InvestGameTests.debug.xcconfig */,
+				5435B0774DB8AA8B359F37F0 /* Pods-InvestGameTests.release.xcconfig */,
+				78223C9E41D762072B50BD1B /* Pods-InvestGameUITests.debug.xcconfig */,
+				89A3B9461FC1506B9115B313 /* Pods-InvestGameUITests.release.xcconfig */,
+				FE9AB327BE49E1DD453CC312 /* Pods-InvestGameiOSTests.debug.xcconfig */,
+				7A5EA6330DF4F27E4F26A999 /* Pods-InvestGameiOSTests.release.xcconfig */,
+				7E920C713D0898370ACE6791 /* Pods-InvestGameiOSUITests.debug.xcconfig */,
+				F1DB3ACC745FB5B5E561DFBC /* Pods-InvestGameiOSUITests.release.xcconfig */,
+				79CB19E568F6B5AE63C850EF /* Pods-mobileInvestGame.debug.xcconfig */,
+				13D8D341D23A5A71C3BF95FC /* Pods-mobileInvestGame.release.xcconfig */,
+				2A85D2DDB35CF4A175776AC0 /* Pods-mobileInvestGameTests.debug.xcconfig */,
+				F7B77F23E513E38783A370AF /* Pods-mobileInvestGameTests.release.xcconfig */,
+				D24AAD719159A5B333589232 /* Pods-mobileInvestGameUITests.debug.xcconfig */,
+				A3985D75597F4939DD1F152A /* Pods-mobileInvestGameUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		803D72172151746100B13BB0 = {
+			isa = PBXGroup;
+			children = (
+				803D72222151746100B13BB0 /* InvestGame */,
+				803D723F2151746300B13BB0 /* InvestGameTests */,
+				803D724A2151746300B13BB0 /* InvestGameUITests */,
+				806BFDEB215186EA000BA5A7 /* mobileInvestGame */,
+				806BFE04215186EB000BA5A7 /* mobileInvestGameTests */,
+				806BFE0F215186EB000BA5A7 /* mobileInvestGameUITests */,
+				803D72212151746100B13BB0 /* Products */,
+				700D1528AE5638FCC7F6E7DC /* Pods */,
+				00271EE95D5E3D6DCD6F6D7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		803D72212151746100B13BB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				803D72202151746100B13BB0 /* InvestGame.app */,
+				803D723C2151746300B13BB0 /* InvestGameTests.xctest */,
+				803D72472151746300B13BB0 /* InvestGameUITests.xctest */,
+				806BFDB721518448000BA5A7 /* InvestGameiOS.app */,
+				806BFDCB2151844B000BA5A7 /* InvestGameiOSTests.xctest */,
+				806BFDD62151844B000BA5A7 /* InvestGameiOSUITests.xctest */,
+				806BFDEA215186EA000BA5A7 /* mobileInvestGame.app */,
+				806BFE01215186EB000BA5A7 /* mobileInvestGameTests.xctest */,
+				806BFE0C215186EB000BA5A7 /* mobileInvestGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		803D72222151746100B13BB0 /* InvestGame */ = {
+			isa = PBXGroup;
+			children = (
+				803D72232151746100B13BB0 /* AppDelegate.h */,
+				803D72242151746100B13BB0 /* AppDelegate.m */,
+				803D72262151746100B13BB0 /* GameScene.sks */,
+				803D72282151746100B13BB0 /* Actions.sks */,
+				803D722A2151746100B13BB0 /* GameScene.h */,
+				803D722B2151746100B13BB0 /* GameScene.m */,
+				803D722D2151746100B13BB0 /* GameViewController.h */,
+				803D722E2151746100B13BB0 /* GameViewController.m */,
+				803D72302151746100B13BB0 /* Main.storyboard */,
+				803D72332151746300B13BB0 /* Assets.xcassets */,
+				803D72352151746300B13BB0 /* Info.plist */,
+				803D72362151746300B13BB0 /* main.m */,
+			);
+			path = InvestGame;
+			sourceTree = "<group>";
+		};
+		803D723F2151746300B13BB0 /* InvestGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				803D72402151746300B13BB0 /* InvestGameTests.m */,
+				803D72422151746300B13BB0 /* Info.plist */,
+			);
+			path = InvestGameTests;
+			sourceTree = "<group>";
+		};
+		803D724A2151746300B13BB0 /* InvestGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				803D724B2151746300B13BB0 /* InvestGameUITests.m */,
+				803D724D2151746300B13BB0 /* Info.plist */,
+			);
+			path = InvestGameUITests;
+			sourceTree = "<group>";
+		};
+		806BFDEB215186EA000BA5A7 /* mobileInvestGame */ = {
+			isa = PBXGroup;
+			children = (
+				806BFDEC215186EA000BA5A7 /* AppDelegate.h */,
+				806BFDED215186EA000BA5A7 /* AppDelegate.m */,
+				806BFDEF215186EA000BA5A7 /* ViewController.h */,
+				806BFDF0215186EA000BA5A7 /* ViewController.m */,
+				806BFDF2215186EA000BA5A7 /* Main.storyboard */,
+				806BFDF5215186EA000BA5A7 /* Assets.xcassets */,
+				806BFDF7215186EA000BA5A7 /* LaunchScreen.storyboard */,
+				806BFDFA215186EB000BA5A7 /* Info.plist */,
+				806BFDFB215186EB000BA5A7 /* main.m */,
+			);
+			path = mobileInvestGame;
+			sourceTree = "<group>";
+		};
+		806BFE04215186EB000BA5A7 /* mobileInvestGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				806BFE05215186EB000BA5A7 /* mobileInvestGameTests.m */,
+				806BFE07215186EB000BA5A7 /* Info.plist */,
+			);
+			path = mobileInvestGameTests;
+			sourceTree = "<group>";
+		};
+		806BFE0F215186EB000BA5A7 /* mobileInvestGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				806BFE10215186EB000BA5A7 /* mobileInvestGameUITests.m */,
+				806BFE12215186EB000BA5A7 /* Info.plist */,
+			);
+			path = mobileInvestGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		803D721F2151746100B13BB0 /* InvestGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803D72502151746300B13BB0 /* Build configuration list for PBXNativeTarget "InvestGame" */;
+			buildPhases = (
+				C672ECD7146E20221AE92936 /* [CP] Check Pods Manifest.lock */,
+				803D721C2151746100B13BB0 /* Sources */,
+				803D721D2151746100B13BB0 /* Frameworks */,
+				803D721E2151746100B13BB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvestGame;
+			productName = InvestGame;
+			productReference = 803D72202151746100B13BB0 /* InvestGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		803D723B2151746300B13BB0 /* InvestGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803D72532151746300B13BB0 /* Build configuration list for PBXNativeTarget "InvestGameTests" */;
+			buildPhases = (
+				629C3CF779005C8A3380B066 /* [CP] Check Pods Manifest.lock */,
+				803D72382151746300B13BB0 /* Sources */,
+				803D72392151746300B13BB0 /* Frameworks */,
+				803D723A2151746300B13BB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				803D723E2151746300B13BB0 /* PBXTargetDependency */,
+			);
+			name = InvestGameTests;
+			productName = InvestGameTests;
+			productReference = 803D723C2151746300B13BB0 /* InvestGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		803D72462151746300B13BB0 /* InvestGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803D72562151746300B13BB0 /* Build configuration list for PBXNativeTarget "InvestGameUITests" */;
+			buildPhases = (
+				429E8F42DE6BDEFEB6B11976 /* [CP] Check Pods Manifest.lock */,
+				803D72432151746300B13BB0 /* Sources */,
+				803D72442151746300B13BB0 /* Frameworks */,
+				803D72452151746300B13BB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				803D72492151746300B13BB0 /* PBXTargetDependency */,
+			);
+			name = InvestGameUITests;
+			productName = InvestGameUITests;
+			productReference = 803D72472151746300B13BB0 /* InvestGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		806BFDB621518448000BA5A7 /* InvestGameiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BFDE32151844B000BA5A7 /* Build configuration list for PBXNativeTarget "InvestGameiOS" */;
+			buildPhases = (
+				806BFDB321518448000BA5A7 /* Sources */,
+				806BFDB421518448000BA5A7 /* Frameworks */,
+				806BFDB521518448000BA5A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvestGameiOS;
+			productName = InvestGameiOS;
+			productReference = 806BFDB721518448000BA5A7 /* InvestGameiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		806BFDCA2151844B000BA5A7 /* InvestGameiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BFDE42151844B000BA5A7 /* Build configuration list for PBXNativeTarget "InvestGameiOSTests" */;
+			buildPhases = (
+				83D63B2CFE03CFEB29BA518A /* [CP] Check Pods Manifest.lock */,
+				806BFDC72151844B000BA5A7 /* Sources */,
+				806BFDC82151844B000BA5A7 /* Frameworks */,
+				806BFDC92151844B000BA5A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				806BFDCD2151844B000BA5A7 /* PBXTargetDependency */,
+			);
+			name = InvestGameiOSTests;
+			productName = InvestGameiOSTests;
+			productReference = 806BFDCB2151844B000BA5A7 /* InvestGameiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		806BFDD52151844B000BA5A7 /* InvestGameiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BFDE52151844B000BA5A7 /* Build configuration list for PBXNativeTarget "InvestGameiOSUITests" */;
+			buildPhases = (
+				FDDE959B84A2D3CF12DDC434 /* [CP] Check Pods Manifest.lock */,
+				806BFDD22151844B000BA5A7 /* Sources */,
+				806BFDD32151844B000BA5A7 /* Frameworks */,
+				806BFDD42151844B000BA5A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				806BFDD82151844B000BA5A7 /* PBXTargetDependency */,
+			);
+			name = InvestGameiOSUITests;
+			productName = InvestGameiOSUITests;
+			productReference = 806BFDD62151844B000BA5A7 /* InvestGameiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		806BFDE9215186EA000BA5A7 /* mobileInvestGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BFE13215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGame" */;
+			buildPhases = (
+				6024F7BB428328348A0F7537 /* [CP] Check Pods Manifest.lock */,
+				806BFDE6215186EA000BA5A7 /* Sources */,
+				806BFDE7215186EA000BA5A7 /* Frameworks */,
+				806BFDE8215186EA000BA5A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mobileInvestGame;
+			productName = mobileInvestGame;
+			productReference = 806BFDEA215186EA000BA5A7 /* mobileInvestGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		806BFE00215186EB000BA5A7 /* mobileInvestGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BFE16215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGameTests" */;
+			buildPhases = (
+				9EFEC6CC685D2BE5114950AE /* [CP] Check Pods Manifest.lock */,
+				806BFDFD215186EB000BA5A7 /* Sources */,
+				806BFDFE215186EB000BA5A7 /* Frameworks */,
+				806BFDFF215186EB000BA5A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				806BFE03215186EB000BA5A7 /* PBXTargetDependency */,
+			);
+			name = mobileInvestGameTests;
+			productName = mobileInvestGameTests;
+			productReference = 806BFE01215186EB000BA5A7 /* mobileInvestGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		806BFE0B215186EB000BA5A7 /* mobileInvestGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806BFE19215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGameUITests" */;
+			buildPhases = (
+				071DC90320F150CFC1A80B9F /* [CP] Check Pods Manifest.lock */,
+				806BFE08215186EB000BA5A7 /* Sources */,
+				806BFE09215186EB000BA5A7 /* Frameworks */,
+				806BFE0A215186EB000BA5A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				806BFE0E215186EB000BA5A7 /* PBXTargetDependency */,
+			);
+			name = mobileInvestGameUITests;
+			productName = mobileInvestGameUITests;
+			productReference = 806BFE0C215186EB000BA5A7 /* mobileInvestGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		803D72182151746100B13BB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = CorrenteDeBlocos;
+				TargetAttributes = {
+					803D721F2151746100B13BB0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					803D723B2151746300B13BB0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 803D721F2151746100B13BB0;
+					};
+					803D72462151746300B13BB0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 803D721F2151746100B13BB0;
+					};
+					806BFDB621518448000BA5A7 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					806BFDCA2151844B000BA5A7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 806BFDB621518448000BA5A7;
+					};
+					806BFDD52151844B000BA5A7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 806BFDB621518448000BA5A7;
+					};
+					806BFDE9215186EA000BA5A7 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					806BFE00215186EB000BA5A7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 806BFDE9215186EA000BA5A7;
+					};
+					806BFE0B215186EB000BA5A7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 806BFDE9215186EA000BA5A7;
+					};
+				};
+			};
+			buildConfigurationList = 803D721B2151746100B13BB0 /* Build configuration list for PBXProject "InvestGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 803D72172151746100B13BB0;
+			productRefGroup = 803D72212151746100B13BB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				803D721F2151746100B13BB0 /* InvestGame */,
+				803D723B2151746300B13BB0 /* InvestGameTests */,
+				803D72462151746300B13BB0 /* InvestGameUITests */,
+				806BFDB621518448000BA5A7 /* InvestGameiOS */,
+				806BFDCA2151844B000BA5A7 /* InvestGameiOSTests */,
+				806BFDD52151844B000BA5A7 /* InvestGameiOSUITests */,
+				806BFDE9215186EA000BA5A7 /* mobileInvestGame */,
+				806BFE00215186EB000BA5A7 /* mobileInvestGameTests */,
+				806BFE0B215186EB000BA5A7 /* mobileInvestGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		803D721E2151746100B13BB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803D72322151746100B13BB0 /* Main.storyboard in Resources */,
+				803D72272151746100B13BB0 /* GameScene.sks in Resources */,
+				803D72342151746300B13BB0 /* Assets.xcassets in Resources */,
+				803D72292151746100B13BB0 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803D723A2151746300B13BB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803D72452151746300B13BB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDB521518448000BA5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDC92151844B000BA5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDD42151844B000BA5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDE8215186EA000BA5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806BFDF9215186EB000BA5A7 /* LaunchScreen.storyboard in Resources */,
+				806BFDF6215186EA000BA5A7 /* Assets.xcassets in Resources */,
+				806BFDF4215186EA000BA5A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDFF215186EB000BA5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFE0A215186EB000BA5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		071DC90320F150CFC1A80B9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobileInvestGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		429E8F42DE6BDEFEB6B11976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6024F7BB428328348A0F7537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobileInvestGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		629C3CF779005C8A3380B066 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D63B2CFE03CFEB29BA518A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestGameiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EFEC6CC685D2BE5114950AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobileInvestGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C672ECD7146E20221AE92936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDDE959B84A2D3CF12DDC434 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvestGameiOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		803D721C2151746100B13BB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803D722C2151746100B13BB0 /* GameScene.m in Sources */,
+				803D722F2151746100B13BB0 /* GameViewController.m in Sources */,
+				803D72372151746300B13BB0 /* main.m in Sources */,
+				803D72252151746100B13BB0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803D72382151746300B13BB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803D72412151746300B13BB0 /* InvestGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803D72432151746300B13BB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803D724C2151746300B13BB0 /* InvestGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDB321518448000BA5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDC72151844B000BA5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDD22151844B000BA5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDE6215186EA000BA5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806BFDF1215186EA000BA5A7 /* ViewController.m in Sources */,
+				806BFDFC215186EB000BA5A7 /* main.m in Sources */,
+				806BFDEE215186EA000BA5A7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFDFD215186EB000BA5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806BFE06215186EB000BA5A7 /* mobileInvestGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806BFE08215186EB000BA5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806BFE11215186EB000BA5A7 /* mobileInvestGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		803D723E2151746300B13BB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 803D721F2151746100B13BB0 /* InvestGame */;
+			targetProxy = 803D723D2151746300B13BB0 /* PBXContainerItemProxy */;
+		};
+		803D72492151746300B13BB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 803D721F2151746100B13BB0 /* InvestGame */;
+			targetProxy = 803D72482151746300B13BB0 /* PBXContainerItemProxy */;
+		};
+		806BFDCD2151844B000BA5A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 806BFDB621518448000BA5A7 /* InvestGameiOS */;
+			targetProxy = 806BFDCC2151844B000BA5A7 /* PBXContainerItemProxy */;
+		};
+		806BFDD82151844B000BA5A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 806BFDB621518448000BA5A7 /* InvestGameiOS */;
+			targetProxy = 806BFDD72151844B000BA5A7 /* PBXContainerItemProxy */;
+		};
+		806BFE03215186EB000BA5A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 806BFDE9215186EA000BA5A7 /* mobileInvestGame */;
+			targetProxy = 806BFE02215186EB000BA5A7 /* PBXContainerItemProxy */;
+		};
+		806BFE0E215186EB000BA5A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 806BFDE9215186EA000BA5A7 /* mobileInvestGame */;
+			targetProxy = 806BFE0D215186EB000BA5A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		803D72302151746100B13BB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803D72312151746100B13BB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		806BFDF2215186EA000BA5A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				806BFDF3215186EA000BA5A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		806BFDF7215186EA000BA5A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				806BFDF8215186EB000BA5A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		803D724E2151746300B13BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		803D724F2151746300B13BB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803D72512151746300B13BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39334330F523E87BBE9A45B6 /* Pods-InvestGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		803D72522151746300B13BB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1351DCFA869609C0CE4D543 /* Pods-InvestGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		803D72542151746300B13BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B521EB21091A6729FD5C0A1 /* Pods-InvestGameTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvestGame.app/InvestGame";
+			};
+			name = Debug;
+		};
+		803D72552151746300B13BB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5435B0774DB8AA8B359F37F0 /* Pods-InvestGameTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvestGame.app/InvestGame";
+			};
+			name = Release;
+		};
+		803D72572151746300B13BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78223C9E41D762072B50BD1B /* Pods-InvestGameUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = InvestGame;
+			};
+			name = Debug;
+		};
+		803D72582151746300B13BB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A3B9461FC1506B9115B313 /* Pods-InvestGameUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = InvestGame;
+			};
+			name = Release;
+		};
+		806BFDDD2151844B000BA5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		806BFDDE2151844B000BA5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		806BFDDF2151844B000BA5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE9AB327BE49E1DD453CC312 /* Pods-InvestGameiOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvestGameiOS.app/InvestGameiOS";
+			};
+			name = Debug;
+		};
+		806BFDE02151844B000BA5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5EA6330DF4F27E4F26A999 /* Pods-InvestGameiOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvestGameiOS.app/InvestGameiOS";
+			};
+			name = Release;
+		};
+		806BFDE12151844B000BA5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E920C713D0898370ACE6791 /* Pods-InvestGameiOSUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = InvestGameiOS;
+			};
+			name = Debug;
+		};
+		806BFDE22151844B000BA5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DB3ACC745FB5B5E561DFBC /* Pods-InvestGameiOSUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = InvestGameiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = InvestGameiOS;
+			};
+			name = Release;
+		};
+		806BFE14215186EB000BA5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CB19E568F6B5AE63C850EF /* Pods-mobileInvestGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = mobileInvestGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		806BFE15215186EB000BA5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D8D341D23A5A71C3BF95FC /* Pods-mobileInvestGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = mobileInvestGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		806BFE17215186EB000BA5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A85D2DDB35CF4A175776AC0 /* Pods-mobileInvestGameTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = mobileInvestGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobileInvestGame.app/mobileInvestGame";
+			};
+			name = Debug;
+		};
+		806BFE18215186EB000BA5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B77F23E513E38783A370AF /* Pods-mobileInvestGameTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = mobileInvestGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobileInvestGame.app/mobileInvestGame";
+			};
+			name = Release;
+		};
+		806BFE1A215186EB000BA5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24AAD719159A5B333589232 /* Pods-mobileInvestGameUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = mobileInvestGameUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mobileInvestGame;
+			};
+			name = Debug;
+		};
+		806BFE1B215186EB000BA5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3985D75597F4939DD1F152A /* Pods-mobileInvestGameUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QVX28XD5JA;
+				INFOPLIST_FILE = mobileInvestGameUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mobileInvestGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		803D721B2151746100B13BB0 /* Build configuration list for PBXProject "InvestGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803D724E2151746300B13BB0 /* Debug */,
+				803D724F2151746300B13BB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803D72502151746300B13BB0 /* Build configuration list for PBXNativeTarget "InvestGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803D72512151746300B13BB0 /* Debug */,
+				803D72522151746300B13BB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803D72532151746300B13BB0 /* Build configuration list for PBXNativeTarget "InvestGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803D72542151746300B13BB0 /* Debug */,
+				803D72552151746300B13BB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803D72562151746300B13BB0 /* Build configuration list for PBXNativeTarget "InvestGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803D72572151746300B13BB0 /* Debug */,
+				803D72582151746300B13BB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BFDE32151844B000BA5A7 /* Build configuration list for PBXNativeTarget "InvestGameiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BFDDD2151844B000BA5A7 /* Debug */,
+				806BFDDE2151844B000BA5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BFDE42151844B000BA5A7 /* Build configuration list for PBXNativeTarget "InvestGameiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BFDDF2151844B000BA5A7 /* Debug */,
+				806BFDE02151844B000BA5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BFDE52151844B000BA5A7 /* Build configuration list for PBXNativeTarget "InvestGameiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BFDE12151844B000BA5A7 /* Debug */,
+				806BFDE22151844B000BA5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BFE13215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BFE14215186EB000BA5A7 /* Debug */,
+				806BFE15215186EB000BA5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BFE16215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BFE17215186EB000BA5A7 /* Debug */,
+				806BFE18215186EB000BA5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		806BFE19215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				806BFE1A215186EB000BA5A7 /* Debug */,
+				806BFE1B215186EB000BA5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 803D72182151746100B13BB0 /* Project object */;
+}

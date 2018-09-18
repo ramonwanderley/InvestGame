@@ -1,0 +1,16 @@
+PODS:
+  - Tibei (0.2)
+
+DEPENDENCIES:
+  - Tibei
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Tibei
+
+SPEC CHECKSUMS:
+  Tibei: 4c913e3b47f5656455afa015863a5dc707ef9b36
+
+PODFILE CHECKSUM: e429e6e69eee16104e1230880fc12b114086581f
+
+COCOAPODS: 1.5.0
