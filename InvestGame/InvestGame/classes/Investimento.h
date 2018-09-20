@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 @interface Investimento:NSObject
     @property  int dataDeAquisicao;
     @property double valorDeInicio;
@@ -16,5 +17,7 @@
     @property NSString *tipo;
 
 - (void)vender:(int) quantidade;
+
 - (void)adquirir:(int) quantidade;
+
 @end

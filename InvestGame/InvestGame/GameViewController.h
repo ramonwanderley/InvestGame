@@ -11,7 +11,6 @@
 #import <GameplayKit/GameplayKit.h>
 
 @interface GameViewController : UIViewController
-@property NSMutableArray< NSString*>* nomesJogadores;
-
+    @property NSMutableArray <NSString*> * nomesJogadores;
 
 @end

@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Investimento.h"
-@implementation Mercado:NSObject {
+@implementation Mercado : NSObject
     
-}
+
 
 @end

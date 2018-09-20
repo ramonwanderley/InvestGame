@@ -15,7 +15,7 @@
 		8002061F2153CA3F00B77B50 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = 8002061E2153CA3F00B77B50 /* Jogador.m */; };
 		80020623215400FC00B77B50 /* Carteira.m in Sources */ = {isa = PBXBuildFile; fileRef = 80020622215400FC00B77B50 /* Carteira.m */; };
 		80020625215404F400B77B50 /* Investimento.m in Sources */ = {isa = PBXBuildFile; fileRef = 80020624215404F400B77B50 /* Investimento.m */; };
-		8002062921540DFE00B77B50 /* mercado.m in Sources */ = {isa = PBXBuildFile; fileRef = 8002062821540DFE00B77B50 /* mercado.m */; };
+		8002062921540DFE00B77B50 /* Mercado.m in Sources */ = {isa = PBXBuildFile; fileRef = 8002062821540DFE00B77B50 /* Mercado.m */; };
 		803D72252151746100B13BB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D72242151746100B13BB0 /* AppDelegate.m */; };
 		803D72272151746100B13BB0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 803D72262151746100B13BB0 /* GameScene.sks */; };
 		803D72292151746100B13BB0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 803D72282151746100B13BB0 /* Actions.sks */; };
@@ -96,8 +96,8 @@
 		80020622215400FC00B77B50 /* Carteira.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Carteira.m; sourceTree = "<group>"; };
 		80020624215404F400B77B50 /* Investimento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Investimento.m; sourceTree = "<group>"; };
 		800206262154050400B77B50 /* Investimento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Investimento.h; sourceTree = "<group>"; };
-		8002062721540DF000B77B50 /* mercado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mercado.h; sourceTree = "<group>"; };
-		8002062821540DFE00B77B50 /* mercado.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mercado.m; sourceTree = "<group>"; };
+		8002062721540DF000B77B50 /* Mercado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mercado.h; sourceTree = "<group>"; };
+		8002062821540DFE00B77B50 /* Mercado.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mercado.m; sourceTree = "<group>"; };
 		803D72202151746100B13BB0 /* InvestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803D72232151746100B13BB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		803D72242151746100B13BB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -274,14 +274,14 @@
 		8002061D2153CA1D00B77B50 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				8002061E2153CA3F00B77B50 /* Jogador.m */,
 				800206202153CA4A00B77B50 /* Jogador.h */,
-				80020622215400FC00B77B50 /* Carteira.m */,
+				8002061E2153CA3F00B77B50 /* Jogador.m */,
 				80020621215400EF00B77B50 /* Carteira.h */,
-				80020624215404F400B77B50 /* Investimento.m */,
+				80020622215400FC00B77B50 /* Carteira.m */,
 				800206262154050400B77B50 /* Investimento.h */,
-				8002062721540DF000B77B50 /* mercado.h */,
-				8002062821540DFE00B77B50 /* mercado.m */,
+				80020624215404F400B77B50 /* Investimento.m */,
+				8002062721540DF000B77B50 /* Mercado.h */,
+				8002062821540DFE00B77B50 /* Mercado.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -325,10 +325,10 @@
 				803D72282151746100B13BB0 /* Actions.sks */,
 				803D722A2151746100B13BB0 /* GameScene.h */,
 				803D722B2151746100B13BB0 /* GameScene.m */,
-				803D722D2151746100B13BB0 /* GameViewController.h */,
 				8002061C2153BFEF00B77B50 /* SelectViewController.h */,
-				803D722E2151746100B13BB0 /* GameViewController.m */,
 				8002061A2153BFD500B77B50 /* SelectViewController.m */,
+				803D722D2151746100B13BB0 /* GameViewController.h */,
+				803D722E2151746100B13BB0 /* GameViewController.m */,
 				8002061D2153CA1D00B77B50 /* classes */,
 				803D72302151746100B13BB0 /* Main.storyboard */,
 				803D72332151746300B13BB0 /* Assets.xcassets */,
@@ -826,7 +826,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8002062921540DFE00B77B50 /* mercado.m in Sources */,
+				8002062921540DFE00B77B50 /* Mercado.m in Sources */,
 				80020623215400FC00B77B50 /* Carteira.m in Sources */,
 				8002061F2153CA3F00B77B50 /* Jogador.m in Sources */,
 				803D722C2151746100B13BB0 /* GameScene.m in Sources */,

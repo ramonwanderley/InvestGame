@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Investimento.h"
+
 @implementation Investimento {
     double valorDeInicio;
     BOOL variavel;
@@ -15,14 +16,15 @@
     int quantidade;
 }
 
--(instancetype)initComTipo:(NSString*)tipo comValor:(double)valor eQuantidade:(int)quantidade{
+-(instancetype)initComTipo:(NSString*)tipo comValor:(double)valor eQuantidade:(int)quantidade {
     self = [super init];
-    if(self){
+    if(self) {
         self.tipo = tipo;
         self.valorDeInicio = valor;
         self.quantidade = quantidade;
     }
     return self;
 }
+
 @end
 
