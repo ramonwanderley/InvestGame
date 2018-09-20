@@ -1,0 +1,6 @@
+framework module Pods_testeTibeiTests {
+  umbrella header "Pods-testeTibeiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,251 +3,198 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07F646B7CD43A455140535922B38462B /* GameControllerServiceBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2909E811A0FA81C6C60CF0B14BAAB39 /* GameControllerServiceBrowserDelegate.swift */; };
-		083887A6C308E9BFA86105B3697D89A4 /* ServerMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE65AE137A068BF67D39E3F6F8A729 /* ServerMessenger.swift */; };
-		0CE6D9AD5B921FCF14560E5E75CC06D0 /* ConnectionLostEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3014BADD489A888EE9AC2BDC68263E80 /* ConnectionLostEvent.swift */; };
-		0E4EE2C4B86EBBA2E77F857D2ABFF606 /* GameControllerServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E3462435A6E4D208EFCAABD144E78 /* GameControllerServer.swift */; };
-		1203CB545F80695A2316C576FFA23831 /* StreamExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E265C3D6A412A7712E81081F433CA /* StreamExtensions.swift */; };
-		1482E0A97B74C384C2F19ABB9B535D5E /* ResponderChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5ED14D71417186F415593E66A9EF6 /* ResponderChain.swift */; };
-		168A5C2427B5927AF2E0EC7025F73E9E /* ConnectionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D94297F1F0B32AD4683E49DB413EE42 /* ConnectionEvent.swift */; };
+		02C2CD158FB2EA6B62AE76D7E04007CD /* Pods-testeTibeiUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EB19124677AF72FED031BD200DC634 /* Pods-testeTibeiUITests-dummy.m */; };
+		03F9AF69AE0D4142D31B11383F91D9A6 /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = E9EBCCB5BF1D46D81D4C904775C1CC87 /* Merhaba.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		16E1CB2DA937501E6E99D68E64DE0F8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
-		16E2233303D419597E1D405CE0997A2F /* Pods-InvestGameUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AF985F96A5DC09535A8CF712E3546 /* Pods-InvestGameUITests-dummy.m */; };
-		19451D56F7EBB1200EC36F31CD1F7E3D /* ServiceAvailabilityChangeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EEB5ACA5A2C1111E448857E23D831F /* ServiceAvailabilityChangeEvent.swift */; };
+		16E2233303D419597E1D405CE0997A2F /* Pods-InvestGameUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D58D82C16358BE3CB8A4F63E0AA1EFFC /* Pods-InvestGameUITests-dummy.m */; };
+		1854CB98319E43CFFBAEE37F5362F783 /* Pods-testeTibeiTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B324F5232828491811F11F672D9E36F9 /* Pods-testeTibeiTests-dummy.m */; };
+		1B51B5F36D782132FB1239A7628408ED /* Merhaba-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CEF17326D359B97E8228346B13CE7 /* Merhaba-tvOS-dummy.m */; };
 		1CC9C4E989620321E8EDE26187C2FA23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
-		20A922785171C9BBF9A29F89B9465E5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856C438DF8199070433034C10C069BA /* Constants.swift */; };
-		2A956119CDCC2BE40525D167ED1E8558 /* KeepAliveMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442E59EB94EA79648AB8CA51DDBB02A /* KeepAliveMessage.swift */; };
-		2AB1D63F9A29064F861CB911D9B4C2EF /* ClientResponderChainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C67A7EABF8725EC6655AEEE164568B /* ClientResponderChainNode.swift */; };
-		2D0587B8F4612EF0BD728D85DB8E42FB /* ServiceAvailabilityChangeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EEB5ACA5A2C1111E448857E23D831F /* ServiceAvailabilityChangeEvent.swift */; };
-		3B5844DB8ACCC6607E741D9E11F19633 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321505940280017E93F466DEC550966 /* Messenger.swift */; };
-		3CE15492AFA6B56190A336EEB5DEC0AD /* Tibei-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A36B7D673A7CE0A03121C0AD9FA4C /* Tibei-iOS-dummy.m */; };
-		3E28F470CB49B87A7113C4306DE5AEFF /* ClientMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C3BF3BA28062F27AC2221C9E376D2 /* ClientMessenger.swift */; };
-		4129EC87E88BF776AD4E246919DEBA9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
-		420309FA96F71878ABC10DDD1819519B /* ServerMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE65AE137A068BF67D39E3F6F8A729 /* ServerMessenger.swift */; };
-		47BCA15D1C5C68F56C693CE45FD0F0AF /* Pods-InvestGameiOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E4584D84247CFC6E07BEE03A33F925 /* Pods-InvestGameiOSUITests-dummy.m */; };
-		4D3588CA394FAA77C3202593F60C8D20 /* ConnectionAcceptedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B9C0A2428E2713ADAE2448B720AAD /* ConnectionAcceptedEvent.swift */; };
-		4DC30D8BE8E03072294051A625D3481A /* ConnectionResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FECB22001987540CF1AC2295236AE5 /* ConnectionResponder.swift */; };
-		51C745E23BEBAB1A03DF2187E530D4E0 /* Pods-InvestGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D98A121458C9AA30F9A10F2495BED553 /* Pods-InvestGame-dummy.m */; };
-		5AC3BB4733E605799D5230875FBEDE8C /* ConnectionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D94297F1F0B32AD4683E49DB413EE42 /* ConnectionEvent.swift */; };
-		5BE4F95C7289E9E2BA06C29C97CC2868 /* GameControllerServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E3462435A6E4D208EFCAABD144E78 /* GameControllerServer.swift */; };
-		5C65209EFAC37690148D2182B46DE839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
-		5DCA87052118490CE774BF7A53E2E1FB /* ClientConnectionResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E215D499C17F859DA9DFD0316C84F8EE /* ClientConnectionResponder.swift */; };
-		63A196F07ABF9EF9016E1C621448C418 /* StreamExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E265C3D6A412A7712E81081F433CA /* StreamExtensions.swift */; };
-		699E8BA06479AE48D199B6726D68D45C /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F967591831A7A7E574A53D3A191B6379 /* ConnectionError.swift */; };
-		6A7A46DD20EDF552F7702E9CE2C887EA /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD2591708E3043F853DC0908C081CE /* Connection.swift */; };
-		7954F5A4A6F50AB8A6E061DBA204E7BE /* Pods-InvestGameiOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F735D0A6B8C45B2C3A17AFE668C1768 /* Pods-InvestGameiOSTests-dummy.m */; };
-		7D82AB4AD56A87DDDA0E761957751E32 /* ClientResponderChainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C67A7EABF8725EC6655AEEE164568B /* ClientResponderChainNode.swift */; };
-		804458B665D05AD73B1018AC9D261422 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C856C438DF8199070433034C10C069BA /* Constants.swift */; };
-		8334FA943D1E46142D8688901085D175 /* Pods-mobileInvestGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4678BC42DDFD42AA6F3685B72C01FB50 /* Pods-mobileInvestGame-dummy.m */; };
-		89ACAB08EDD1D05A44FDBCF5E6FB2CB6 /* KeepAliveMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442E59EB94EA79648AB8CA51DDBB02A /* KeepAliveMessage.swift */; };
-		89B713AA77A8EE7F1F93DD245CDE8F8E /* IncomingMessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E264EB38E185935E6D9190074BA82D51 /* IncomingMessageData.swift */; };
-		89E6AC7C0FB15C6DF4EE1DF2B72506B8 /* ConnectionID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BEAB7798D08D2D51B348F11F80627 /* ConnectionID.swift */; };
-		8BC743498E1CECC92487D97832ACFB25 /* Tibei-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C614EA019D7A0BFFB0068C599F0BCA1 /* Tibei-tvOS-dummy.m */; };
-		8F16E14C2954E4DB6AE50A6DB486823D /* IncomingMessageEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3C094104D27B0193672BC93C29831 /* IncomingMessageEvent.swift */; };
-		91CF183A320C8C5B7C85F4E9427FBFF2 /* Pods-InvestGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 317663439F831E82416F8CB4E4D55041 /* Pods-InvestGame-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		98D2ECE61FC249B94DE2A363761FEDBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
-		99F10DFFE2B9811FD013C6F565DC7797 /* Pods-mobileInvestGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC59D0CDD8C949C4D31F09701F3705C /* Pods-mobileInvestGame-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9AF530FCEF3527F968FC24EDA89C4F60 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9321505940280017E93F466DEC550966 /* Messenger.swift */; };
-		9D927BA7594E52CA62416C03A28DA417 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD2591708E3043F853DC0908C081CE /* Connection.swift */; };
-		A1019BFDB1AE60FF8FA815148440816C /* Tibei-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 346092A305B867FB2D2981336A098BFE /* Tibei-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A25D7A9D13B4D33577D70D3AF4FFD331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
-		A38D555AD6D3759C6D77778CA75F2DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
-		A759FB7EE0126DBDFD8B5FBC1BF39CDC /* ClientMessenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05C3BF3BA28062F27AC2221C9E376D2 /* ClientMessenger.swift */; };
+		245131E4B5923A8FB69FB15CEFF83F80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		3C18579308095337E54C03D3B70B79D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		4AA01C32928C54DAEE6F4F831FF85DB2 /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E56DE102D197839C4004FF8F3C67C /* MRBServer.m */; };
+		4F9334AD32435C8C7E9052AB1A20BFEE /* Pods-testeTibei-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB978B8598FD8A64C66A9D6AAE7DDCF9 /* Pods-testeTibei-dummy.m */; };
+		5E3D24E287DFF3CA5B8EC4C7F5852778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		5FF73CF2CA78EB6C00704D0B6FF9D49E /* Pods-testeTibeiUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C341907D32AC22CDC067F2B389C698 /* Pods-testeTibeiUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67D2A0D394648AC480DE86FC96FBAC89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		6F600AD9E0E1AD60EED8051B3F8608CD /* Merhaba-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7405805080EC06AA8EC32309C682D3 /* Merhaba-iOS-dummy.m */; };
+		7614B4795265500989356D0EE4D6E87D /* Pods-testeTibei-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E30959731560D01728FFAA7B03591BDA /* Pods-testeTibei-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76BDB3F61FCEF2610563606C2492A304 /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FE716B7B46ED3F632B1551D54A6C51 /* MRBServer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CF751BF3EA3A21F29CFC6E4337700ED /* Pods-InvestGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4ACE60BFBB770ED6D8555BA61CB66A /* Pods-InvestGame-dummy.m */; };
+		83C3D02374F2E308F73462E89A971915 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
+		89F7346F47897387D974EFF72BE8F94C /* Pods-testeTibeiTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F18D78D7F4B583BA6D3693A6B2549F1 /* Pods-testeTibeiTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98F2F01DCEC0C7CA5BF2A0B35D2AD157 /* MRBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FE716B7B46ED3F632B1551D54A6C51 /* MRBServer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3C235E8C5E0B5CD1433DC8A4BA0C838 /* Pods-mobileInvestGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB777571B8988552365436B3FEB637BA /* Pods-mobileInvestGame-dummy.m */; };
+		A587A56E8FC65559DF210E2732F362CB /* MRBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E56DE102D197839C4004FF8F3C67C /* MRBServer.m */; };
 		A8BBFEFF6272BDA152F9DCA8FE4483C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
-		AD32CF16DF9DDD4600DC533A5DE24428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
-		B02E13DD8CE48EC3E020BB957C3312D7 /* GameControllerServiceBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2909E811A0FA81C6C60CF0B14BAAB39 /* GameControllerServiceBrowserDelegate.swift */; };
-		B458B27C703E1F7D4ABBA5E7683E3E58 /* IncomingMessageEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3C094104D27B0193672BC93C29831 /* IncomingMessageEvent.swift */; };
-		B6183CF503E3D482669F045226309709 /* ConnectionAcceptedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337B9C0A2428E2713ADAE2448B720AAD /* ConnectionAcceptedEvent.swift */; };
-		B64F9E9E0B8CF11127FA719CCAB90BA7 /* ClientConnectionResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E215D499C17F859DA9DFD0316C84F8EE /* ClientConnectionResponder.swift */; };
-		BA8904ECFD3698E7DA6CA21F14228767 /* Pods-mobileInvestGameUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C07B10A7775A4D4628CC8F1B3CF3CAD1 /* Pods-mobileInvestGameUITests-dummy.m */; };
-		C22C7EF15CDC0434811422224C6A45BE /* ResponderChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5ED14D71417186F415593E66A9EF6 /* ResponderChain.swift */; };
-		C55E9E01BCAE37C80915C76C0720DDCE /* JSONConvertibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705CF4318D9CAF6B547B963A79A1E971 /* JSONConvertibleMessage.swift */; };
-		C69CCDA13FE4D733B6CB72D5D324BB5C /* ConnectionID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BEAB7798D08D2D51B348F11F80627 /* ConnectionID.swift */; };
-		CF80D7497B3743286136519D0E35F517 /* GameControllerServiceBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48543800DD5B1409D034D64938D9AF71 /* GameControllerServiceBrowser.swift */; };
-		D4530BEDE7D62E78A107035229605FBD /* ConnectionLostEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3014BADD489A888EE9AC2BDC68263E80 /* ConnectionLostEvent.swift */; };
-		D619F879E985A6035EFEB5DE24E6E84F /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5CC7CFBE01343FB3A3064F6002354 /* ConnectionDelegate.swift */; };
-		E1BE9CA1FCC6E2F69596A96812FC8FD5 /* ConnectionResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FECB22001987540CF1AC2295236AE5 /* ConnectionResponder.swift */; };
-		E459D7695BDD1B9F99A9B1C90F0F2877 /* JSONConvertibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705CF4318D9CAF6B547B963A79A1E971 /* JSONConvertibleMessage.swift */; };
+		BA8904ECFD3698E7DA6CA21F14228767 /* Pods-mobileInvestGameUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C8836DAFF3463DCEF19F4E2B5BE068 /* Pods-mobileInvestGameUITests-dummy.m */; };
+		BF0E1FC23B5E78FA1D20C35A31D33F32 /* Merhaba.h in Headers */ = {isa = PBXBuildFile; fileRef = E9EBCCB5BF1D46D81D4C904775C1CC87 /* Merhaba.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D2D7478ADE44D17BE7B93C3B7B7C0DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
+		D6308992C5AFB1A7E3822BB5B87B7229 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
 		E65C5736F955FD8B9BA710EEA070DB19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
-		E81B7705436054692031B13101EABB27 /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F967591831A7A7E574A53D3A191B6379 /* ConnectionError.swift */; };
-		E9716842412589AB416F25D4B7E71E57 /* Pods-InvestGameTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1082384B0006D0CDF45EF23BA3C6C1 /* Pods-InvestGameTests-dummy.m */; };
-		ECB348EE42FB6D092EEFB75BDFE3552C /* Pods-mobileInvestGameTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BAB8AA568F349442D469629D3AA6DA /* Pods-mobileInvestGameTests-dummy.m */; };
-		ED975D1BA92C4782B19C9C77179218FD /* ConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5CC7CFBE01343FB3A3064F6002354 /* ConnectionDelegate.swift */; };
-		F23C9ECA6041DB27D78BBBC2D954B782 /* IncomingMessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E264EB38E185935E6D9190074BA82D51 /* IncomingMessageData.swift */; };
-		F2B01074CF6C7F25674517742981D787 /* Tibei-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 198EBAF1241A0423DFE055D310D0CAE7 /* Tibei-iOS-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F96237D996453491EFDDB7545FC81B1A /* GameControllerServiceBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48543800DD5B1409D034D64938D9AF71 /* GameControllerServiceBrowser.swift */; };
+		E9716842412589AB416F25D4B7E71E57 /* Pods-InvestGameTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA39F687442797F2CACC1BC87999E34 /* Pods-InvestGameTests-dummy.m */; };
+		ECB348EE42FB6D092EEFB75BDFE3552C /* Pods-mobileInvestGameTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBC276558D65518F7B89C71FC2F0C28 /* Pods-mobileInvestGameTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		03611C417360638137D50815790C5A09 /* PBXContainerItemProxy */ = {
+		32FD3BB9DB2D9B701F8EEECF79705EB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 17452114FFCA69151066CCA6DEEF0244;
-			remoteInfo = "Pods-InvestGame";
+			remoteGlobalIDString = 97973369F8F44E36A471C1D624AECD1A;
+			remoteInfo = "Pods-testeTibei";
 		};
 		384C6168BAA0F5E912F572691CC6C6B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EA73393230BC0027D3040E20B94C8022;
+			remoteGlobalIDString = D376403BC42DDA001E48F64BE11CB422;
 			remoteInfo = "Pods-mobileInvestGame";
-		};
-		76AC3E819E8D2CEE2EFF55832876501D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 17452114FFCA69151066CCA6DEEF0244;
-			remoteInfo = "Pods-InvestGame";
-		};
-		B5F583DCE831FED4BA3ED7377127412B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB8645B10060C4B281B0EFE7BB8CF98A;
-			remoteInfo = "Tibei-tvOS";
 		};
 		BCB19CB189BAF2CA47A508536C7CCDB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EA73393230BC0027D3040E20B94C8022;
+			remoteGlobalIDString = D376403BC42DDA001E48F64BE11CB422;
 			remoteInfo = "Pods-mobileInvestGame";
 		};
 		C5AA5DEC654D2873378A0ED488F501A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 17452114FFCA69151066CCA6DEEF0244;
+			remoteGlobalIDString = E08EFE0E6D19380F4010C33EEE64975E;
 			remoteInfo = "Pods-InvestGame";
 		};
-		F05DE090E8563486B7BFF8C7594C3610 /* PBXContainerItemProxy */ = {
+		D68F554FA319D304CAC0A54CD6A1A3A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D05D29684F94EA5CEDFDC31BB997657;
-			remoteInfo = "Tibei-iOS";
+			remoteGlobalIDString = B61EDBF4837DDC5B4B0CAB518DBDA4E5;
+			remoteInfo = "Merhaba-tvOS";
+		};
+		DA5D28509757CB38652A5F12E507C955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD88CC15882D0EEE20EDB50C7081277;
+			remoteInfo = "Merhaba-iOS";
+		};
+		F3401E6259F24D5D7D78E7F8904B2135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97973369F8F44E36A471C1D624AECD1A;
+			remoteInfo = "Pods-testeTibei";
 		};
 		F6476F562F77B6654BFAD442DDBF65CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 17452114FFCA69151066CCA6DEEF0244;
+			remoteGlobalIDString = E08EFE0E6D19380F4010C33EEE64975E;
 			remoteInfo = "Pods-InvestGame";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0131FED7A84F093B4A58B2EF0305EB91 /* Pods-InvestGameTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameTests-frameworks.sh"; sourceTree = "<group>"; };
-		02CD2591708E3043F853DC0908C081CE /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Tibei/connection/Connection.swift; sourceTree = "<group>"; };
-		0306E877D28E85FC414F178E4E671DC1 /* Pods-InvestGameUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameUITests-frameworks.sh"; sourceTree = "<group>"; };
-		04D3C094104D27B0193672BC93C29831 /* IncomingMessageEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IncomingMessageEvent.swift; path = Sources/Tibei/common/responderChain/events/IncomingMessageEvent.swift; sourceTree = "<group>"; };
-		04F8157085E1C3D079E8C159AC313475 /* Pods-mobileInvestGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGameTests.release.xcconfig"; sourceTree = "<group>"; };
-		05BE6B35D80CA6DF32810789C3324D2F /* Pods-InvestGameUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InvestGameUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		06EEB5ACA5A2C1111E448857E23D831F /* ServiceAvailabilityChangeEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceAvailabilityChangeEvent.swift; path = Sources/Tibei/client/responderChain/events/ServiceAvailabilityChangeEvent.swift; sourceTree = "<group>"; };
-		080C6B7F81C3A3ADAA9544FCFA022149 /* Pods-mobileInvestGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mobileInvestGame-acknowledgements.markdown"; sourceTree = "<group>"; };
-		088A58396FEAA6E1F64CCBB109236CBB /* Tibei-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tibei-tvOS-prefix.pch"; path = "../Tibei-tvOS/Tibei-tvOS-prefix.pch"; sourceTree = "<group>"; };
-		0AD28230EB1B77FA7CC2699AE4701068 /* Pods-InvestGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InvestGame.modulemap"; sourceTree = "<group>"; };
-		120E265C3D6A412A7712E81081F433CA /* StreamExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamExtensions.swift; path = Sources/Tibei/StreamExtensions.swift; sourceTree = "<group>"; };
-		163404B2495A258DE6181599CB5375C0 /* Pods-InvestGameiOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InvestGameiOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		175C8C1543CED0E7E3C4F9560FA86130 /* Pods-mobileInvestGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGame-resources.sh"; sourceTree = "<group>"; };
-		198EBAF1241A0423DFE055D310D0CAE7 /* Tibei-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tibei-iOS-umbrella.h"; path = "../../Headers/Public/Tibei/Tibei-iOS-umbrella.h"; sourceTree = "<group>"; };
-		19D05C26908CF4CC02B6D173E6718091 /* Pods-mobileInvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1D482BF294FF76907662EAB9D2FAFC2D /* Pods-InvestGameiOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InvestGameiOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1DB529975DC783BCD54D434FD640941E /* Pods-mobileInvestGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1ED3BB7750D0A9D242AD1DBA2FE6A33E /* Pods-mobileInvestGameUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGameUITests-resources.sh"; sourceTree = "<group>"; };
-		21273E311B20B5F90DBF933256108278 /* libPods-InvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C67A7EABF8725EC6655AEEE164568B /* ClientResponderChainNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientResponderChainNode.swift; path = Sources/Tibei/client/responderChain/ClientResponderChainNode.swift; sourceTree = "<group>"; };
-		29BA25F2CDC2829DCF3698BC1BA8E2B1 /* Pods-InvestGameiOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameiOSUITests-frameworks.sh"; sourceTree = "<group>"; };
-		2B7917C28637730F7226898456F7567A /* Pods-InvestGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InvestGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		01418162712130BFDF1DEDF16E3ABEAE /* Merhaba-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Merhaba-tvOS-prefix.pch"; path = "../Merhaba-tvOS/Merhaba-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		08CBAFDD520990A70E4D728ED816510A /* Merhaba-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Merhaba-tvOS.xcconfig"; path = "../Merhaba-tvOS/Merhaba-tvOS.xcconfig"; sourceTree = "<group>"; };
+		09479E688D7CA80B8950F471718402CA /* Pods_testeTibeiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testeTibeiTests.framework; path = "Pods-testeTibeiTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09ED88CECCFEB32F145E3B2D04D5B51E /* libMerhaba-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMerhaba-tvOS.a"; path = "libMerhaba-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B5EA0D8D7297AF2770FE4FAA27BA4B8 /* Pods-testeTibeiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testeTibeiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		10911DECA374262B51087CE09B7AF6CB /* Pods-testeTibei-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testeTibei-frameworks.sh"; sourceTree = "<group>"; };
+		1120381CCCD5DC9AD4534793FDC92B03 /* Pods-InvestGameUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameUITests-frameworks.sh"; sourceTree = "<group>"; };
+		11707D86B52F03C39A68A85B60633973 /* Pods-testeTibeiTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testeTibeiTests-resources.sh"; sourceTree = "<group>"; };
+		121BE18784FBDD2ADEF8B1897CA81D67 /* Pods-mobileInvestGameUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mobileInvestGameUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1484B117FA227E130979429BDB5B7C7F /* Pods-mobileInvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		17C7ACBE4EAC6AB1B48205A33E3CBD2A /* libPods-InvestGameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-InvestGameUITests.a"; path = "libPods-InvestGameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		182CEF17326D359B97E8228346B13CE7 /* Merhaba-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Merhaba-tvOS-dummy.m"; path = "../Merhaba-tvOS/Merhaba-tvOS-dummy.m"; sourceTree = "<group>"; };
+		18D78B77D30EDDD0BCE7B2E6801CB721 /* Pods-testeTibeiUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testeTibeiUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B6027D91E9B9EDCD7A51D32545F700B /* Pods-testeTibeiTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testeTibeiTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BCC158F933F55CC2593B9310DC478FF /* Pods-mobileInvestGameTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mobileInvestGameTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BF4A70A21EC680FEDBAC8F2296EBC24 /* Pods-testeTibei-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testeTibei-resources.sh"; sourceTree = "<group>"; };
+		222700BE5FD62C558F1E8071FC1C040C /* Pods-InvestGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGame-frameworks.sh"; sourceTree = "<group>"; };
+		280969849D9AD7526D268CC564713FCC /* Pods-InvestGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGame-resources.sh"; sourceTree = "<group>"; };
+		28AA19544FA5D911C242A8DB3EBF9309 /* Merhaba-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Merhaba-iOS.xcconfig"; sourceTree = "<group>"; };
+		29FC33ED7EDB5938552BA982265C39F6 /* Pods-InvestGameTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameTests-resources.sh"; sourceTree = "<group>"; };
 		2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3014BADD489A888EE9AC2BDC68263E80 /* ConnectionLostEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLostEvent.swift; path = Sources/Tibei/common/responderChain/events/ConnectionLostEvent.swift; sourceTree = "<group>"; };
-		317663439F831E82416F8CB4E4D55041 /* Pods-InvestGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InvestGame-umbrella.h"; sourceTree = "<group>"; };
-		337B9C0A2428E2713ADAE2448B720AAD /* ConnectionAcceptedEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionAcceptedEvent.swift; path = Sources/Tibei/common/responderChain/events/ConnectionAcceptedEvent.swift; sourceTree = "<group>"; };
-		33ABFCF1335701FCA9638402E9B11651 /* Pods-mobileInvestGameUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mobileInvestGameUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		346092A305B867FB2D2981336A098BFE /* Tibei-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tibei-tvOS-umbrella.h"; path = "../../Headers/Public/Tibei/Tibei-tvOS-umbrella.h"; sourceTree = "<group>"; };
-		3C614EA019D7A0BFFB0068C599F0BCA1 /* Tibei-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Tibei-tvOS-dummy.m"; path = "../Tibei-tvOS/Tibei-tvOS-dummy.m"; sourceTree = "<group>"; };
-		3F4FDAC970D6287DD1E6D30666506AD6 /* libPods-mobileInvestGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44F271DA74A55F52A5E268FAB933BD1B /* Pods-mobileInvestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGame.debug.xcconfig"; sourceTree = "<group>"; };
-		4678BC42DDFD42AA6F3685B72C01FB50 /* Pods-mobileInvestGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mobileInvestGame-dummy.m"; sourceTree = "<group>"; };
-		48543800DD5B1409D034D64938D9AF71 /* GameControllerServiceBrowser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameControllerServiceBrowser.swift; path = Sources/Tibei/client/GameControllerServiceBrowser.swift; sourceTree = "<group>"; };
-		4DC62370F96B334528ED1FFA4CA46CC8 /* Pods-mobileInvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
-		53E5ED14D71417186F415593E66A9EF6 /* ResponderChain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponderChain.swift; path = Sources/Tibei/common/responderChain/ResponderChain.swift; sourceTree = "<group>"; };
-		54918BB815AE5F07E604E78D4BB5A50E /* Pods-mobileInvestGameUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGameUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2F18D78D7F4B583BA6D3693A6B2549F1 /* Pods-testeTibeiTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testeTibeiTests-umbrella.h"; sourceTree = "<group>"; };
+		30B3CD11A4376CAAC555659C506EA8D6 /* Pods-InvestGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		36F6B5223BA7794B274BCD9BCB317CBD /* Pods-testeTibei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testeTibei.debug.xcconfig"; sourceTree = "<group>"; };
+		3A2CA393AD0483159A5C68D6F9C1CFD8 /* Pods-InvestGameTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameTests-frameworks.sh"; sourceTree = "<group>"; };
+		3F8C4A38EAB21EC9B353F38B018A7335 /* Pods-mobileInvestGameTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGameTests-frameworks.sh"; sourceTree = "<group>"; };
+		413C7038AC5FB9AF00B9D02800268068 /* libPods-InvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-InvestGame.a"; path = "libPods-InvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		451E56DE102D197839C4004FF8F3C67C /* MRBServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRBServer.m; path = Sources/MRBServer.m; sourceTree = "<group>"; };
+		451E85565D5109E15479A537BA52DEE3 /* Pods-InvestGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InvestGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47E6584B24B02DFF85BD55D34CEFF3B3 /* Pods-mobileInvestGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mobileInvestGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		4C83CA8BE842683733A1E4A45EAD47B7 /* Pods-mobileInvestGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mobileInvestGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CEB16DDB297FA837111B373CADCD3AB /* Pods-InvestGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InvestGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		54C2D7B356B1A3CD2DA53797E92D77CB /* Pods-testeTibei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testeTibei.release.xcconfig"; sourceTree = "<group>"; };
+		54F06C4418CADD3B1225901CC8AB783D /* Pods-mobileInvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55A743CA50A172CA4DAB8B1BC0B262F1 /* Pods-InvestGameTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InvestGameTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		59328A18AF2F5AB062F3EA4D2E56E8D4 /* Pods-InvestGameiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DE94378CA84F11F98FD65A8B0B3ED3E /* libPods-mobileInvestGameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F1D17A01ED0230953A655C1B2259A87 /* libTibei-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTibei-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63B8A6F776E6F6CA4B201A3C76D168D3 /* Pods-InvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
-		67BFA0DD091825F56F1BCFE2961EB642 /* Pods-InvestGameiOSUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameiOSUITests-resources.sh"; sourceTree = "<group>"; };
-		6E0AF985F96A5DC09535A8CF712E3546 /* Pods-InvestGameUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InvestGameUITests-dummy.m"; sourceTree = "<group>"; };
-		705CF4318D9CAF6B547B963A79A1E971 /* JSONConvertibleMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONConvertibleMessage.swift; path = Sources/Tibei/message/JSONConvertibleMessage.swift; sourceTree = "<group>"; };
-		72BAB8AA568F349442D469629D3AA6DA /* Pods-mobileInvestGameTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mobileInvestGameTests-dummy.m"; sourceTree = "<group>"; };
-		742CE4382DA6887D9F53F442FA780A83 /* libPods-InvestGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F735D0A6B8C45B2C3A17AFE668C1768 /* Pods-InvestGameiOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InvestGameiOSTests-dummy.m"; sourceTree = "<group>"; };
-		8481D80EC34071770A0D334F2C10D620 /* Pods-mobileInvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGame.release.xcconfig"; sourceTree = "<group>"; };
-		8AF56A7BCA07E2DB43BC770A7D503023 /* Tibei-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Tibei-tvOS.modulemap"; path = "../../Headers/Public/Tibei/Tibei-tvOS.modulemap"; sourceTree = "<group>"; };
-		8D94297F1F0B32AD4683E49DB413EE42 /* ConnectionEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionEvent.swift; path = Sources/Tibei/common/responderChain/events/ConnectionEvent.swift; sourceTree = "<group>"; };
-		8FB3552331B03486F4EBAA058D27C8F6 /* libPods-InvestGameiOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91BA001B3A4BBE372A93DA4FDFDD3020 /* Pods-InvestGameiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameiOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		92D64CAC4F08188B8E9932A80AE63981 /* Pods-InvestGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameTests.release.xcconfig"; sourceTree = "<group>"; };
-		92FECB22001987540CF1AC2295236AE5 /* ConnectionResponder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionResponder.swift; path = Sources/Tibei/common/responderChain/ConnectionResponder.swift; sourceTree = "<group>"; };
-		9321505940280017E93F466DEC550966 /* Messenger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Messenger.swift; path = Sources/Tibei/common/Messenger.swift; sourceTree = "<group>"; };
-		93218CAFE5C43ACCFA2610B304CD91DA /* Pods-mobileInvestGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGame-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97042D7254F9803F0E88BCAD8037D6C7 /* Pods-InvestGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGame-frameworks.sh"; sourceTree = "<group>"; };
-		97EC0BC7D6929FD0AED763DCE51C74CF /* Pods-InvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGame.release.xcconfig"; sourceTree = "<group>"; };
-		995DF5F2F88D7FB76C32AC38C08086CE /* libTibei-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTibei-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99FD89212C519F767D9DBBF9C526F9DF /* libPods-mobileInvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A1082384B0006D0CDF45EF23BA3C6C1 /* Pods-InvestGameTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InvestGameTests-dummy.m"; sourceTree = "<group>"; };
-		9C80917BC6F6BC86D92C4E2BE905987A /* Pods-InvestGameiOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InvestGameiOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9FA67BE70433B489448EAB9C525096A6 /* Pods-InvestGameiOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameiOSTests-frameworks.sh"; sourceTree = "<group>"; };
-		A39A36B7D673A7CE0A03121C0AD9FA4C /* Tibei-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tibei-iOS-dummy.m"; sourceTree = "<group>"; };
-		A4EA698F699BA1709A9256DA03E47D1F /* Pods-InvestGameiOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InvestGameiOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A5B3855F40B402A16CEF051EF2520A92 /* Pods-InvestGameiOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameiOSTests-resources.sh"; sourceTree = "<group>"; };
-		A841B9C60C2820E246A136B2125896D5 /* Pods-InvestGameTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameTests-resources.sh"; sourceTree = "<group>"; };
-		A8E4584D84247CFC6E07BEE03A33F925 /* Pods-InvestGameiOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InvestGameiOSUITests-dummy.m"; sourceTree = "<group>"; };
-		AC26F9658302A9AACFBA74E1965A8C19 /* Pods-InvestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGame.debug.xcconfig"; sourceTree = "<group>"; };
-		AFC68CE22C9C3A09AFD245EF1EA780DC /* Tibei-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Tibei-iOS.modulemap"; path = "../../Headers/Public/Tibei/Tibei-iOS.modulemap"; sourceTree = "<group>"; };
-		B02CC6EE258FF21AD855653D7DE61F6E /* Pods-InvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B48A68EFC52F41A4FC963D61E6220FFB /* Pods-mobileInvestGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mobileInvestGame-acknowledgements.plist"; sourceTree = "<group>"; };
-		B4F69D0694643D5DF5CD17DFD88EA175 /* Tibei-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Tibei-iOS.xcconfig"; sourceTree = "<group>"; };
-		B749475B95AAD86C2834ABBF118349DD /* Pods-InvestGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGame-resources.sh"; sourceTree = "<group>"; };
-		B90E3462435A6E4D208EFCAABD144E78 /* GameControllerServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameControllerServer.swift; path = Sources/Tibei/server/GameControllerServer.swift; sourceTree = "<group>"; };
-		C03422255AF8CD021ED27BB45F5B1868 /* Tibei-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tibei-iOS-prefix.pch"; sourceTree = "<group>"; };
-		C05C3BF3BA28062F27AC2221C9E376D2 /* ClientMessenger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientMessenger.swift; path = Sources/Tibei/client/ClientMessenger.swift; sourceTree = "<group>"; };
-		C072C31DC7D5F4C6D3AA114F454670A6 /* Pods-mobileInvestGameUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mobileInvestGameUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C07B10A7775A4D4628CC8F1B3CF3CAD1 /* Pods-mobileInvestGameUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mobileInvestGameUITests-dummy.m"; sourceTree = "<group>"; };
-		C856C438DF8199070433034C10C069BA /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/Tibei/common/Constants.swift; sourceTree = "<group>"; };
-		C88AAACC9B23DF257A9566270354F5EB /* Pods-mobileInvestGameTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGameTests-frameworks.sh"; sourceTree = "<group>"; };
-		CC12919DB80165EF9E3F3758127E11D7 /* Pods-InvestGameiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CCC5A9BEE5BA329C4BADA8279DB2FEAF /* Pods-mobileInvestGameTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mobileInvestGameTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D37AA78043A13EBB84FC612E41379EBD /* Pods-InvestGameUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameUITests-resources.sh"; sourceTree = "<group>"; };
-		D442E59EB94EA79648AB8CA51DDBB02A /* KeepAliveMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeepAliveMessage.swift; path = Sources/Tibei/message/KeepAliveMessage.swift; sourceTree = "<group>"; };
-		D4D5CC7CFBE01343FB3A3064F6002354 /* ConnectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionDelegate.swift; path = Sources/Tibei/connection/ConnectionDelegate.swift; sourceTree = "<group>"; };
-		D6A43D2B8D6A35598D13E6139BE39CFE /* Tibei-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tibei-tvOS.xcconfig"; path = "../Tibei-tvOS/Tibei-tvOS.xcconfig"; sourceTree = "<group>"; };
-		D98A121458C9AA30F9A10F2495BED553 /* Pods-InvestGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InvestGame-dummy.m"; sourceTree = "<group>"; };
-		D9A517327C9F9E3F32290EAEA906C89E /* Pods-InvestGameUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InvestGameUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DD80E3D5E635BAAA5376BA94F795D8DF /* libPods-InvestGameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE2747DABD1CDADA283F667505EC6981 /* Pods-InvestGameiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E1B97DCABF35E02ECC97B23CE24AF15A /* Pods-InvestGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E215D499C17F859DA9DFD0316C84F8EE /* ClientConnectionResponder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientConnectionResponder.swift; path = Sources/Tibei/client/responderChain/ClientConnectionResponder.swift; sourceTree = "<group>"; };
-		E264EB38E185935E6D9190074BA82D51 /* IncomingMessageData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IncomingMessageData.swift; path = Sources/Tibei/message/IncomingMessageData.swift; sourceTree = "<group>"; };
-		E2909E811A0FA81C6C60CF0B14BAAB39 /* GameControllerServiceBrowserDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameControllerServiceBrowserDelegate.swift; path = Sources/Tibei/client/GameControllerServiceBrowserDelegate.swift; sourceTree = "<group>"; };
-		E6428B8EDCA35EE2CC8CD05DA335B75B /* Pods-mobileInvestGameTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGameTests-resources.sh"; sourceTree = "<group>"; };
-		ED4361E0FBEA59AB806EAF698F8A8DE8 /* libPods-InvestGameiOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDC59D0CDD8C949C4D31F09701F3705C /* Pods-mobileInvestGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mobileInvestGame-umbrella.h"; sourceTree = "<group>"; };
-		F0AE65AE137A068BF67D39E3F6F8A729 /* ServerMessenger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerMessenger.swift; path = Sources/Tibei/server/ServerMessenger.swift; sourceTree = "<group>"; };
-		F2054E5D7FA4995778DB7CFFA1218714 /* Pods-InvestGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InvestGame-acknowledgements.plist"; sourceTree = "<group>"; };
-		F76E7BDB9020F7764CF0594F4C985758 /* Pods-mobileInvestGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mobileInvestGame.modulemap"; sourceTree = "<group>"; };
-		F961FE83EDA708D43E30CBEB99DA3E21 /* Pods-mobileInvestGameTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mobileInvestGameTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F967591831A7A7E574A53D3A191B6379 /* ConnectionError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionError.swift; path = Sources/Tibei/connection/ConnectionError.swift; sourceTree = "<group>"; };
-		FC0BEAB7798D08D2D51B348F11F80627 /* ConnectionID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionID.swift; path = Sources/Tibei/connection/ConnectionID.swift; sourceTree = "<group>"; };
-		FD289FDDCB95FB5298B5D02732F8712D /* Pods-InvestGameTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InvestGameTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FF9DFF8ADADA75F805C2BB37D3303C0D /* Pods-InvestGameTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InvestGameTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		628DC5431CDC090865CEB66F2255289A /* Pods-testeTibei-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testeTibei-acknowledgements.plist"; sourceTree = "<group>"; };
+		660B0935954306BC634C7A46E7B1E8B0 /* Pods-mobileInvestGameTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGameTests-resources.sh"; sourceTree = "<group>"; };
+		6B7B0CDDC873411ABDA0BA30863A510A /* Pods-testeTibeiTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testeTibeiTests.modulemap"; sourceTree = "<group>"; };
+		6C52749E5A6F689459D8E0C8C160D681 /* Pods-mobileInvestGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		70FEDC169E7C4DC3FCD5504999EB993E /* Pods-InvestGameUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InvestGameUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		71D7003687521DA0A2F6F471D0995C9A /* Pods-InvestGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75FB13285DD98A5B4A968FB162A9FAE8 /* Pods-testeTibeiTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testeTibeiTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		76A336EA25DC231AD8F6182913D096E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79EA1BE165C38C381A1F72B6E74DD7C5 /* libPods-InvestGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-InvestGameTests.a"; path = "libPods-InvestGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3F9355AFEB6439DD6A226D2DA3320C /* Pods-testeTibeiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testeTibeiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F4ACE60BFBB770ED6D8555BA61CB66A /* Pods-InvestGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InvestGame-dummy.m"; sourceTree = "<group>"; };
+		81B817201B176D67DA0D372858C500CB /* Pods-InvestGameUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InvestGameUITests-resources.sh"; sourceTree = "<group>"; };
+		81C7923FB2E80A9C007FDCAF69ADE04A /* libMerhaba-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMerhaba-iOS.a"; path = "libMerhaba-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E1BC023385D233BB7F37773B817D52 /* libPods-mobileInvestGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-mobileInvestGameTests.a"; path = "libPods-mobileInvestGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8776C873FC15434FC8FF6AC05B449878 /* Pods-mobileInvestGameTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mobileInvestGameTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		89C341907D32AC22CDC067F2B389C698 /* Pods-testeTibeiUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testeTibeiUITests-umbrella.h"; sourceTree = "<group>"; };
+		8F5F1D074498F479D87A84F6701965D7 /* Pods-testeTibeiUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testeTibeiUITests-frameworks.sh"; sourceTree = "<group>"; };
+		91EB19124677AF72FED031BD200DC634 /* Pods-testeTibeiUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testeTibeiUITests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		958DB66D6C3A653E0C34EE86E7051356 /* Pods-InvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9648F5D83DF3F87F0B7DF5FD4E072DB3 /* Pods-testeTibeiTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testeTibeiTests-frameworks.sh"; sourceTree = "<group>"; };
+		96C7B48733CF9F430DD39F855AE77038 /* Pods-testeTibeiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testeTibeiTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E26E4CED4BCB2BC5AA3B22AD0471562 /* Pods-mobileInvestGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGame-resources.sh"; sourceTree = "<group>"; };
+		A35034203A51E42E01F11BE95B849D4A /* Pods_testeTibeiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testeTibeiUITests.framework; path = "Pods-testeTibeiUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45E64C8ABC51A27B07C9CE085605466 /* Pods-mobileInvestGameUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGameUITests-resources.sh"; sourceTree = "<group>"; };
+		A865861882803411C0C7F809C4A280D6 /* Pods-testeTibei-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testeTibei-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A936F2D3EA539EECDBF2854BC57A7464 /* Pods_testeTibei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testeTibei.framework; path = "Pods-testeTibei.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB777571B8988552365436B3FEB637BA /* Pods-mobileInvestGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mobileInvestGame-dummy.m"; sourceTree = "<group>"; };
+		ABA9E37234C6B854B8954D815619C431 /* Pods-testeTibeiUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testeTibeiUITests-resources.sh"; sourceTree = "<group>"; };
+		AC28809A0AA68B7AE9D928D6D04EE911 /* Pods-testeTibeiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testeTibeiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF749717382F258C178A6CC4AFDD2ED3 /* Pods-testeTibeiUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testeTibeiUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B324F5232828491811F11F672D9E36F9 /* Pods-testeTibeiTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testeTibeiTests-dummy.m"; sourceTree = "<group>"; };
+		BDEA13D7FCF58E1B843FF87EBD48B3E9 /* Pods-mobileInvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGame.release.xcconfig"; sourceTree = "<group>"; };
+		BE7405805080EC06AA8EC32309C682D3 /* Merhaba-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Merhaba-iOS-dummy.m"; sourceTree = "<group>"; };
+		C1C861026F8C9A7031B26A80BDA1D301 /* libPods-mobileInvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-mobileInvestGame.a"; path = "libPods-mobileInvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C440EE70EEAE94E117AC987F4A8B71F2 /* Pods-mobileInvestGameUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGameUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CAEE23C40840406265ED3BAB0385F62D /* Pods-InvestGameTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InvestGameTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC0C031AEA36B30A35E04DF8D53BA14A /* Pods-InvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCA39F687442797F2CACC1BC87999E34 /* Pods-InvestGameTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InvestGameTests-dummy.m"; sourceTree = "<group>"; };
+		CFA091812EC18395C819AD0F1CCA297E /* Pods-mobileInvestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGame.debug.xcconfig"; sourceTree = "<group>"; };
+		D200C677D95B94B5280275AE14D7C962 /* Pods-mobileInvestGameUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mobileInvestGameUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D4CE95572E5D9E0DC3B2901EEAB7AF3B /* Pods-testeTibeiUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testeTibeiUITests.modulemap"; sourceTree = "<group>"; };
+		D58D82C16358BE3CB8A4F63E0AA1EFFC /* Pods-InvestGameUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InvestGameUITests-dummy.m"; sourceTree = "<group>"; };
+		D7C8836DAFF3463DCEF19F4E2B5BE068 /* Pods-mobileInvestGameUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mobileInvestGameUITests-dummy.m"; sourceTree = "<group>"; };
+		DC389424EB35483F21B86DE9252A66AD /* Pods-InvestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGame.debug.xcconfig"; sourceTree = "<group>"; };
+		DDBC276558D65518F7B89C71FC2F0C28 /* Pods-mobileInvestGameTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mobileInvestGameTests-dummy.m"; sourceTree = "<group>"; };
+		DDE6A7AF575D16B930BCCC4D6B8EBA82 /* Pods-InvestGameUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InvestGameUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E22FBC302E9D0174A1255CB17F163097 /* Merhaba-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Merhaba-iOS-prefix.pch"; sourceTree = "<group>"; };
+		E30959731560D01728FFAA7B03591BDA /* Pods-testeTibei-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testeTibei-umbrella.h"; sourceTree = "<group>"; };
+		E322E23DD7AC33092D8E83EC5F791D92 /* libPods-mobileInvestGameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-mobileInvestGameUITests.a"; path = "libPods-mobileInvestGameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FE716B7B46ED3F632B1551D54A6C51 /* MRBServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRBServer.h; path = Sources/MRBServer.h; sourceTree = "<group>"; };
+		E8085F0CE16CE2CD6CA278EF1BBDAAEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EBCCB5BF1D46D81D4C904775C1CC87 /* Merhaba.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Merhaba.h; path = Sources/Merhaba.h; sourceTree = "<group>"; };
+		EB606F8CB1AA198281E845F8ECD1782A /* Pods-InvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InvestGame.release.xcconfig"; sourceTree = "<group>"; };
+		EDFC38510E9369B8703972A422A04B2B /* Pods-testeTibei.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testeTibei.modulemap"; sourceTree = "<group>"; };
+		F136534B295553D589A50DC17533811E /* Pods-mobileInvestGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mobileInvestGame-frameworks.sh"; sourceTree = "<group>"; };
+		F874F9CEB26CD60BD61595C0F42A46A9 /* Pods-mobileInvestGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mobileInvestGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8BE5E6DAD22A2906D724CDEECA3EBAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB978B8598FD8A64C66A9D6AAE7DDCF9 /* Pods-testeTibei-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testeTibei-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +206,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		080A9F3690CFBB411EAC153F58B86604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6308992C5AFB1A7E3822BB5B87B7229 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26441139BFB3BB01CF664A97144A349D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C18579308095337E54C03D3B70B79D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46CB66715E0FD989BC26FEC47A622E52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,35 +230,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47903AC79E3D1C2DBC243770C423E665 /* Frameworks */ = {
+		86B9372C4DDC922B14DB0D25FCC11593 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4129EC87E88BF776AD4E246919DEBA9F /* Foundation.framework in Frameworks */,
+				245131E4B5923A8FB69FB15CEFF83F80 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		656FEC54D1D9409971F9E66C97E50B6B /* Frameworks */ = {
+		8FF07DDA98628124EBFCDF6D0312E986 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD32CF16DF9DDD4600DC533A5DE24428 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		74899F31C09453FD45408313694395B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A25D7A9D13B4D33577D70D3AF4FFD331 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88AACFD716D298C86622EE9B1653760E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98D2ECE61FC249B94DE2A363761FEDBF /* Foundation.framework in Frameworks */,
+				5E3D24E287DFF3CA5B8EC4C7F5852778 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,71 +262,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7E7FD54395BB0C4A1D8D110E28A4F05 /* Frameworks */ = {
+		E9FE6790F81F100A7EA6118D7FC50894 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C65209EFAC37690148D2182B46DE839 /* Foundation.framework in Frameworks */,
+				67D2A0D394648AC480DE86FC96FBAC89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFCD55055C4EF0745B1F6A4BB2DE4DC7 /* Frameworks */ = {
+		F2AAC9B8432EB0A8A206A2404A143765 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A38D555AD6D3759C6D77778CA75F2DE1 /* Foundation.framework in Frameworks */,
+				83C3D02374F2E308F73462E89A971915 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA25B3885B482CA3E72E2A01CB6140E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D7478ADE44D17BE7B93C3B7B7C0DC3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A97DAB25E32E86D871BCFA62EDCB911 /* Pods-mobileInvestGameUITests */ = {
+		1AFE54DB668CCAC8059C454838DA9059 /* Pods-InvestGameUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C072C31DC7D5F4C6D3AA114F454670A6 /* Pods-mobileInvestGameUITests-acknowledgements.markdown */,
-				33ABFCF1335701FCA9638402E9B11651 /* Pods-mobileInvestGameUITests-acknowledgements.plist */,
-				C07B10A7775A4D4628CC8F1B3CF3CAD1 /* Pods-mobileInvestGameUITests-dummy.m */,
-				54918BB815AE5F07E604E78D4BB5A50E /* Pods-mobileInvestGameUITests-frameworks.sh */,
-				1ED3BB7750D0A9D242AD1DBA2FE6A33E /* Pods-mobileInvestGameUITests-resources.sh */,
-				1DB529975DC783BCD54D434FD640941E /* Pods-mobileInvestGameUITests.debug.xcconfig */,
-				19D05C26908CF4CC02B6D173E6718091 /* Pods-mobileInvestGameUITests.release.xcconfig */,
+				DDE6A7AF575D16B930BCCC4D6B8EBA82 /* Pods-InvestGameUITests-acknowledgements.markdown */,
+				70FEDC169E7C4DC3FCD5504999EB993E /* Pods-InvestGameUITests-acknowledgements.plist */,
+				D58D82C16358BE3CB8A4F63E0AA1EFFC /* Pods-InvestGameUITests-dummy.m */,
+				1120381CCCD5DC9AD4534793FDC92B03 /* Pods-InvestGameUITests-frameworks.sh */,
+				81B817201B176D67DA0D372858C500CB /* Pods-InvestGameUITests-resources.sh */,
+				71D7003687521DA0A2F6F471D0995C9A /* Pods-InvestGameUITests.debug.xcconfig */,
+				958DB66D6C3A653E0C34EE86E7051356 /* Pods-InvestGameUITests.release.xcconfig */,
 			);
-			name = "Pods-mobileInvestGameUITests";
-			path = "Target Support Files/Pods-mobileInvestGameUITests";
-			sourceTree = "<group>";
-		};
-		0FCB9AD866B38B3F3734F60A3E74DB06 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AFC68CE22C9C3A09AFD245EF1EA780DC /* Tibei-iOS.modulemap */,
-				B4F69D0694643D5DF5CD17DFD88EA175 /* Tibei-iOS.xcconfig */,
-				A39A36B7D673A7CE0A03121C0AD9FA4C /* Tibei-iOS-dummy.m */,
-				C03422255AF8CD021ED27BB45F5B1868 /* Tibei-iOS-prefix.pch */,
-				198EBAF1241A0423DFE055D310D0CAE7 /* Tibei-iOS-umbrella.h */,
-				8AF56A7BCA07E2DB43BC770A7D503023 /* Tibei-tvOS.modulemap */,
-				D6A43D2B8D6A35598D13E6139BE39CFE /* Tibei-tvOS.xcconfig */,
-				3C614EA019D7A0BFFB0068C599F0BCA1 /* Tibei-tvOS-dummy.m */,
-				088A58396FEAA6E1F64CCBB109236CBB /* Tibei-tvOS-prefix.pch */,
-				346092A305B867FB2D2981336A098BFE /* Tibei-tvOS-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Tibei-iOS";
-			sourceTree = "<group>";
-		};
-		1B77B851554659AC6CEC33EB1A969E57 /* Pods-InvestGameiOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9C80917BC6F6BC86D92C4E2BE905987A /* Pods-InvestGameiOSUITests-acknowledgements.markdown */,
-				163404B2495A258DE6181599CB5375C0 /* Pods-InvestGameiOSUITests-acknowledgements.plist */,
-				A8E4584D84247CFC6E07BEE03A33F925 /* Pods-InvestGameiOSUITests-dummy.m */,
-				29BA25F2CDC2829DCF3698BC1BA8E2B1 /* Pods-InvestGameiOSUITests-frameworks.sh */,
-				67BFA0DD091825F56F1BCFE2961EB642 /* Pods-InvestGameiOSUITests-resources.sh */,
-				59328A18AF2F5AB062F3EA4D2E56E8D4 /* Pods-InvestGameiOSUITests.debug.xcconfig */,
-				DE2747DABD1CDADA283F667505EC6981 /* Pods-InvestGameiOSUITests.release.xcconfig */,
-			);
-			name = "Pods-InvestGameiOSUITests";
-			path = "Target Support Files/Pods-InvestGameiOSUITests";
+			name = "Pods-InvestGameUITests";
+			path = "Target Support Files/Pods-InvestGameUITests";
 			sourceTree = "<group>";
 		};
 		20F731AE46C73F232AF0C168DC383CF9 /* tvOS */ = {
@@ -390,42 +312,34 @@
 			name = tvOS;
 			sourceTree = "<group>";
 		};
-		23FE98E7AFFCA9AE690ADE5718F3AB7B /* Pods-InvestGameUITests */ = {
+		3F487682CE414D9F622E79C495C9DC25 /* Pods-mobileInvestGameUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D9A517327C9F9E3F32290EAEA906C89E /* Pods-InvestGameUITests-acknowledgements.markdown */,
-				05BE6B35D80CA6DF32810789C3324D2F /* Pods-InvestGameUITests-acknowledgements.plist */,
-				6E0AF985F96A5DC09535A8CF712E3546 /* Pods-InvestGameUITests-dummy.m */,
-				0306E877D28E85FC414F178E4E671DC1 /* Pods-InvestGameUITests-frameworks.sh */,
-				D37AA78043A13EBB84FC612E41379EBD /* Pods-InvestGameUITests-resources.sh */,
-				E1B97DCABF35E02ECC97B23CE24AF15A /* Pods-InvestGameUITests.debug.xcconfig */,
-				B02CC6EE258FF21AD855653D7DE61F6E /* Pods-InvestGameUITests.release.xcconfig */,
+				D200C677D95B94B5280275AE14D7C962 /* Pods-mobileInvestGameUITests-acknowledgements.markdown */,
+				121BE18784FBDD2ADEF8B1897CA81D67 /* Pods-mobileInvestGameUITests-acknowledgements.plist */,
+				D7C8836DAFF3463DCEF19F4E2B5BE068 /* Pods-mobileInvestGameUITests-dummy.m */,
+				C440EE70EEAE94E117AC987F4A8B71F2 /* Pods-mobileInvestGameUITests-frameworks.sh */,
+				A45E64C8ABC51A27B07C9CE085605466 /* Pods-mobileInvestGameUITests-resources.sh */,
+				F874F9CEB26CD60BD61595C0F42A46A9 /* Pods-mobileInvestGameUITests.debug.xcconfig */,
+				1484B117FA227E130979429BDB5B7C7F /* Pods-mobileInvestGameUITests.release.xcconfig */,
 			);
-			name = "Pods-InvestGameUITests";
-			path = "Target Support Files/Pods-InvestGameUITests";
+			name = "Pods-mobileInvestGameUITests";
+			path = "Target Support Files/Pods-mobileInvestGameUITests";
 			sourceTree = "<group>";
 		};
-		2AA4B0EE665F2269E470B5B7C11BC83E /* Pods-InvestGameiOSTests */ = {
+		4921805F9A49DFEE747A3F5DB1015DC9 /* Pods-InvestGame */ = {
 			isa = PBXGroup;
 			children = (
-				1D482BF294FF76907662EAB9D2FAFC2D /* Pods-InvestGameiOSTests-acknowledgements.markdown */,
-				A4EA698F699BA1709A9256DA03E47D1F /* Pods-InvestGameiOSTests-acknowledgements.plist */,
-				7F735D0A6B8C45B2C3A17AFE668C1768 /* Pods-InvestGameiOSTests-dummy.m */,
-				9FA67BE70433B489448EAB9C525096A6 /* Pods-InvestGameiOSTests-frameworks.sh */,
-				A5B3855F40B402A16CEF051EF2520A92 /* Pods-InvestGameiOSTests-resources.sh */,
-				CC12919DB80165EF9E3F3758127E11D7 /* Pods-InvestGameiOSTests.debug.xcconfig */,
-				91BA001B3A4BBE372A93DA4FDFDD3020 /* Pods-InvestGameiOSTests.release.xcconfig */,
+				451E85565D5109E15479A537BA52DEE3 /* Pods-InvestGame-acknowledgements.markdown */,
+				4CEB16DDB297FA837111B373CADCD3AB /* Pods-InvestGame-acknowledgements.plist */,
+				7F4ACE60BFBB770ED6D8555BA61CB66A /* Pods-InvestGame-dummy.m */,
+				222700BE5FD62C558F1E8071FC1C040C /* Pods-InvestGame-frameworks.sh */,
+				280969849D9AD7526D268CC564713FCC /* Pods-InvestGame-resources.sh */,
+				DC389424EB35483F21B86DE9252A66AD /* Pods-InvestGame.debug.xcconfig */,
+				EB606F8CB1AA198281E845F8ECD1782A /* Pods-InvestGame.release.xcconfig */,
 			);
-			name = "Pods-InvestGameiOSTests";
-			path = "Target Support Files/Pods-InvestGameiOSTests";
-			sourceTree = "<group>";
-		};
-		3A0314AFAC6D23D6EFEEFDA7764003F2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				76928F83E80BEED857CF2D5652DF8D49 /* Tibei */,
-			);
-			name = Pods;
+			name = "Pods-InvestGame";
+			path = "Target Support Files/Pods-InvestGame";
 			sourceTree = "<group>";
 		};
 		58996781A54EE964D7111D73083A18A5 /* iOS */ = {
@@ -436,79 +350,93 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		76928F83E80BEED857CF2D5652DF8D49 /* Tibei */ = {
-			isa = PBXGroup;
-			children = (
-				E215D499C17F859DA9DFD0316C84F8EE /* ClientConnectionResponder.swift */,
-				C05C3BF3BA28062F27AC2221C9E376D2 /* ClientMessenger.swift */,
-				27C67A7EABF8725EC6655AEEE164568B /* ClientResponderChainNode.swift */,
-				02CD2591708E3043F853DC0908C081CE /* Connection.swift */,
-				337B9C0A2428E2713ADAE2448B720AAD /* ConnectionAcceptedEvent.swift */,
-				D4D5CC7CFBE01343FB3A3064F6002354 /* ConnectionDelegate.swift */,
-				F967591831A7A7E574A53D3A191B6379 /* ConnectionError.swift */,
-				8D94297F1F0B32AD4683E49DB413EE42 /* ConnectionEvent.swift */,
-				FC0BEAB7798D08D2D51B348F11F80627 /* ConnectionID.swift */,
-				3014BADD489A888EE9AC2BDC68263E80 /* ConnectionLostEvent.swift */,
-				92FECB22001987540CF1AC2295236AE5 /* ConnectionResponder.swift */,
-				C856C438DF8199070433034C10C069BA /* Constants.swift */,
-				B90E3462435A6E4D208EFCAABD144E78 /* GameControllerServer.swift */,
-				48543800DD5B1409D034D64938D9AF71 /* GameControllerServiceBrowser.swift */,
-				E2909E811A0FA81C6C60CF0B14BAAB39 /* GameControllerServiceBrowserDelegate.swift */,
-				E264EB38E185935E6D9190074BA82D51 /* IncomingMessageData.swift */,
-				04D3C094104D27B0193672BC93C29831 /* IncomingMessageEvent.swift */,
-				705CF4318D9CAF6B547B963A79A1E971 /* JSONConvertibleMessage.swift */,
-				D442E59EB94EA79648AB8CA51DDBB02A /* KeepAliveMessage.swift */,
-				9321505940280017E93F466DEC550966 /* Messenger.swift */,
-				53E5ED14D71417186F415593E66A9EF6 /* ResponderChain.swift */,
-				F0AE65AE137A068BF67D39E3F6F8A729 /* ServerMessenger.swift */,
-				06EEB5ACA5A2C1111E448857E23D831F /* ServiceAvailabilityChangeEvent.swift */,
-				120E265C3D6A412A7712E81081F433CA /* StreamExtensions.swift */,
-				0FCB9AD866B38B3F3734F60A3E74DB06 /* Support Files */,
-			);
-			path = Tibei;
-			sourceTree = "<group>";
-		};
-		7AF931730D9DF7D933123BBCC7D82E9C /* Pods-mobileInvestGameTests */ = {
-			isa = PBXGroup;
-			children = (
-				CCC5A9BEE5BA329C4BADA8279DB2FEAF /* Pods-mobileInvestGameTests-acknowledgements.markdown */,
-				F961FE83EDA708D43E30CBEB99DA3E21 /* Pods-mobileInvestGameTests-acknowledgements.plist */,
-				72BAB8AA568F349442D469629D3AA6DA /* Pods-mobileInvestGameTests-dummy.m */,
-				C88AAACC9B23DF257A9566270354F5EB /* Pods-mobileInvestGameTests-frameworks.sh */,
-				E6428B8EDCA35EE2CC8CD05DA335B75B /* Pods-mobileInvestGameTests-resources.sh */,
-				4DC62370F96B334528ED1FFA4CA46CC8 /* Pods-mobileInvestGameTests.debug.xcconfig */,
-				04F8157085E1C3D079E8C159AC313475 /* Pods-mobileInvestGameTests.release.xcconfig */,
-			);
-			name = "Pods-mobileInvestGameTests";
-			path = "Target Support Files/Pods-mobileInvestGameTests";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				A42F72DC1D780481325DD00969B19BB6 /* Frameworks */,
-				3A0314AFAC6D23D6EFEEFDA7764003F2 /* Pods */,
-				DBE2407056D6BC768EBD4B5989C11949 /* Products */,
-				A5B8A587357A53F0F9EBF42539C8B74C /* Targets Support Files */,
+				95BA7FC1E00DA05E2A6878AE21634EAF /* Pods */,
+				8AF041F386E65312A0D597802068A019 /* Products */,
+				A2C22794FBAFA95EF37F669552CB3D65 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A1DF0E394A3463132E132D400EFAE001 /* Pods-InvestGame */ = {
+		7EEBC62A444DC2172E4C562BB2F10AA3 /* Pods-testeTibeiTests */ = {
 			isa = PBXGroup;
 			children = (
-				0AD28230EB1B77FA7CC2699AE4701068 /* Pods-InvestGame.modulemap */,
-				2B7917C28637730F7226898456F7567A /* Pods-InvestGame-acknowledgements.markdown */,
-				F2054E5D7FA4995778DB7CFFA1218714 /* Pods-InvestGame-acknowledgements.plist */,
-				D98A121458C9AA30F9A10F2495BED553 /* Pods-InvestGame-dummy.m */,
-				97042D7254F9803F0E88BCAD8037D6C7 /* Pods-InvestGame-frameworks.sh */,
-				B749475B95AAD86C2834ABBF118349DD /* Pods-InvestGame-resources.sh */,
-				317663439F831E82416F8CB4E4D55041 /* Pods-InvestGame-umbrella.h */,
-				AC26F9658302A9AACFBA74E1965A8C19 /* Pods-InvestGame.debug.xcconfig */,
-				97EC0BC7D6929FD0AED763DCE51C74CF /* Pods-InvestGame.release.xcconfig */,
+				E8085F0CE16CE2CD6CA278EF1BBDAAEA /* Info.plist */,
+				6B7B0CDDC873411ABDA0BA30863A510A /* Pods-testeTibeiTests.modulemap */,
+				1B6027D91E9B9EDCD7A51D32545F700B /* Pods-testeTibeiTests-acknowledgements.markdown */,
+				75FB13285DD98A5B4A968FB162A9FAE8 /* Pods-testeTibeiTests-acknowledgements.plist */,
+				B324F5232828491811F11F672D9E36F9 /* Pods-testeTibeiTests-dummy.m */,
+				9648F5D83DF3F87F0B7DF5FD4E072DB3 /* Pods-testeTibeiTests-frameworks.sh */,
+				11707D86B52F03C39A68A85B60633973 /* Pods-testeTibeiTests-resources.sh */,
+				2F18D78D7F4B583BA6D3693A6B2549F1 /* Pods-testeTibeiTests-umbrella.h */,
+				AC28809A0AA68B7AE9D928D6D04EE911 /* Pods-testeTibeiTests.debug.xcconfig */,
+				96C7B48733CF9F430DD39F855AE77038 /* Pods-testeTibeiTests.release.xcconfig */,
 			);
-			name = "Pods-InvestGame";
-			path = "Target Support Files/Pods-InvestGame";
+			name = "Pods-testeTibeiTests";
+			path = "Target Support Files/Pods-testeTibeiTests";
+			sourceTree = "<group>";
+		};
+		8AF041F386E65312A0D597802068A019 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C7923FB2E80A9C007FDCAF69ADE04A /* libMerhaba-iOS.a */,
+				09ED88CECCFEB32F145E3B2D04D5B51E /* libMerhaba-tvOS.a */,
+				413C7038AC5FB9AF00B9D02800268068 /* libPods-InvestGame.a */,
+				79EA1BE165C38C381A1F72B6E74DD7C5 /* libPods-InvestGameTests.a */,
+				17C7ACBE4EAC6AB1B48205A33E3CBD2A /* libPods-InvestGameUITests.a */,
+				C1C861026F8C9A7031B26A80BDA1D301 /* libPods-mobileInvestGame.a */,
+				84E1BC023385D233BB7F37773B817D52 /* libPods-mobileInvestGameTests.a */,
+				E322E23DD7AC33092D8E83EC5F791D92 /* libPods-mobileInvestGameUITests.a */,
+				A936F2D3EA539EECDBF2854BC57A7464 /* Pods_testeTibei.framework */,
+				09479E688D7CA80B8950F471718402CA /* Pods_testeTibeiTests.framework */,
+				A35034203A51E42E01F11BE95B849D4A /* Pods_testeTibeiUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93ADE0173A2803D66581EF8C35CCE005 /* Pods-testeTibei */ = {
+			isa = PBXGroup;
+			children = (
+				F8BE5E6DAD22A2906D724CDEECA3EBAE /* Info.plist */,
+				EDFC38510E9369B8703972A422A04B2B /* Pods-testeTibei.modulemap */,
+				A865861882803411C0C7F809C4A280D6 /* Pods-testeTibei-acknowledgements.markdown */,
+				628DC5431CDC090865CEB66F2255289A /* Pods-testeTibei-acknowledgements.plist */,
+				FB978B8598FD8A64C66A9D6AAE7DDCF9 /* Pods-testeTibei-dummy.m */,
+				10911DECA374262B51087CE09B7AF6CB /* Pods-testeTibei-frameworks.sh */,
+				1BF4A70A21EC680FEDBAC8F2296EBC24 /* Pods-testeTibei-resources.sh */,
+				E30959731560D01728FFAA7B03591BDA /* Pods-testeTibei-umbrella.h */,
+				36F6B5223BA7794B274BCD9BCB317CBD /* Pods-testeTibei.debug.xcconfig */,
+				54C2D7B356B1A3CD2DA53797E92D77CB /* Pods-testeTibei.release.xcconfig */,
+			);
+			name = "Pods-testeTibei";
+			path = "Target Support Files/Pods-testeTibei";
+			sourceTree = "<group>";
+		};
+		95BA7FC1E00DA05E2A6878AE21634EAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8DECAEAFCC62676B9DE215373115A /* Merhaba */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2C22794FBAFA95EF37F669552CB3D65 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4921805F9A49DFEE747A3F5DB1015DC9 /* Pods-InvestGame */,
+				F3F5403BED258F3A2E4D8083BBC9ECB7 /* Pods-InvestGameTests */,
+				1AFE54DB668CCAC8059C454838DA9059 /* Pods-InvestGameUITests */,
+				BEC1E7B76A7F33DFEC6B2DA2AC60EB5F /* Pods-mobileInvestGame */,
+				D1A17DA783ACA04B516B173D63D7D3AE /* Pods-mobileInvestGameTests */,
+				3F487682CE414D9F622E79C495C9DC25 /* Pods-mobileInvestGameUITests */,
+				93ADE0173A2803D66581EF8C35CCE005 /* Pods-testeTibei */,
+				7EEBC62A444DC2172E4C562BB2F10AA3 /* Pods-testeTibeiTests */,
+				D8B1E4063CBD443B69F4033882952CDA /* Pods-testeTibeiUITests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		A42F72DC1D780481325DD00969B19BB6 /* Frameworks */ = {
@@ -520,102 +448,137 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A5B8A587357A53F0F9EBF42539C8B74C /* Targets Support Files */ = {
+		A7A8DECAEAFCC62676B9DE215373115A /* Merhaba */ = {
 			isa = PBXGroup;
 			children = (
-				A1DF0E394A3463132E132D400EFAE001 /* Pods-InvestGame */,
-				2AA4B0EE665F2269E470B5B7C11BC83E /* Pods-InvestGameiOSTests */,
-				1B77B851554659AC6CEC33EB1A969E57 /* Pods-InvestGameiOSUITests */,
-				C492826D33B8B9C761422739382DED58 /* Pods-InvestGameTests */,
-				23FE98E7AFFCA9AE690ADE5718F3AB7B /* Pods-InvestGameUITests */,
-				EE4D51CB4E2300D9669BA12EF3167EE5 /* Pods-mobileInvestGame */,
-				7AF931730D9DF7D933123BBCC7D82E9C /* Pods-mobileInvestGameTests */,
-				0A97DAB25E32E86D871BCFA62EDCB911 /* Pods-mobileInvestGameUITests */,
+				E9EBCCB5BF1D46D81D4C904775C1CC87 /* Merhaba.h */,
+				E7FE716B7B46ED3F632B1551D54A6C51 /* MRBServer.h */,
+				451E56DE102D197839C4004FF8F3C67C /* MRBServer.m */,
+				F45C09C8CB14DEE298CC9E2E24ED81B6 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = Merhaba;
+			path = Merhaba;
 			sourceTree = "<group>";
 		};
-		C492826D33B8B9C761422739382DED58 /* Pods-InvestGameTests */ = {
+		BEC1E7B76A7F33DFEC6B2DA2AC60EB5F /* Pods-mobileInvestGame */ = {
 			isa = PBXGroup;
 			children = (
-				FF9DFF8ADADA75F805C2BB37D3303C0D /* Pods-InvestGameTests-acknowledgements.markdown */,
-				FD289FDDCB95FB5298B5D02732F8712D /* Pods-InvestGameTests-acknowledgements.plist */,
-				9A1082384B0006D0CDF45EF23BA3C6C1 /* Pods-InvestGameTests-dummy.m */,
-				0131FED7A84F093B4A58B2EF0305EB91 /* Pods-InvestGameTests-frameworks.sh */,
-				A841B9C60C2820E246A136B2125896D5 /* Pods-InvestGameTests-resources.sh */,
-				63B8A6F776E6F6CA4B201A3C76D168D3 /* Pods-InvestGameTests.debug.xcconfig */,
-				92D64CAC4F08188B8E9932A80AE63981 /* Pods-InvestGameTests.release.xcconfig */,
-			);
-			name = "Pods-InvestGameTests";
-			path = "Target Support Files/Pods-InvestGameTests";
-			sourceTree = "<group>";
-		};
-		DBE2407056D6BC768EBD4B5989C11949 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				21273E311B20B5F90DBF933256108278 /* libPods-InvestGame.a */,
-				8FB3552331B03486F4EBAA058D27C8F6 /* libPods-InvestGameiOSTests.a */,
-				ED4361E0FBEA59AB806EAF698F8A8DE8 /* libPods-InvestGameiOSUITests.a */,
-				742CE4382DA6887D9F53F442FA780A83 /* libPods-InvestGameTests.a */,
-				DD80E3D5E635BAAA5376BA94F795D8DF /* libPods-InvestGameUITests.a */,
-				99FD89212C519F767D9DBBF9C526F9DF /* libPods-mobileInvestGame.a */,
-				3F4FDAC970D6287DD1E6D30666506AD6 /* libPods-mobileInvestGameTests.a */,
-				5DE94378CA84F11F98FD65A8B0B3ED3E /* libPods-mobileInvestGameUITests.a */,
-				5F1D17A01ED0230953A655C1B2259A87 /* libTibei-iOS.a */,
-				995DF5F2F88D7FB76C32AC38C08086CE /* libTibei-tvOS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EE4D51CB4E2300D9669BA12EF3167EE5 /* Pods-mobileInvestGame */ = {
-			isa = PBXGroup;
-			children = (
-				F76E7BDB9020F7764CF0594F4C985758 /* Pods-mobileInvestGame.modulemap */,
-				080C6B7F81C3A3ADAA9544FCFA022149 /* Pods-mobileInvestGame-acknowledgements.markdown */,
-				B48A68EFC52F41A4FC963D61E6220FFB /* Pods-mobileInvestGame-acknowledgements.plist */,
-				4678BC42DDFD42AA6F3685B72C01FB50 /* Pods-mobileInvestGame-dummy.m */,
-				93218CAFE5C43ACCFA2610B304CD91DA /* Pods-mobileInvestGame-frameworks.sh */,
-				175C8C1543CED0E7E3C4F9560FA86130 /* Pods-mobileInvestGame-resources.sh */,
-				EDC59D0CDD8C949C4D31F09701F3705C /* Pods-mobileInvestGame-umbrella.h */,
-				44F271DA74A55F52A5E268FAB933BD1B /* Pods-mobileInvestGame.debug.xcconfig */,
-				8481D80EC34071770A0D334F2C10D620 /* Pods-mobileInvestGame.release.xcconfig */,
+				4C83CA8BE842683733A1E4A45EAD47B7 /* Pods-mobileInvestGame-acknowledgements.markdown */,
+				47E6584B24B02DFF85BD55D34CEFF3B3 /* Pods-mobileInvestGame-acknowledgements.plist */,
+				AB777571B8988552365436B3FEB637BA /* Pods-mobileInvestGame-dummy.m */,
+				F136534B295553D589A50DC17533811E /* Pods-mobileInvestGame-frameworks.sh */,
+				9E26E4CED4BCB2BC5AA3B22AD0471562 /* Pods-mobileInvestGame-resources.sh */,
+				CFA091812EC18395C819AD0F1CCA297E /* Pods-mobileInvestGame.debug.xcconfig */,
+				BDEA13D7FCF58E1B843FF87EBD48B3E9 /* Pods-mobileInvestGame.release.xcconfig */,
 			);
 			name = "Pods-mobileInvestGame";
 			path = "Target Support Files/Pods-mobileInvestGame";
 			sourceTree = "<group>";
 		};
+		D1A17DA783ACA04B516B173D63D7D3AE /* Pods-mobileInvestGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BCC158F933F55CC2593B9310DC478FF /* Pods-mobileInvestGameTests-acknowledgements.markdown */,
+				8776C873FC15434FC8FF6AC05B449878 /* Pods-mobileInvestGameTests-acknowledgements.plist */,
+				DDBC276558D65518F7B89C71FC2F0C28 /* Pods-mobileInvestGameTests-dummy.m */,
+				3F8C4A38EAB21EC9B353F38B018A7335 /* Pods-mobileInvestGameTests-frameworks.sh */,
+				660B0935954306BC634C7A46E7B1E8B0 /* Pods-mobileInvestGameTests-resources.sh */,
+				54F06C4418CADD3B1225901CC8AB783D /* Pods-mobileInvestGameTests.debug.xcconfig */,
+				6C52749E5A6F689459D8E0C8C160D681 /* Pods-mobileInvestGameTests.release.xcconfig */,
+			);
+			name = "Pods-mobileInvestGameTests";
+			path = "Target Support Files/Pods-mobileInvestGameTests";
+			sourceTree = "<group>";
+		};
+		D8B1E4063CBD443B69F4033882952CDA /* Pods-testeTibeiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76A336EA25DC231AD8F6182913D096E8 /* Info.plist */,
+				D4CE95572E5D9E0DC3B2901EEAB7AF3B /* Pods-testeTibeiUITests.modulemap */,
+				AF749717382F258C178A6CC4AFDD2ED3 /* Pods-testeTibeiUITests-acknowledgements.markdown */,
+				18D78B77D30EDDD0BCE7B2E6801CB721 /* Pods-testeTibeiUITests-acknowledgements.plist */,
+				91EB19124677AF72FED031BD200DC634 /* Pods-testeTibeiUITests-dummy.m */,
+				8F5F1D074498F479D87A84F6701965D7 /* Pods-testeTibeiUITests-frameworks.sh */,
+				ABA9E37234C6B854B8954D815619C431 /* Pods-testeTibeiUITests-resources.sh */,
+				89C341907D32AC22CDC067F2B389C698 /* Pods-testeTibeiUITests-umbrella.h */,
+				7B3F9355AFEB6439DD6A226D2DA3320C /* Pods-testeTibeiUITests.debug.xcconfig */,
+				0B5EA0D8D7297AF2770FE4FAA27BA4B8 /* Pods-testeTibeiUITests.release.xcconfig */,
+			);
+			name = "Pods-testeTibeiUITests";
+			path = "Target Support Files/Pods-testeTibeiUITests";
+			sourceTree = "<group>";
+		};
+		F3F5403BED258F3A2E4D8083BBC9ECB7 /* Pods-InvestGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE23C40840406265ED3BAB0385F62D /* Pods-InvestGameTests-acknowledgements.markdown */,
+				55A743CA50A172CA4DAB8B1BC0B262F1 /* Pods-InvestGameTests-acknowledgements.plist */,
+				CCA39F687442797F2CACC1BC87999E34 /* Pods-InvestGameTests-dummy.m */,
+				3A2CA393AD0483159A5C68D6F9C1CFD8 /* Pods-InvestGameTests-frameworks.sh */,
+				29FC33ED7EDB5938552BA982265C39F6 /* Pods-InvestGameTests-resources.sh */,
+				CC0C031AEA36B30A35E04DF8D53BA14A /* Pods-InvestGameTests.debug.xcconfig */,
+				30B3CD11A4376CAAC555659C506EA8D6 /* Pods-InvestGameTests.release.xcconfig */,
+			);
+			name = "Pods-InvestGameTests";
+			path = "Target Support Files/Pods-InvestGameTests";
+			sourceTree = "<group>";
+		};
+		F45C09C8CB14DEE298CC9E2E24ED81B6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28AA19544FA5D911C242A8DB3EBF9309 /* Merhaba-iOS.xcconfig */,
+				BE7405805080EC06AA8EC32309C682D3 /* Merhaba-iOS-dummy.m */,
+				E22FBC302E9D0174A1255CB17F163097 /* Merhaba-iOS-prefix.pch */,
+				08CBAFDD520990A70E4D728ED816510A /* Merhaba-tvOS.xcconfig */,
+				182CEF17326D359B97E8228346B13CE7 /* Merhaba-tvOS-dummy.m */,
+				01418162712130BFDF1DEDF16E3ABEAE /* Merhaba-tvOS-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Merhaba-iOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		30FEFBA6639A50FC02947DDAE5690F40 /* Headers */ = {
+		01542DB89CE6BA1F9B3D2CD3FAA26A91 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B01074CF6C7F25674517742981D787 /* Tibei-iOS-umbrella.h in Headers */,
+				7614B4795265500989356D0EE4D6E87D /* Pods-testeTibei-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DD057AB87EB544129C4CCD59B0D185D /* Headers */ = {
+		8115B07517ECB826F0413EC3F62A3F25 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F10DFFE2B9811FD013C6F565DC7797 /* Pods-mobileInvestGame-umbrella.h in Headers */,
+				03F9AF69AE0D4142D31B11383F91D9A6 /* Merhaba.h in Headers */,
+				76BDB3F61FCEF2610563606C2492A304 /* MRBServer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		973CA9B29F25CEE56291C655D7111A0D /* Headers */ = {
+		85C4E350B389D259E8CD76011162BBEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91CF183A320C8C5B7C85F4E9427FBFF2 /* Pods-InvestGame-umbrella.h in Headers */,
+				BF0E1FC23B5E78FA1D20C35A31D33F32 /* Merhaba.h in Headers */,
+				98F2F01DCEC0C7CA5BF2A0B35D2AD157 /* MRBServer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1AC8A74C1136ECD405EFCA378B70415 /* Headers */ = {
+		DAF97A95EE3D9407EE6EB12FFFE104DE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1019BFDB1AE60FF8FA815148440816C /* Tibei-tvOS-umbrella.h in Headers */,
+				5FF73CF2CA78EB6C00704D0B6FF9D49E /* Pods-testeTibeiUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16C43A1B57FC2981007711D234FA72F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F7346F47897387D974EFF72BE8F94C /* Pods-testeTibeiTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,26 +599,43 @@
 			);
 			name = "Pods-InvestGameTests";
 			productName = "Pods-InvestGameTests";
-			productReference = 742CE4382DA6887D9F53F442FA780A83 /* libPods-InvestGameTests.a */;
+			productReference = 79EA1BE165C38C381A1F72B6E74DD7C5 /* libPods-InvestGameTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		17452114FFCA69151066CCA6DEEF0244 /* Pods-InvestGame */ = {
+		1BD88CC15882D0EEE20EDB50C7081277 /* Merhaba-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F466F81643B737494278F9C8ABE1175A /* Build configuration list for PBXNativeTarget "Pods-InvestGame" */;
+			buildConfigurationList = 6186E34C910C3E6F8F102134127DEB85 /* Build configuration list for PBXNativeTarget "Merhaba-iOS" */;
 			buildPhases = (
-				307FB50AB591AE65EFBD5F2A0D6CAE79 /* Sources */,
-				74899F31C09453FD45408313694395B1 /* Frameworks */,
-				973CA9B29F25CEE56291C655D7111A0D /* Headers */,
+				806E112A805C20CA0ADCFD4CC9CADF9F /* Sources */,
+				E9FE6790F81F100A7EA6118D7FC50894 /* Frameworks */,
+				8115B07517ECB826F0413EC3F62A3F25 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3EB92F44E7DD9F8625449BC00641F6BD /* PBXTargetDependency */,
 			);
-			name = "Pods-InvestGame";
-			productName = "Pods-InvestGame";
-			productReference = 21273E311B20B5F90DBF933256108278 /* libPods-InvestGame.a */;
+			name = "Merhaba-iOS";
+			productName = "Merhaba-iOS";
+			productReference = 81C7923FB2E80A9C007FDCAF69ADE04A /* libMerhaba-iOS.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		464A51832AE55A25645BBBF74441AE4B /* Pods-testeTibeiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC0BC697F8F2F655954E1D907C58029D /* Build configuration list for PBXNativeTarget "Pods-testeTibeiTests" */;
+			buildPhases = (
+				1AAD0648C188D934F76D9142351D60BB /* Sources */,
+				26441139BFB3BB01CF664A97144A349D /* Frameworks */,
+				E16C43A1B57FC2981007711D234FA72F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A1BE685349942328AE03715AAF8AB75 /* PBXTargetDependency */,
+			);
+			name = "Pods-testeTibeiTests";
+			productName = "Pods-testeTibeiTests";
+			productReference = 09479E688D7CA80B8950F471718402CA /* Pods_testeTibeiTests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		5A469B6D7A4B142BD0811FABBE4E848B /* Pods-mobileInvestGameTests */ = {
 			isa = PBXNativeTarget;
@@ -671,26 +651,25 @@
 			);
 			name = "Pods-mobileInvestGameTests";
 			productName = "Pods-mobileInvestGameTests";
-			productReference = 3F4FDAC970D6287DD1E6D30666506AD6 /* libPods-mobileInvestGameTests.a */;
+			productReference = 84E1BC023385D233BB7F37773B817D52 /* libPods-mobileInvestGameTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8D05D29684F94EA5CEDFDC31BB997657 /* Tibei-iOS */ = {
+		97973369F8F44E36A471C1D624AECD1A /* Pods-testeTibei */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 220283D8D00B40B48C91F1DA7C4DE53E /* Build configuration list for PBXNativeTarget "Tibei-iOS" */;
+			buildConfigurationList = E2039ADA53BBC1CF359AEF414E5966FB /* Build configuration list for PBXNativeTarget "Pods-testeTibei" */;
 			buildPhases = (
-				E3BD628FDC62BE452E2D996D7D0184C1 /* Sources */,
-				FFCD55055C4EF0745B1F6A4BB2DE4DC7 /* Frameworks */,
-				30FEFBA6639A50FC02947DDAE5690F40 /* Headers */,
-				374582B3D5D0171ED6D9C1282ED5C395 /* Copy generated compatibility header */,
+				89B0D2E51E393246B99C85620967A763 /* Sources */,
+				8FF07DDA98628124EBFCDF6D0312E986 /* Frameworks */,
+				01542DB89CE6BA1F9B3D2CD3FAA26A91 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Tibei-iOS";
-			productName = "Tibei-iOS";
-			productReference = 5F1D17A01ED0230953A655C1B2259A87 /* libTibei-iOS.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "Pods-testeTibei";
+			productName = "Pods-testeTibei";
+			productReference = A936F2D3EA539EECDBF2854BC57A7464 /* Pods_testeTibei.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		A30377A78CA41F115A040895C9EA2DAF /* Pods-mobileInvestGameUITests */ = {
 			isa = PBXNativeTarget;
@@ -706,42 +685,41 @@
 			);
 			name = "Pods-mobileInvestGameUITests";
 			productName = "Pods-mobileInvestGameUITests";
-			productReference = 5DE94378CA84F11F98FD65A8B0B3ED3E /* libPods-mobileInvestGameUITests.a */;
+			productReference = E322E23DD7AC33092D8E83EC5F791D92 /* libPods-mobileInvestGameUITests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BAA512C6C6EAB2EB22FDF0161CF36356 /* Pods-InvestGameiOSUITests */ = {
+		B61EDBF4837DDC5B4B0CAB518DBDA4E5 /* Merhaba-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C1B1C0709ED13CE3E0CF954947B4D81 /* Build configuration list for PBXNativeTarget "Pods-InvestGameiOSUITests" */;
+			buildConfigurationList = 433A15150DFDD469A12E119B3037D5ED /* Build configuration list for PBXNativeTarget "Merhaba-tvOS" */;
 			buildPhases = (
-				374D28B97439AB7708E59503479ADBC6 /* Sources */,
-				C7E7FD54395BB0C4A1D8D110E28A4F05 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4208F7C7B2963D43FA486E94F5ABBF62 /* PBXTargetDependency */,
-			);
-			name = "Pods-InvestGameiOSUITests";
-			productName = "Pods-InvestGameiOSUITests";
-			productReference = ED4361E0FBEA59AB806EAF698F8A8DE8 /* libPods-InvestGameiOSUITests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		CB8645B10060C4B281B0EFE7BB8CF98A /* Tibei-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE5FF3BE992556F0F65C21C035BCF6DE /* Build configuration list for PBXNativeTarget "Tibei-tvOS" */;
-			buildPhases = (
-				27F3B3724634D1D427F964720136B61F /* Sources */,
-				88AACFD716D298C86622EE9B1653760E /* Frameworks */,
-				D1AC8A74C1136ECD405EFCA378B70415 /* Headers */,
-				FC28696FAFCC685331A4E83697693AEE /* Copy generated compatibility header */,
+				69B0E678027420038222CDA934FD307F /* Sources */,
+				F2AAC9B8432EB0A8A206A2404A143765 /* Frameworks */,
+				85C4E350B389D259E8CD76011162BBEC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Tibei-tvOS";
-			productName = "Tibei-tvOS";
-			productReference = 995DF5F2F88D7FB76C32AC38C08086CE /* libTibei-tvOS.a */;
+			name = "Merhaba-tvOS";
+			productName = "Merhaba-tvOS";
+			productReference = 09ED88CECCFEB32F145E3B2D04D5B51E /* libMerhaba-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D376403BC42DDA001E48F64BE11CB422 /* Pods-mobileInvestGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEBAA7E3EA77FCE5AADF309F5B25E56 /* Build configuration list for PBXNativeTarget "Pods-mobileInvestGame" */;
+			buildPhases = (
+				82918B5EB16D165C5F7C71D74BE79F77 /* Sources */,
+				080A9F3690CFBB411EAC153F58B86604 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				198B386475ADE4BD8410971CB753259C /* PBXTargetDependency */,
+			);
+			name = "Pods-mobileInvestGame";
+			productName = "Pods-mobileInvestGame";
+			productReference = C1C861026F8C9A7031B26A80BDA1D301 /* libPods-mobileInvestGame.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D5E74B6326D2A5365DE9D1C35A50EE81 /* Pods-InvestGameUITests */ = {
@@ -758,42 +736,42 @@
 			);
 			name = "Pods-InvestGameUITests";
 			productName = "Pods-InvestGameUITests";
-			productReference = DD80E3D5E635BAAA5376BA94F795D8DF /* libPods-InvestGameUITests.a */;
+			productReference = 17C7ACBE4EAC6AB1B48205A33E3CBD2A /* libPods-InvestGameUITests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		E9D15B3FEF09B8A54599921CF9B74289 /* Pods-InvestGameiOSTests */ = {
+		DEED44B33D95446B8B399FDFC4FE06C5 /* Pods-testeTibeiUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FE102802B321F26F8C73697C619A360 /* Build configuration list for PBXNativeTarget "Pods-InvestGameiOSTests" */;
+			buildConfigurationList = F3D81D5101F6A849086F510B57CDC659 /* Build configuration list for PBXNativeTarget "Pods-testeTibeiUITests" */;
 			buildPhases = (
-				335A48F28E95645D40D1B585F04603EF /* Sources */,
-				656FEC54D1D9409971F9E66C97E50B6B /* Frameworks */,
+				607B1FB6BED267DCB78037190749EFB2 /* Sources */,
+				86B9372C4DDC922B14DB0D25FCC11593 /* Frameworks */,
+				DAF97A95EE3D9407EE6EB12FFFE104DE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				455FDD8C8D81724D0232D916B94B6965 /* PBXTargetDependency */,
+				741A3BA7CD73FBD7A6786C84A434B6D2 /* PBXTargetDependency */,
 			);
-			name = "Pods-InvestGameiOSTests";
-			productName = "Pods-InvestGameiOSTests";
-			productReference = 8FB3552331B03486F4EBAA058D27C8F6 /* libPods-InvestGameiOSTests.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "Pods-testeTibeiUITests";
+			productName = "Pods-testeTibeiUITests";
+			productReference = A35034203A51E42E01F11BE95B849D4A /* Pods_testeTibeiUITests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		EA73393230BC0027D3040E20B94C8022 /* Pods-mobileInvestGame */ = {
+		E08EFE0E6D19380F4010C33EEE64975E /* Pods-InvestGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 007867411D5FBC51F9B8D3595824229F /* Build configuration list for PBXNativeTarget "Pods-mobileInvestGame" */;
+			buildConfigurationList = 4982D146039F70AD2A20FA8B4818D38D /* Build configuration list for PBXNativeTarget "Pods-InvestGame" */;
 			buildPhases = (
-				A5CE21623432A1259021E5180DD58C1E /* Sources */,
-				47903AC79E3D1C2DBC243770C423E665 /* Frameworks */,
-				4DD057AB87EB544129C4CCD59B0D185D /* Headers */,
+				D0428E584117390B45659674D8D4204F /* Sources */,
+				FFA25B3885B482CA3E72E2A01CB6140E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				858640956BD6940D2687B3E418062E8D /* PBXTargetDependency */,
+				1189E955BEC4D0AE9D4BFF2AF08E080A /* PBXTargetDependency */,
 			);
-			name = "Pods-mobileInvestGame";
-			productName = "Pods-mobileInvestGame";
-			productReference = 99FD89212C519F767D9DBBF9C526F9DF /* libPods-mobileInvestGame.a */;
+			name = "Pods-InvestGame";
+			productName = "Pods-InvestGame";
+			productReference = 413C7038AC5FB9AF00B9D02800268068 /* libPods-InvestGame.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -803,7 +781,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -813,66 +791,24 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DBE2407056D6BC768EBD4B5989C11949 /* Products */;
+			productRefGroup = 8AF041F386E65312A0D597802068A019 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17452114FFCA69151066CCA6DEEF0244 /* Pods-InvestGame */,
-				E9D15B3FEF09B8A54599921CF9B74289 /* Pods-InvestGameiOSTests */,
-				BAA512C6C6EAB2EB22FDF0161CF36356 /* Pods-InvestGameiOSUITests */,
+				1BD88CC15882D0EEE20EDB50C7081277 /* Merhaba-iOS */,
+				B61EDBF4837DDC5B4B0CAB518DBDA4E5 /* Merhaba-tvOS */,
+				E08EFE0E6D19380F4010C33EEE64975E /* Pods-InvestGame */,
 				01E4B03A54CB4292C82D835C86884CCB /* Pods-InvestGameTests */,
 				D5E74B6326D2A5365DE9D1C35A50EE81 /* Pods-InvestGameUITests */,
-				EA73393230BC0027D3040E20B94C8022 /* Pods-mobileInvestGame */,
+				D376403BC42DDA001E48F64BE11CB422 /* Pods-mobileInvestGame */,
 				5A469B6D7A4B142BD0811FABBE4E848B /* Pods-mobileInvestGameTests */,
 				A30377A78CA41F115A040895C9EA2DAF /* Pods-mobileInvestGameUITests */,
-				8D05D29684F94EA5CEDFDC31BB997657 /* Tibei-iOS */,
-				CB8645B10060C4B281B0EFE7BB8CF98A /* Tibei-tvOS */,
+				97973369F8F44E36A471C1D624AECD1A /* Pods-testeTibei */,
+				464A51832AE55A25645BBBF74441AE4B /* Pods-testeTibeiTests */,
+				DEED44B33D95446B8B399FDFC4FE06C5 /* Pods-testeTibeiUITests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		374582B3D5D0171ED6D9C1282ED5C395 /* Copy generated compatibility header */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/Tibei/Tibei-iOS.modulemap",
-				"${PODS_ROOT}/Headers/Public/Tibei/Tibei-iOS-umbrella.h",
-			);
-			name = "Copy generated compatibility header";
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/Tibei-iOS-umbrella.h",
-				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Tibei/Tibei-iOS.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Tibei/Tibei-iOS-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-		};
-		FC28696FAFCC685331A4E83697693AEE /* Copy generated compatibility header */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/Tibei/Tibei-tvOS.modulemap",
-				"${PODS_ROOT}/Headers/Public/Tibei/Tibei-tvOS-umbrella.h",
-			);
-			name = "Copy generated compatibility header";
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/Tibei-tvOS-umbrella.h",
-				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Tibei/Tibei-tvOS.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Tibei/Tibei-tvOS-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1124AEE591DA6AC7D2D5C8335285F4BE /* Sources */ = {
@@ -883,59 +819,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27F3B3724634D1D427F964720136B61F /* Sources */ = {
+		1AAD0648C188D934F76D9142351D60BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DCA87052118490CE774BF7A53E2E1FB /* ClientConnectionResponder.swift in Sources */,
-				3E28F470CB49B87A7113C4306DE5AEFF /* ClientMessenger.swift in Sources */,
-				7D82AB4AD56A87DDDA0E761957751E32 /* ClientResponderChainNode.swift in Sources */,
-				9D927BA7594E52CA62416C03A28DA417 /* Connection.swift in Sources */,
-				4D3588CA394FAA77C3202593F60C8D20 /* ConnectionAcceptedEvent.swift in Sources */,
-				D619F879E985A6035EFEB5DE24E6E84F /* ConnectionDelegate.swift in Sources */,
-				699E8BA06479AE48D199B6726D68D45C /* ConnectionError.swift in Sources */,
-				168A5C2427B5927AF2E0EC7025F73E9E /* ConnectionEvent.swift in Sources */,
-				C69CCDA13FE4D733B6CB72D5D324BB5C /* ConnectionID.swift in Sources */,
-				0CE6D9AD5B921FCF14560E5E75CC06D0 /* ConnectionLostEvent.swift in Sources */,
-				E1BE9CA1FCC6E2F69596A96812FC8FD5 /* ConnectionResponder.swift in Sources */,
-				20A922785171C9BBF9A29F89B9465E5D /* Constants.swift in Sources */,
-				0E4EE2C4B86EBBA2E77F857D2ABFF606 /* GameControllerServer.swift in Sources */,
-				F96237D996453491EFDDB7545FC81B1A /* GameControllerServiceBrowser.swift in Sources */,
-				B02E13DD8CE48EC3E020BB957C3312D7 /* GameControllerServiceBrowserDelegate.swift in Sources */,
-				89B713AA77A8EE7F1F93DD245CDE8F8E /* IncomingMessageData.swift in Sources */,
-				B458B27C703E1F7D4ABBA5E7683E3E58 /* IncomingMessageEvent.swift in Sources */,
-				E459D7695BDD1B9F99A9B1C90F0F2877 /* JSONConvertibleMessage.swift in Sources */,
-				89ACAB08EDD1D05A44FDBCF5E6FB2CB6 /* KeepAliveMessage.swift in Sources */,
-				3B5844DB8ACCC6607E741D9E11F19633 /* Messenger.swift in Sources */,
-				C22C7EF15CDC0434811422224C6A45BE /* ResponderChain.swift in Sources */,
-				420309FA96F71878ABC10DDD1819519B /* ServerMessenger.swift in Sources */,
-				19451D56F7EBB1200EC36F31CD1F7E3D /* ServiceAvailabilityChangeEvent.swift in Sources */,
-				1203CB545F80695A2316C576FFA23831 /* StreamExtensions.swift in Sources */,
-				8BC743498E1CECC92487D97832ACFB25 /* Tibei-tvOS-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		307FB50AB591AE65EFBD5F2A0D6CAE79 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51C745E23BEBAB1A03DF2187E530D4E0 /* Pods-InvestGame-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		335A48F28E95645D40D1B585F04603EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7954F5A4A6F50AB8A6E061DBA204E7BE /* Pods-InvestGameiOSTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		374D28B97439AB7708E59503479ADBC6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47BCA15D1C5C68F56C693CE45FD0F0AF /* Pods-InvestGameiOSUITests-dummy.m in Sources */,
+				1854CB98319E43CFFBAEE37F5362F783 /* Pods-testeTibeiTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,11 +835,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5CE21623432A1259021E5180DD58C1E /* Sources */ = {
+		607B1FB6BED267DCB78037190749EFB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8334FA943D1E46142D8688901085D175 /* Pods-mobileInvestGame-dummy.m in Sources */,
+				02C2CD158FB2EA6B62AE76D7E04007CD /* Pods-testeTibeiUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69B0E678027420038222CDA934FD307F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B51B5F36D782132FB1239A7628408ED /* Merhaba-tvOS-dummy.m in Sources */,
+				4AA01C32928C54DAEE6F4F831FF85DB2 /* MRBServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		806E112A805C20CA0ADCFD4CC9CADF9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F600AD9E0E1AD60EED8051B3F8608CD /* Merhaba-iOS-dummy.m in Sources */,
+				A587A56E8FC65559DF210E2732F362CB /* MRBServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82918B5EB16D165C5F7C71D74BE79F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3C235E8C5E0B5CD1433DC8A4BA0C838 /* Pods-mobileInvestGame-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B0D2E51E393246B99C85620967A763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9334AD32435C8C7E9052AB1A20BFEE /* Pods-testeTibei-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,87 +893,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3BD628FDC62BE452E2D996D7D0184C1 /* Sources */ = {
+		D0428E584117390B45659674D8D4204F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B64F9E9E0B8CF11127FA719CCAB90BA7 /* ClientConnectionResponder.swift in Sources */,
-				A759FB7EE0126DBDFD8B5FBC1BF39CDC /* ClientMessenger.swift in Sources */,
-				2AB1D63F9A29064F861CB911D9B4C2EF /* ClientResponderChainNode.swift in Sources */,
-				6A7A46DD20EDF552F7702E9CE2C887EA /* Connection.swift in Sources */,
-				B6183CF503E3D482669F045226309709 /* ConnectionAcceptedEvent.swift in Sources */,
-				ED975D1BA92C4782B19C9C77179218FD /* ConnectionDelegate.swift in Sources */,
-				E81B7705436054692031B13101EABB27 /* ConnectionError.swift in Sources */,
-				5AC3BB4733E605799D5230875FBEDE8C /* ConnectionEvent.swift in Sources */,
-				89E6AC7C0FB15C6DF4EE1DF2B72506B8 /* ConnectionID.swift in Sources */,
-				D4530BEDE7D62E78A107035229605FBD /* ConnectionLostEvent.swift in Sources */,
-				4DC30D8BE8E03072294051A625D3481A /* ConnectionResponder.swift in Sources */,
-				804458B665D05AD73B1018AC9D261422 /* Constants.swift in Sources */,
-				5BE4F95C7289E9E2BA06C29C97CC2868 /* GameControllerServer.swift in Sources */,
-				CF80D7497B3743286136519D0E35F517 /* GameControllerServiceBrowser.swift in Sources */,
-				07F646B7CD43A455140535922B38462B /* GameControllerServiceBrowserDelegate.swift in Sources */,
-				F23C9ECA6041DB27D78BBBC2D954B782 /* IncomingMessageData.swift in Sources */,
-				8F16E14C2954E4DB6AE50A6DB486823D /* IncomingMessageEvent.swift in Sources */,
-				C55E9E01BCAE37C80915C76C0720DDCE /* JSONConvertibleMessage.swift in Sources */,
-				2A956119CDCC2BE40525D167ED1E8558 /* KeepAliveMessage.swift in Sources */,
-				9AF530FCEF3527F968FC24EDA89C4F60 /* Messenger.swift in Sources */,
-				1482E0A97B74C384C2F19ABB9B535D5E /* ResponderChain.swift in Sources */,
-				083887A6C308E9BFA86105B3697D89A4 /* ServerMessenger.swift in Sources */,
-				2D0587B8F4612EF0BD728D85DB8E42FB /* ServiceAvailabilityChangeEvent.swift in Sources */,
-				63A196F07ABF9EF9016E1C621448C418 /* StreamExtensions.swift in Sources */,
-				3CE15492AFA6B56190A336EEB5DEC0AD /* Tibei-iOS-dummy.m in Sources */,
+				7CF751BF3EA3A21F29CFC6E4337700ED /* Pods-InvestGame-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1189E955BEC4D0AE9D4BFF2AF08E080A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Merhaba-tvOS";
+			target = B61EDBF4837DDC5B4B0CAB518DBDA4E5 /* Merhaba-tvOS */;
+			targetProxy = D68F554FA319D304CAC0A54CD6A1A3A2 /* PBXContainerItemProxy */;
+		};
+		198B386475ADE4BD8410971CB753259C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Merhaba-iOS";
+			target = 1BD88CC15882D0EEE20EDB50C7081277 /* Merhaba-iOS */;
+			targetProxy = DA5D28509757CB38652A5F12E507C955 /* PBXContainerItemProxy */;
+		};
 		29932EF1BC2583CBB9C4946A0B9DD1F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-InvestGame";
-			target = 17452114FFCA69151066CCA6DEEF0244 /* Pods-InvestGame */;
+			target = E08EFE0E6D19380F4010C33EEE64975E /* Pods-InvestGame */;
 			targetProxy = F6476F562F77B6654BFAD442DDBF65CD /* PBXContainerItemProxy */;
-		};
-		3EB92F44E7DD9F8625449BC00641F6BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Tibei-tvOS";
-			target = CB8645B10060C4B281B0EFE7BB8CF98A /* Tibei-tvOS */;
-			targetProxy = B5F583DCE831FED4BA3ED7377127412B /* PBXContainerItemProxy */;
-		};
-		4208F7C7B2963D43FA486E94F5ABBF62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-InvestGame";
-			target = 17452114FFCA69151066CCA6DEEF0244 /* Pods-InvestGame */;
-			targetProxy = 76AC3E819E8D2CEE2EFF55832876501D /* PBXContainerItemProxy */;
-		};
-		455FDD8C8D81724D0232D916B94B6965 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-InvestGame";
-			target = 17452114FFCA69151066CCA6DEEF0244 /* Pods-InvestGame */;
-			targetProxy = 03611C417360638137D50815790C5A09 /* PBXContainerItemProxy */;
 		};
 		5A05036CE52F94CE7BF49EF19BB259CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-mobileInvestGame";
-			target = EA73393230BC0027D3040E20B94C8022 /* Pods-mobileInvestGame */;
+			target = D376403BC42DDA001E48F64BE11CB422 /* Pods-mobileInvestGame */;
 			targetProxy = 384C6168BAA0F5E912F572691CC6C6B8 /* PBXContainerItemProxy */;
 		};
-		858640956BD6940D2687B3E418062E8D /* PBXTargetDependency */ = {
+		741A3BA7CD73FBD7A6786C84A434B6D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Tibei-iOS";
-			target = 8D05D29684F94EA5CEDFDC31BB997657 /* Tibei-iOS */;
-			targetProxy = F05DE090E8563486B7BFF8C7594C3610 /* PBXContainerItemProxy */;
+			name = "Pods-testeTibei";
+			target = 97973369F8F44E36A471C1D624AECD1A /* Pods-testeTibei */;
+			targetProxy = F3401E6259F24D5D7D78E7F8904B2135 /* PBXContainerItemProxy */;
+		};
+		8A1BE685349942328AE03715AAF8AB75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-testeTibei";
+			target = 97973369F8F44E36A471C1D624AECD1A /* Pods-testeTibei */;
+			targetProxy = 32FD3BB9DB2D9B701F8EEECF79705EB4 /* PBXContainerItemProxy */;
 		};
 		A4D9DD2EEF43DB8596E321FA9C4789CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-mobileInvestGame";
-			target = EA73393230BC0027D3040E20B94C8022 /* Pods-mobileInvestGame */;
+			target = D376403BC42DDA001E48F64BE11CB422 /* Pods-mobileInvestGame */;
 			targetProxy = BCB19CB189BAF2CA47A508536C7CCDB2 /* PBXContainerItemProxy */;
 		};
 		C2EB5D5B694E7F9F703176527DBBAFB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-InvestGame";
-			target = 17452114FFCA69151066CCA6DEEF0244 /* Pods-InvestGame */;
+			target = E08EFE0E6D19380F4010C33EEE64975E /* Pods-InvestGame */;
 			targetProxy = C5AA5DEC654D2873378A0ED488F501A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1059,7 +957,7 @@
 /* Begin XCBuildConfiguration section */
 		04CF6D63CC9947590A622BF825BD64D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DB529975DC783BCD54D434FD640941E /* Pods-mobileInvestGameUITests.debug.xcconfig */;
+			baseConfigurationReference = F874F9CEB26CD60BD61595C0F42A46A9 /* Pods-mobileInvestGameUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1081,7 +979,7 @@
 		};
 		0B556B158C2EAE731B4E093D20D2CD8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04F8157085E1C3D079E8C159AC313475 /* Pods-mobileInvestGameTests.release.xcconfig */;
+			baseConfigurationReference = 6C52749E5A6F689459D8E0C8C160D681 /* Pods-mobileInvestGameTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1101,10 +999,30 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		0CC0A115EDBA1AEB675F32BFEE09B45D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC389424EB35483F21B86DE9252A66AD /* Pods-InvestGame.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
 		};
 		1786CA94515DD152E4E2323263B11DB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DC62370F96B334528ED1FFA4CA46CC8 /* Pods-mobileInvestGameTests.debug.xcconfig */;
+			baseConfigurationReference = 54F06C4418CADD3B1225901CC8AB783D /* Pods-mobileInvestGameTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1124,55 +1042,78 @@
 			};
 			name = Debug;
 		};
-		1913B99CECE5BD3CD938D9E9CC1FC488 /* Release */ = {
+		17F6C4EA7CD1D97DB0ABC2954D9A43C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91BA001B3A4BBE372A93DA4FDFDD3020 /* Pods-InvestGameiOSTests.release.xcconfig */;
+			baseConfigurationReference = 96C7B48733CF9F430DD39F855AE77038 /* Pods-testeTibeiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testeTibeiTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testeTibeiTests/Pods-testeTibeiTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = appletvos;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		1DEE068CBC3376FA87FD0ED9CABB1F95 /* Debug */ = {
+		23BBAFA48BD8B8D8903AAE55F070B040 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44F271DA74A55F52A5E268FAB933BD1B /* Pods-mobileInvestGame.debug.xcconfig */;
+			baseConfigurationReference = AC28809A0AA68B7AE9D928D6D04EE911 /* Pods-testeTibeiTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testeTibeiTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-mobileInvestGame/Pods-mobileInvestGame.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-testeTibeiTests/Pods-testeTibeiTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		1DF40E561482AFD692FA61BE15EA4020 /* Debug */ = {
+		263E62696049062080527D7219941FB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59328A18AF2F5AB062F3EA4D2E56E8D4 /* Pods-InvestGameiOSUITests.debug.xcconfig */;
+			baseConfigurationReference = 71D7003687521DA0A2F6F471D0995C9A /* Pods-InvestGameUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1190,120 +1131,69 @@
 			};
 			name = Debug;
 		};
-		23BCB193082FDDD017B268DA6AE79E92 /* Debug */ = {
+		2CB83488A720BC1BDA3B32B9D2BB7DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4F69D0694643D5DF5CD17DFD88EA175 /* Tibei-iOS.xcconfig */;
+			baseConfigurationReference = 28AA19544FA5D911C242A8DB3EBF9309 /* Merhaba-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Tibei-iOS/Tibei-iOS-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MODULEMAP_FILE = "Headers/Public/Tibei/Tibei-iOS.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/Merhaba-iOS/Merhaba-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Tibei;
-				PRODUCT_NAME = "Tibei-iOS";
+				PRODUCT_MODULE_NAME = Merhaba;
+				PRODUCT_NAME = "Merhaba-iOS";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		251C080B75F51F596B07803F93A716D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE2747DABD1CDADA283F667505EC6981 /* Pods-InvestGameiOSUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.4;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		263E62696049062080527D7219941FB7 /* Debug */ = {
+		33F0AD3C327765197AAA2C9C2BD055FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1B97DCABF35E02ECC97B23CE24AF15A /* Pods-InvestGameUITests.debug.xcconfig */;
+			baseConfigurationReference = 54C2D7B356B1A3CD2DA53797E92D77CB /* Pods-testeTibei.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.4;
-			};
-			name = Debug;
-		};
-		43CDF1A2709752F68EA0C1B7F7376EC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8481D80EC34071770A0D334F2C10D620 /* Pods-mobileInvestGame.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testeTibei/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-mobileInvestGame/Pods-mobileInvestGame.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-testeTibei/Pods-testeTibei.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		4583791F020EE205F88B1E8F37375AF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC12919DB80165EF9E3F3758127E11D7 /* Pods-InvestGameiOSTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.4;
-			};
-			name = Debug;
 		};
 		469AC5E7BA1FD365AD904974B97C1641 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63B8A6F776E6F6CA4B201A3C76D168D3 /* Pods-InvestGameTests.debug.xcconfig */;
+			baseConfigurationReference = CC0C031AEA36B30A35E04DF8D53BA14A /* Pods-InvestGameTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1375,7 +1265,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 				TVOS_DEPLOYMENT_TARGET = 11.4;
 			};
@@ -1383,7 +1272,7 @@
 		};
 		533C550F92C114C18A310FF551AB9F87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19D05C26908CF4CC02B6D173E6718091 /* Pods-mobileInvestGameUITests.release.xcconfig */;
+			baseConfigurationReference = 1484B117FA227E130979429BDB5B7C7F /* Pods-mobileInvestGameUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1404,34 +1293,32 @@
 			};
 			name = Release;
 		};
-		54C9582A89B2485889A8275C6FE07EBB /* Release */ = {
+		56B7063BE21A449E4C95DD82DDD1FFCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6A43D2B8D6A35598D13E6139BE39CFE /* Tibei-tvOS.xcconfig */;
+			baseConfigurationReference = 08CBAFDD520990A70E4D728ED816510A /* Merhaba-tvOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Tibei-tvOS/Tibei-tvOS-prefix.pch";
-				MODULEMAP_FILE = "Headers/Public/Tibei/Tibei-tvOS.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/Merhaba-tvOS/Merhaba-tvOS-prefix.pch";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Tibei;
-				PRODUCT_NAME = "Tibei-tvOS";
+				PRODUCT_MODULE_NAME = Merhaba;
+				PRODUCT_NAME = "Merhaba-tvOS";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		5B02F26148405E76289FB34517F5F730 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92D64CAC4F08188B8E9932A80AE63981 /* Pods-InvestGameTests.release.xcconfig */;
+			baseConfigurationReference = 30B3CD11A4376CAAC555659C506EA8D6 /* Pods-InvestGameTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1446,6 +1333,29 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64C61E67A8BA4406936FC74C79BFC239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEA13D7FCF58E1B843FF87EBD48B3E9 /* Pods-mobileInvestGame.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1514,105 +1424,203 @@
 			};
 			name = Debug;
 		};
-		71EAF3F66734F64EBF031BDCE797152B /* Debug */ = {
+		7D45329322AE1E6F3779547FD4070FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC26F9658302A9AACFBA74E1965A8C19 /* Pods-InvestGame.debug.xcconfig */;
+			baseConfigurationReference = CFA091812EC18395C819AD0F1CCA297E /* Pods-mobileInvestGame.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		871DA86C831897FA44C91F16CB7347BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CBAFDD520990A70E4D728ED816510A /* Merhaba-tvOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Merhaba-tvOS/Merhaba-tvOS-prefix.pch";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Merhaba;
+				PRODUCT_NAME = "Merhaba-tvOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8967F54187619D27840A5A5BFEF7B999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B5EA0D8D7297AF2770FE4FAA27BA4B8 /* Pods-testeTibeiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testeTibeiUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testeTibeiUITests/Pods-testeTibeiUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6EA75FAF2C1164A828D03BC3B35F95C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB606F8CB1AA198281E845F8ECD1782A /* Pods-InvestGame.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-InvestGame/Pods-InvestGame.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD3A8F96ABB08D09B585E7FDDC0F51E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B3F9355AFEB6439DD6A226D2DA3320C /* Pods-testeTibeiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testeTibeiUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testeTibeiUITests/Pods-testeTibeiUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		C958462822EAE9D58A820F57CF1F266B /* Release */ = {
+		BD7CCBA080B735900F3BDCFC0899E320 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4F69D0694643D5DF5CD17DFD88EA175 /* Tibei-iOS.xcconfig */;
+			baseConfigurationReference = 36F6B5223BA7794B274BCD9BCB317CBD /* Pods-testeTibei.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testeTibei/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testeTibei/Pods-testeTibei.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E102A0791171684022D9A9E36B258D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AA19544FA5D911C242A8DB3EBF9309 /* Merhaba-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Tibei-iOS/Tibei-iOS-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MODULEMAP_FILE = "Headers/Public/Tibei/Tibei-iOS.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/Merhaba-iOS/Merhaba-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Tibei;
-				PRODUCT_NAME = "Tibei-iOS";
+				PRODUCT_MODULE_NAME = Merhaba;
+				PRODUCT_NAME = "Merhaba-iOS";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DB6DD64D53DA6823FA4ACA9DF6714A2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97EC0BC7D6929FD0AED763DCE51C74CF /* Pods-InvestGame.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-InvestGame/Pods-InvestGame.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.4;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DD85BA25B987783023EC5944F26E0840 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6A43D2B8D6A35598D13E6139BE39CFE /* Tibei-tvOS.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Tibei-tvOS/Tibei-tvOS-prefix.pch";
-				MODULEMAP_FILE = "Headers/Public/Tibei/Tibei-tvOS.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Tibei;
-				PRODUCT_NAME = "Tibei-tvOS";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
 		F35431804B828E04CE1883529FE707F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B02CC6EE258FF21AD855653D7DE61F6E /* Pods-InvestGameUITests.release.xcconfig */;
+			baseConfigurationReference = 958DB66D6C3A653E0C34EE86E7051356 /* Pods-InvestGameUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1634,15 +1642,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		007867411D5FBC51F9B8D3595824229F /* Build configuration list for PBXNativeTarget "Pods-mobileInvestGame" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1DEE068CBC3376FA87FD0ED9CABB1F95 /* Debug */,
-				43CDF1A2709752F68EA0C1B7F7376EC9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		03E914755304CC9721FA914410B308D6 /* Build configuration list for PBXNativeTarget "Pods-InvestGameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1657,33 +1656,6 @@
 			buildConfigurations = (
 				1786CA94515DD152E4E2323263B11DB1 /* Debug */,
 				0B556B158C2EAE731B4E093D20D2CD8C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0C1B1C0709ED13CE3E0CF954947B4D81 /* Build configuration list for PBXNativeTarget "Pods-InvestGameiOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1DF40E561482AFD692FA61BE15EA4020 /* Debug */,
-				251C080B75F51F596B07803F93A716D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1FE102802B321F26F8C73697C619A360 /* Build configuration list for PBXNativeTarget "Pods-InvestGameiOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4583791F020EE205F88B1E8F37375AF1 /* Debug */,
-				1913B99CECE5BD3CD938D9E9CC1FC488 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		220283D8D00B40B48C91F1DA7C4DE53E /* Build configuration list for PBXNativeTarget "Tibei-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				23BCB193082FDDD017B268DA6AE79E92 /* Debug */,
-				C958462822EAE9D58A820F57CF1F266B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1706,6 +1678,42 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		433A15150DFDD469A12E119B3037D5ED /* Build configuration list for PBXNativeTarget "Merhaba-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B7063BE21A449E4C95DD82DDD1FFCF /* Debug */,
+				871DA86C831897FA44C91F16CB7347BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4982D146039F70AD2A20FA8B4818D38D /* Build configuration list for PBXNativeTarget "Pods-InvestGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC0A115EDBA1AEB675F32BFEE09B45D /* Debug */,
+				A6EA75FAF2C1164A828D03BC3B35F95C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEBAA7E3EA77FCE5AADF309F5B25E56 /* Build configuration list for PBXNativeTarget "Pods-mobileInvestGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D45329322AE1E6F3779547FD4070FFA /* Debug */,
+				64C61E67A8BA4406936FC74C79BFC239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6186E34C910C3E6F8F102134127DEB85 /* Build configuration list for PBXNativeTarget "Merhaba-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E102A0791171684022D9A9E36B258D98 /* Debug */,
+				2CB83488A720BC1BDA3B32B9D2BB7DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7A5CAA0C423416B32EA56D0DF9E26CB0 /* Build configuration list for PBXNativeTarget "Pods-InvestGameUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1715,20 +1723,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F466F81643B737494278F9C8ABE1175A /* Build configuration list for PBXNativeTarget "Pods-InvestGame" */ = {
+		CC0BC697F8F2F655954E1D907C58029D /* Build configuration list for PBXNativeTarget "Pods-testeTibeiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71EAF3F66734F64EBF031BDCE797152B /* Debug */,
-				DB6DD64D53DA6823FA4ACA9DF6714A2F /* Release */,
+				23BBAFA48BD8B8D8903AAE55F070B040 /* Debug */,
+				17F6C4EA7CD1D97DB0ABC2954D9A43C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE5FF3BE992556F0F65C21C035BCF6DE /* Build configuration list for PBXNativeTarget "Tibei-tvOS" */ = {
+		E2039ADA53BBC1CF359AEF414E5966FB /* Build configuration list for PBXNativeTarget "Pods-testeTibei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD85BA25B987783023EC5944F26E0840 /* Debug */,
-				54C9582A89B2485889A8275C6FE07EBB /* Release */,
+				BD7CCBA080B735900F3BDCFC0899E320 /* Debug */,
+				33F0AD3C327765197AAA2C9C2BD055FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D81D5101F6A849086F510B57CDC659 /* Build configuration list for PBXNativeTarget "Pods-testeTibeiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3A8F96ABB08D09B585E7FDDC0F51E0 /* Debug */,
+				8967F54187619D27840A5A5BFEF7B999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,7 +8,7 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
-
+#import "Jogador.h"
 @implementation GameViewController
 
 - (void)viewDidLoad {
@@ -28,6 +28,9 @@
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     
+    //criando Carteiras e jogadores.
+    Carteira* carteiraInicio = [[Carteira alloc] ]
+    Jogador* jogador1 = [[Jogador alloc] initWithNome: @"William"];
 }
 
 - (void)didReceiveMemoryWarning {

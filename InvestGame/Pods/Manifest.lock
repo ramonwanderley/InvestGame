@@ -1,16 +1,16 @@
 PODS:
-  - Tibei (0.2)
+  - Merhaba (1.2.1)
 
 DEPENDENCIES:
-  - Tibei
+  - Merhaba (~> 1.2.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Tibei
+    - Merhaba
 
 SPEC CHECKSUMS:
-  Tibei: 4c913e3b47f5656455afa015863a5dc707ef9b36
+  Merhaba: 79b6cc2eda88210d6c12001201c9549afa8bb1bc
 
-PODFILE CHECKSUM: e429e6e69eee16104e1230880fc12b114086581f
+PODFILE CHECKSUM: 488334f0523a30a8cb978e265d3205df4734b9d8
 
 COCOAPODS: 1.5.0
