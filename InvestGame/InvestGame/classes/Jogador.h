@@ -8,10 +8,10 @@
 #import "Carteira.h"
 
 @interface Jogador : NSObject
-@property (assign) NSString *nome;
-@property (assign) NSString *posicao;
+@property  NSString* nome;
+@property  NSString* posicao;
 @property Carteira *carteira;
--(instancetype)initWithNome:(NSString *)nome comPosicao:(NSString*)posicao andCarteira:(Carteira *)carteira;
+-(instancetype)initComNome:(NSString *)nome comPosicao:(NSString*)posicao andCarteira:(Carteira *)carteira;
 @end
 
 

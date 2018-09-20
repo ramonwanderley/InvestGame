@@ -276,8 +276,8 @@
 			children = (
 				8002061E2153CA3F00B77B50 /* Jogador.m */,
 				800206202153CA4A00B77B50 /* Jogador.h */,
-				80020621215400EF00B77B50 /* Carteira.h */,
 				80020622215400FC00B77B50 /* Carteira.m */,
+				80020621215400EF00B77B50 /* Carteira.h */,
 				80020624215404F400B77B50 /* Investimento.m */,
 				800206262154050400B77B50 /* Investimento.h */,
 				8002062721540DF000B77B50 /* mercado.h */,

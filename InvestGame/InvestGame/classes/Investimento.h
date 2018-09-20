@@ -13,6 +13,7 @@
     @property NSMutableArray *historicoVendas;
     @property int  quantidade;
     @property BOOL variavel;
+    @property NSString *tipo;
 
 - (void)vender:(int) quantidade;
 - (void)adquirir:(int) quantidade;

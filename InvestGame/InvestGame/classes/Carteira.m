@@ -9,11 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "Carteira.h"
 #import "Investimento.h"
-@implementation Carteira {
-    double saldo;
-    double valorTotal;
-    NSMutableArray<Investimento*> *investimentos;
+@implementation Carteira
+
+-(instancetype)initComSaldo:(double)saldo{
+    self = [super init];
+    if(self){
+        self.saldo = saldo;
+            }
+    return self;
 }
+
 -(void)comprarInvestimento:(Investimento *) novoInvestimento{
     if(self.saldo >= novoInvestimento.valorDeInicio){
         [self.investimentos addObject:(novoInvestimento)];

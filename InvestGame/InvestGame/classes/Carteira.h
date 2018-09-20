@@ -12,4 +12,5 @@
     @property double saldo;
     @property double valorTotal;
 -(void)comprarInvestimento:(Investimento *) novoInvestimento;
+-(instancetype)initComSaldo:(double)saldo;
 @end

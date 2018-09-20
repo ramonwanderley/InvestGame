@@ -12,7 +12,6 @@
 int main(int argc, char * argv[]) {
     //Jogador *jogador1 = [Jogador alloc];
     
-    Jogador* jogador1 = [[Jogador alloc] initWithNome: @"William"];
 //    NSLog(@"%@", jogador1.nome);
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SelectViewController.H"
+#import "SelectViewController.h"
+#import "GameViewController.h"
 @implementation SelectViewController
 
 
@@ -18,6 +19,23 @@
     _cavacoField.text = @"Sérgio";
     _percussaoField.text = @"Ana";
     
+}
+//- (IBAction)iniciaGame:(id)sender {
+//    [self performSegueWithIdentifier:@"chamaJogo" sender:sender];
+//}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"chamaJogo"])
+    {
+        // Get reference to the destination view controller
+        GameViewController *vc = segue.destinationViewController;
+        
+        // Pass any objects to the view controller here, like...
+//        [vc setMyObjectHere:@"hola"];
+        vc.nomesJogadores=@[_vocalistaField.text, _pandeiristaField.text, _cavacoField.text , _percussaoField.text];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

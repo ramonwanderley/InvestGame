@@ -50,7 +50,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="começar"/>
                                 <connections>
-                                    <segue destination="rV6-Qf-Ld6" kind="show" id="U7m-c5-E8l"/>
+                                    <segue destination="rV6-Qf-Ld6" kind="show" identifier="chamaJogo" id="U7m-c5-E8l"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCn-ao-ElP">

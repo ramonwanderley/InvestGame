@@ -29,8 +29,18 @@
     skView.showsNodeCount = YES;
     
     //criando Carteiras e jogadores.
-    Carteira* carteiraInicio = [[Carteira alloc] ]
-    Jogador* jogador1 = [[Jogador alloc] initWithNome: @"William"];
+    Carteira* carteiraInicio = [[Carteira alloc] initComSaldo:1000];
+    
+    Jogador* jogador1 = [[Jogador alloc] initComNome: _nomesJogadores[0] comPosicao:@"Vocalista" andCarteira: carteiraInicio];
+     Jogador* jogador2 = [[Jogador alloc] initComNome: _nomesJogadores[1] comPosicao:@"Cavaco" andCarteira: carteiraInicio];
+     Jogador* jogador3 = [[Jogador alloc] initComNome: _nomesJogadores[2] comPosicao:@"Pandeiro" andCarteira: carteiraInicio];
+     Jogador* jogador4 = [[Jogador alloc] initComNome: _nomesJogadores[3] comPosicao:@"Percussão" andCarteira: carteiraInicio];
+    NSMutableArray<Jogador*>  *jogadores = [NSMutableArray arrayWithObjects: jogador1, jogador2, jogador3, jogador4, nil];
+    for(int i = 0; i < 4; i++){
+    NSLog(@"%lf", carteiraInicio.saldo);
+    
+        NSLog(@"jogador%d nome:%@ posicao:%@ saldo: %lf", i,jogadores[i].nome, jogadores[i].posicao, jogadores[i].carteira.saldo);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
