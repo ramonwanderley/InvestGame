@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "mercado.h"
+#import "Mercado.h"
 @implementation Mercado:NSObject
 -(instancetype)initMercadoComRisco:(double)risco comOferta:(int)oferta eDemanda:(int)demanda{
         self = [super init];
@@ -31,4 +31,5 @@
     -(void)calcularValorHoje{
         self.valorHoje = self.valorHoje + (self.demanda - self.oferta)/100;
     }
+
 @end
