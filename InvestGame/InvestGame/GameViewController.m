@@ -9,11 +9,10 @@
 #import "GameViewController.h"
 #import "GameScene.h"
 #import "Jogador.h"
-<<<<<<< HEAD
-#import "mercado.h"
-=======
 
->>>>>>> afa5e40618a89c45c4d38b1f532f043746042cae
+#import "mercado.h"
+
+
 @implementation GameViewController
 
 int estado = 0;
