@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+<<<<<<< HEAD:InvestGame/InvestGame/classes/mercado.m
 #import "mercado.h"
 @implementation Mercado:NSObject
 -(instancetype)initMercadoComRisco:(double)risco comOferta:(int)oferta eDemanda:(int)demanda{
@@ -30,5 +31,11 @@
     -(void)calcularValorHoje{
         self.valorHoje = self.valorHoje + (self.demanda - self.oferta)/100;
     }
+=======
+#import "Investimento.h"
+@implementation Mercado : NSObject
+    
+
+>>>>>>> afa5e40618a89c45c4d38b1f532f043746042cae:InvestGame/InvestGame/classes/Mercado.m
 
 @end
