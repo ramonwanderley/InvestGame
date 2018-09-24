@@ -9,14 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "InvestGame/classes/mercado.m"
-            timestampString = "559506004.34171"
+            filePath = "InvestGame/classes/Mercado.m"
+            timestampString = "559513592.02589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "-initMercadoComRisco:comOferta:eDemanda:"
-            landmarkType = "7">
+            landmarkName = "Mercado"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

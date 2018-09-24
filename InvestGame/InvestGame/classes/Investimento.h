@@ -16,6 +16,7 @@
     @property BOOL variavel;
     @property NSString *tipo;
 
+-(instancetype)initComTipo:(NSString*)tipo comValor:(double)valor eQuantidade:(int)quantidade;
 - (void)vender:(int) quantidade;
 
 - (void)adquirir:(int) quantidade;

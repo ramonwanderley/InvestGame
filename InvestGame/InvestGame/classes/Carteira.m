@@ -21,12 +21,16 @@
 }
 
 -(void) comprarInvestimento:(Investimento *) novoInvestimento {
-    
+   
     if (self.saldo >= novoInvestimento.valorDeInicio) {
         [self.investimentos addObject:(novoInvestimento)];
         self.saldo = self.saldo - novoInvestimento.valorDeInicio;
         NSLog(@"%lf", self.saldo);  // %lf - tipo de dado float
     }
+    else{
+         NSLog(@"saldo insuficiente!");
+    }
+    
 }
 
 

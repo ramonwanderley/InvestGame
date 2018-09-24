@@ -34,6 +34,9 @@
 		806BFDFC215186EB000BA5A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFDFB215186EB000BA5A7 /* main.m */; };
 		806BFE06215186EB000BA5A7 /* mobileInvestGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFE05215186EB000BA5A7 /* mobileInvestGameTests.m */; };
 		806BFE11215186EB000BA5A7 /* mobileInvestGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFE10215186EB000BA5A7 /* mobileInvestGameUITests.m */; };
+		80DFF34721596A1F002CB612 /* popupInvestir.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DFF34621596A1F002CB612 /* popupInvestir.m */; };
+		80DFF34921596B4D002CB612 /* popupinvestir.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DFF34821596B4D002CB612 /* popupinvestir.xib */; };
+		80DFF34D215981D8002CB612 /* Noticia.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DFF34C215981D8002CB612 /* Noticia.m */; };
 		88BCA213DD4818AAE9277B82 /* libPods-mobileInvestGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF914DC535A37795AAA9B870 /* libPods-mobileInvestGameTests.a */; };
 		90C4EF7D3B94D41E0260ABF5 /* libPods-mobileInvestGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F799332A250D28557E75575C /* libPods-mobileInvestGame.a */; };
 		BD8F221B53ED6C39CD5A54BE /* Pods_testeTibeiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7DE1FF0C0E54A9643CA94B /* Pods_testeTibeiTests.framework */; };
@@ -133,6 +136,11 @@
 		806BFE0C215186EB000BA5A7 /* mobileInvestGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobileInvestGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		806BFE10215186EB000BA5A7 /* mobileInvestGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mobileInvestGameUITests.m; sourceTree = "<group>"; };
 		806BFE12215186EB000BA5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80DFF34621596A1F002CB612 /* popupInvestir.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = popupInvestir.m; sourceTree = "<group>"; };
+		80DFF34821596B4D002CB612 /* popupinvestir.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = popupinvestir.xib; sourceTree = "<group>"; };
+		80DFF34A21596FB8002CB612 /* popupInvestir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = popupInvestir.h; sourceTree = "<group>"; };
+		80DFF34B215981C7002CB612 /* Noticia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Noticia.h; sourceTree = "<group>"; };
+		80DFF34C215981D8002CB612 /* Noticia.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Noticia.m; sourceTree = "<group>"; };
 		80E09D4E2152AF8F007B15DC /* testeTibeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeTibeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E09D592152AF90007B15DC /* testeTibeiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeTibeiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		879C7709C2CDB7ADFF6E623C /* libPods-InvestGameiOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +290,8 @@
 				80020624215404F400B77B50 /* Investimento.m */,
 				8002062721540DF000B77B50 /* Mercado.h */,
 				8002062821540DFE00B77B50 /* Mercado.m */,
+				80DFF34B215981C7002CB612 /* Noticia.h */,
+				80DFF34C215981D8002CB612 /* Noticia.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -334,6 +344,9 @@
 				803D72332151746300B13BB0 /* Assets.xcassets */,
 				803D72352151746300B13BB0 /* Info.plist */,
 				803D72362151746300B13BB0 /* main.m */,
+				80DFF34621596A1F002CB612 /* popupInvestir.m */,
+				80DFF34A21596FB8002CB612 /* popupInvestir.h */,
+				80DFF34821596B4D002CB612 /* popupinvestir.xib */,
 			);
 			path = InvestGame;
 			sourceTree = "<group>";
@@ -617,6 +630,7 @@
 				803D72272151746100B13BB0 /* GameScene.sks in Resources */,
 				803D72342151746300B13BB0 /* Assets.xcassets in Resources */,
 				803D72292151746100B13BB0 /* Actions.sks in Resources */,
+				80DFF34921596B4D002CB612 /* popupinvestir.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,8 +844,10 @@
 				80020623215400FC00B77B50 /* Carteira.m in Sources */,
 				8002061F2153CA3F00B77B50 /* Jogador.m in Sources */,
 				803D722C2151746100B13BB0 /* GameScene.m in Sources */,
+				80DFF34D215981D8002CB612 /* Noticia.m in Sources */,
 				803D722F2151746100B13BB0 /* GameViewController.m in Sources */,
 				803D72372151746300B13BB0 /* main.m in Sources */,
+				80DFF34721596A1F002CB612 /* popupInvestir.m in Sources */,
 				8002061B2153BFD500B77B50 /* SelectViewController.m in Sources */,
 				80020625215404F400B77B50 /* Investimento.m in Sources */,
 				803D72252151746100B13BB0 /* AppDelegate.m in Sources */,
