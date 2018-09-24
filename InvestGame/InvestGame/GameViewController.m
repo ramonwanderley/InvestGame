@@ -9,7 +9,10 @@
 #import "GameViewController.h"
 #import "GameScene.h"
 #import "Jogador.h"
+#import "mercado.h"
 @implementation GameViewController
+
+int estado = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,10 +40,18 @@
      Jogador* jogador4 = [[Jogador alloc] initComNome: _nomesJogadores[3] comPosicao:@"Percussão" andCarteira: carteiraInicio];
     NSMutableArray<Jogador*>  *jogadores = [NSMutableArray arrayWithObjects: jogador1, jogador2, jogador3, jogador4, nil];
     for(int i = 0; i < 4; i++){
-    NSLog(@"%lf", carteiraInicio.saldo);
-    
         NSLog(@"jogador%d nome:%@ posicao:%@ saldo: %lf", i,jogadores[i].nome, jogadores[i].posicao, jogadores[i].carteira.saldo);
     }
+    
+    //estabelecendo Mercados
+    Mercado* mercadoCripto = [[Mercado alloc] initMercadoComRisco:0.55 comOferta:500 eDemanda:500];
+    Mercado* mercadoAcao = [[Mercado alloc] initMercadoComRisco:0.25 comOferta:1000 eDemanda:1000];
+    
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
 }
 
 - (void)didReceiveMemoryWarning {

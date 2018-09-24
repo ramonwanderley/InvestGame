@@ -14,7 +14,8 @@
     @property int demanda;
     @property double mudancaDia;
     @property double valorHoje;
-    + mudarOferta(quantidade);
-    + mudarDemanda(quantidade);
-    + calculcarValorHoje();
+-(instancetype)initMercadoComRisco:(double)risco comOferta:(int)oferta eDemanda:(int)demanda;
+    - (void)mudarOferta:(int) quantidade;
+    - (void)mudarDemanda: (int) quantidade;
+    - (void)calcularValorHoje;
 @end
