@@ -18,4 +18,5 @@
 
 -(instancetype)initComSaldo:(double)saldo;
 
+-(float)Total;
 @end

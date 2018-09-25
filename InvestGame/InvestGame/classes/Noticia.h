@@ -12,9 +12,9 @@
 @property int  ofertaMin;
 @property int demandaMax;
 @property int demandaMin;
+@property NSString *titulo;
 
-
--(instancetype)initNoticiacomTexto:(NSString*)texto comOfertaMax:(int)ofertaMax comOfertaMin:(int)ofertaMin comDemandaMax:(int)demandaMax eComDemandaMin:(int)demandaMin;
+-(instancetype)initNoticiacomTexto:(NSString*)texto comTitulo:(NSString*)titulo comOfertaMax:(int)ofertaMax comOfertaMin:(int)ofertaMin comDemandaMax:(int)demandaMax eComDemandaMin:(int)demandaMin;
 
 
 @end

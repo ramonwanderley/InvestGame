@@ -9,9 +9,10 @@
 @implementation Noticia:NSObject
 
 
--(instancetype)initNoticiacomTexto:(NSString*)texto comOfertaMax:(int)ofertaMax comOfertaMin:(int)ofertaMin comDemandaMax:(int)demandaMax eComDemandaMin:(int)demandaMin{
+-(instancetype)initNoticiacomTexto:(NSString*)texto comTitulo:(NSString*)titulo comOfertaMax:(int)ofertaMax comOfertaMin:(int)ofertaMin comDemandaMax:(int)demandaMax eComDemandaMin:(int)demandaMin{
     self = [super init];
     if(self){
+        self.titulo = titulo;
         self.texto = texto;
         self.ofertaMax = ofertaMax;
         self.ofertaMin = ofertaMin;

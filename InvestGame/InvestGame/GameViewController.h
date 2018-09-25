@@ -15,5 +15,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *noticiaLabel;
 - (IBAction)buttonOne:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *playerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mancheteLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *granaBarra;
+@property (weak, nonatomic) IBOutlet UIProgressView *turnoBarra;
 -(void)SetarTurno;
+-(void)SetarNoticias;
+-(void)atualizarBarras;
+-(void)SetarNoticiasDaVez;
 @end

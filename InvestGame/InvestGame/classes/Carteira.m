@@ -32,6 +32,15 @@
     }
     
 }
+-(float)Total{
+    float montante = 0;
+    montante = self.saldo;
+    for(int i = 0; i < self.investimentos.count ; i++ ){
+        montante = montante + self.investimentos[i].valorDeInicio;
+        
+    }
+    return montante;
+}
 
 
 @end
