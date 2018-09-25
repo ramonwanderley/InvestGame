@@ -21,7 +21,32 @@ int jogadorVez = 0;
 Mercado* mercadoAcao;
 Mercado* mercadoCripto;
 
-//NSMutableArray<Investimento*> *investimentosDisponiveis = [NSMutableArray arrayWithObjects: [[Investimento alloc]initComTipo: comValor:<#(double)#> eQuantidade:<#(int)#> ] ,nil];
+
+- (void)didUpdateFocusInContext:(UIFocusUpdateContext *)context withAnimationCoordinator:(UIFocusAnimationCoordinator *)coordinator
+{
+    [super didUpdateFocusInContext:context withAnimationCoordinator:coordinator];
+    
+    if (self == context.nextFocusedView) {
+        [coordinator addCoordinatedAnimations:^{
+            context.nextFocusedView.backgroundColor = [UIColor colorWithRed:66.0f/255.0f
+                                                                      green:79.0f/255.0f
+                                                                       blue:91.0f/255.0f
+                                                                      alpha:1.0f] ;
+        } completion:^{
+            // completion
+        }];
+    } else if (self == context.previouslyFocusedView) {
+        [coordinator addCoordinatedAnimations:^{
+            context.nextFocusedView.backgroundColor = [UIColor colorWithRed:66.0f/255.0f
+                                                                      green:79.0f/255.0f
+                                                                       blue:91.0f/255.0f
+                                                                      alpha:1.0f] ;
+        } completion:^{
+            // completion
+        }];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
