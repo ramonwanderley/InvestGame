@@ -18,5 +18,5 @@
 
 -(instancetype)initComSaldo:(double)saldo;
 
--(float)TotalvalorMercado:(float) valorMercado;
+-(float)TotalvalorMercadoCripto:(float) valorMercadoCripto eValorMercadoAcao:(float) valorMercadoAcao eFixo:(float) valorMercadoFixo;
 @end

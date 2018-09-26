@@ -38,7 +38,15 @@
     float montante = 0;
     montante = self.saldo;
     for(int i = 0; i < self.investimentos.count ; i++ ){
-        montante = montante + self.investimentos[i].quantidade*valorMercado;
+        if(self.investimentos[i].tipo == @"Cripto"){
+            montante = montante + self.investimentos[i].quantidade*valorMercadoCripto;
+        }
+        else if (self.investimentos[i].tipo == @"Ação"){
+            montante = montante + self.investimentos[i].quantidade*valorMercadoAcao;
+        }
+        else{
+            montante = montante + self.investimentos[i].quantidade*valorMercadoFixo;
+        }
         
     }
     return montante;

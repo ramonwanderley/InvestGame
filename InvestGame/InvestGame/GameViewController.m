@@ -288,7 +288,7 @@ NSInteger noticiasPassadas[24];
 -(void)atualizarBarras{
     float montante = 0;
     for(int i = 0; i < 4; i++){
-        montante = montante + [jogadores[i].carteira TotalvalorMercado:mercadoCripto.valorHoje];
+        montante = montante + [jogadores[i].carteira TotalvalorMercadoCripto:mercadoCripto.valorHoje eValorMercadoAcao:mercadoAcao.valorHoje eFixo:mercadoFixo.valorHoje];
     }
     _granaBarra.progress = montante/10000;
     _turnoBarra.progress = estado/12;
