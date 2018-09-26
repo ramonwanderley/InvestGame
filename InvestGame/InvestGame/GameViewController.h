@@ -14,12 +14,15 @@
     @property NSMutableArray <NSString*> * nomesJogadores;
 @property (weak, nonatomic) IBOutlet UILabel *noticiaLabel;
 - (IBAction)buttonOne:(id)sender;
+- (IBAction)proximo:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *playerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mancheteLabel;
 @property (weak, nonatomic) IBOutlet UIProgressView *granaBarra;
 @property (weak, nonatomic) IBOutlet UIProgressView *turnoBarra;
+@property (weak, nonatomic) IBOutlet UIButton *proximoCanal;
 -(void)SetarTurno;
 -(void)SetarNoticias;
 -(void)atualizarBarras;
 -(void)SetarNoticiasDaVez;
+//- (void)swipeRight:(UISwipeGestureRecognizer *)sender;
 @end
