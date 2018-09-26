@@ -17,6 +17,7 @@
             self.oferta = oferta;
             self.demanda = demanda;
             self.valorHoje = 1;
+            self.valorOntem = 1;
         }
         return self;
     }
@@ -30,7 +31,7 @@
     return self;
 }
 
-
+    
     -(void)calcularValorHojeFixo{
         self.valorHoje = self.valorHoje + self.valorHoje* self.taxa;
     }
@@ -42,6 +43,7 @@
         self.demanda = self.demanda + quantidade;
     }
     -(void)calcularValorHoje{
+        self.valorOntem = self.valorHoje;
         self.valorHoje = self.valorHoje + self.valorHoje *(self.demanda - self.oferta)/100;
     }
 

@@ -30,8 +30,17 @@
 @property (weak, nonatomic) IBOutlet UIImageView *violaoIcon;
 @property (weak, nonatomic) IBOutlet UIImageView *pandeiroIcon;
 @property (weak, nonatomic) IBOutlet UIImageView *tecladoIcon;
+@property (weak, nonatomic) IBOutlet UILabel *valorFixo;
+@property (weak, nonatomic) IBOutlet UILabel *variacaoFixo;
 - (UIImage *)imageWithImage:(UIImage *)image convertToSize:(CGSize)size ;
 @property (weak, nonatomic) IBOutlet UIView *admView;
+@property (weak, nonatomic) IBOutlet UILabel *valorCripto;
+@property (weak, nonatomic) IBOutlet UILabel *variacaoCripto;
+@property (weak, nonatomic) IBOutlet UILabel *tendenciaCripto;
+@property (weak, nonatomic) IBOutlet UILabel *valorAcao;
+@property (weak, nonatomic) IBOutlet UILabel *variacaoACAO;
+@property (weak, nonatomic) IBOutlet UILabel *tendenciaAcao;
+@property (weak, nonatomic) IBOutlet UIView *mercadoView;
 @property (strong, nonatomic) IBOutlet UICollectionView *investCollection;
 -(void)SetarTurno;
 -(void)mudarCanl;

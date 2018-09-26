@@ -16,7 +16,7 @@
     @property double mudancaDia;
     @property double valorHoje;
     @property float taxa;
-
+    @property double valorOntem;
 -(instancetype)initMercadoComRisco:(double)risco comOferta:(int)oferta eDemanda:(int)demanda;
     - (void)mudarOferta:(int) quantidade;
     - (void)mudarDemanda: (int) quantidade;

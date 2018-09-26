@@ -101,7 +101,7 @@ NSInteger noticiasPassadas[24];
     mercadoCripto = [[Mercado alloc] initMercadoComRisco:0.55 comOferta:0 eDemanda:0];
     mercadoAcao = [[Mercado alloc] initMercadoComRisco:0.25 comOferta:0 eDemanda:0];
     mercadoFixo  = [[Mercado alloc] initMercadocomTaxa:0.005];
-    
+    _mercadoView.hidden = YES;
     _admView.hidden = YES;
     [self SetarTurno];
     
@@ -326,7 +326,7 @@ NSInteger noticiasPassadas[24];
 
 -(void)mudarCanal{
     if(estadoTV == 0 ){
-        _admView.hidden = YES;
+        _mercadoView.hidden = YES;
         _buttonOne.hidden = NO;
         _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
@@ -341,17 +341,54 @@ NSInteger noticiasPassadas[24];
     else if(estadoTV == 2){
         _admView.hidden = NO;
         _buttonOne.hidden = YES;
+        
         [self.investCollection reloadData];
+        estadoTV = estadoTV + 1;
+    }
+    else if(estadoTV == 3){
+        _mercadoView.hidden = NO;
+        _admView.hidden = YES;
         estadoTV = 0;
+         NSString *valorCriptoTexto =  [NSString stringWithFormat:@"%0.2lf",mercadoCripto.valorHoje];
+            NSString *valorAcaoTexto =  [NSString stringWithFormat:@"%0.2lf",mercadoAcao.valorHoje];
+        _valorAcao.text = valorAcaoTexto;
+        _valorCripto.text = valorCriptoTexto;
+        if( mercadoCripto.oferta > mercadoCripto.demanda){
+            _tendenciaCripto.text = @"Baixa";
+            _tendenciaCripto.textColor = UIColor.redColor;
+        }
+        else{
+            _tendenciaCripto.text = @"Alta";
+            _tendenciaCripto.textColor = UIColor.greenColor;
+        }
+        if( mercadoAcao.oferta > mercadoAcao.demanda){
+            _tendenciaAcao.text = @"Baixa";
+            _tendenciaAcao.textColor = UIColor.redColor;
+        }
+        else{
+            _tendenciaAcao.text = @"Alta";
+            _tendenciaAcao.textColor = UIColor.greenColor;
+        }
+        float inicioDoCalculoCripto = mercadoCripto.valorHoje - mercadoCripto.valorOntem;
+        inicioDoCalculoCripto = inicioDoCalculoCripto/mercadoCripto.valorOntem;
+        NSString *variacaoCriptoTexto =  [NSString stringWithFormat:@"%0.2lf %%",inicioDoCalculoCripto];
+        _variacaoCripto.text = variacaoCriptoTexto;
+        float inicioDoCalculoAcao = mercadoAcao.valorHoje - mercadoAcao.valorOntem;
+        inicioDoCalculoCripto = inicioDoCalculoCripto/mercadoAcao.valorOntem;
+        NSString *variacaoAcaoTexto =  [NSString stringWithFormat:@"%0.2lf %%",inicioDoCalculoAcao];
+        _variacaoACAO.text = variacaoAcaoTexto;
+        
+        NSString *variacaoFixoTexto =  [NSString stringWithFormat:@"%0.3lf %%", mercadoFixo.taxa];
+        NSString *valorFixoTexto =  [NSString stringWithFormat:@"%0.3lf", mercadoFixo.valorHoje];
+        _valorFixo.text = valorFixoTexto;
+        _variacaoFixo.text = variacaoFixoTexto;
+        
+        
     }
 }
-- (IBAction)proximo:(id)sender {
-    
- 
-}
 
-- (IBAction)butAcao:(id)sender {
-}
+
+
 - (BOOL)collectionView:(UICollectionView *)collectionView
 canFocusItemAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
