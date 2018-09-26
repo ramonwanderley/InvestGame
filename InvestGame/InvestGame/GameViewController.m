@@ -16,14 +16,19 @@
 #import "Noticia.h"
 #import "cellInvest.h"
 #include <stdlib.h>
+
 @implementation GameViewController
+
 NSMutableArray<Jogador*>  *jogadores;
+
 int estado = 0;
 int estadoTV = 0;
 int jogadorVez = 0;
+
 Mercado* mercadoAcao;
 Mercado* mercadoCripto;
 Mercado* mercadoFixo;
+
 NSMutableArray<Noticia*> *noticias;
 NSInteger noticiaDaVez[2];
 NSInteger noticiasPassadas[24];
@@ -79,31 +84,44 @@ NSInteger noticiasPassadas[24];
     tapGestureRec.allowedPressTypes = @[@(UIPressTypePlayPause)];
     [self.view addGestureRecognizer:tapGestureRec];
     [self.investCollection hasUncommittedUpdates];
+    
+    // [protocolos] collection view da carteira do jogador (canal na tv)
     self.investCollection.delegate = self;
     self.investCollection.dataSource = self;
+    
+    // iniciando as carteiras dos jogadores com 1k cavacoins cada
     Carteira* carteiraInicio = [[Carteira alloc] initComSaldo:1000];
     Carteira* carteiraInicio2 = [[Carteira alloc] initComSaldo:1000];
     Carteira* carteiraInicio3 = [[Carteira alloc] initComSaldo:1000];
     Carteira* carteiraInicio4 = [[Carteira alloc] initComSaldo:1000];
     
+    // iniciando os 4 jogadores com o nome escolhido, vaga na banda e 1k cavacoins
     Jogador* jogador1 = [[Jogador alloc] initComNome: _nomesJogadores[0] comPosicao:@"Vocalista" andCarteira: carteiraInicio];
     Jogador* jogador2 = [[Jogador alloc] initComNome: _nomesJogadores[1] comPosicao:@"Cavaco" andCarteira: carteiraInicio2];
     Jogador* jogador3 = [[Jogador alloc] initComNome: _nomesJogadores[2] comPosicao:@"Pandeiro" andCarteira: carteiraInicio3];
     Jogador* jogador4 = [[Jogador alloc] initComNome: _nomesJogadores[3] comPosicao:@"Percussão" andCarteira: carteiraInicio4];
     jogadores = [NSMutableArray arrayWithObjects: jogador1, jogador2, jogador3, jogador4, nil];
     
-    
+    // print de teste
     for(int i = 0; i < 4; i++) {
         NSLog(@"jogador%d nome:%@ posicao:%@ saldo: %lf", i,jogadores[i].nome, jogadores[i].posicao, jogadores[i].carteira.saldo);
     }
     
-    //estabelecendo Mercados
+    //estabelecendo Mercados iniciais
     mercadoCripto = [[Mercado alloc] initMercadoComRisco:0.55 comOferta:0 eDemanda:0];
     mercadoAcao = [[Mercado alloc] initMercadoComRisco:0.25 comOferta:0 eDemanda:0];
     mercadoFixo  = [[Mercado alloc] initMercadocomTaxa:0.005];
+    
+    // canal da carteira
     _mercadoView.hidden = YES;
     _admView.hidden = YES;
     [self SetarTurno];
+    
+    
+    // aparência da progress view (a altura ta por constraint)
+    _granaBarra.layer.cornerRadius = 12;
+    
+    
     
 }
 
@@ -285,6 +303,8 @@ NSInteger noticiasPassadas[24];
         
     }
 }
+
+
 -(void)atualizarBarras{
     float montante = 0;
     for(int i = 0; i < 4; i++){

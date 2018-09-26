@@ -151,9 +151,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DpP-ai-peO">
+                            <progressView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" progressImage="peachTV" trackImage="money-pg-background" translatesAutoresizingMaskIntoConstraints="NO" id="DpP-ai-peO">
                                 <rect key="frame" x="141" y="68" width="1642" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Zpw-Za-Dt5"/>
+                                </constraints>
                             </progressView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="microfonedeselecionado" translatesAutoresizingMaskIntoConstraints="NO" id="nsM-nl-f3m" userLabel="1-vocal-icon">
                                 <rect key="frame" x="1674" y="208" width="180" height="180"/>
@@ -671,6 +673,7 @@
         <image name="escolher-quadro" width="744" height="744"/>
         <image name="microfone" width="343" height="343"/>
         <image name="microfonedeselecionado" width="171" height="172"/>
+        <image name="money-pg-background" width="3350" height="116"/>
         <image name="pandeiro" width="343" height="343"/>
         <image name="pandeirodeselecionado" width="171" height="172"/>
         <image name="peachTV" width="111" height="95"/>
