@@ -15,7 +15,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *noticiaLabel;
 - (IBAction)buttonOne:(id)sender;
 - (IBAction)proximo:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *buttonOne;
+- (IBAction)passar:(id)sender;
+- (IBAction)buyFixo:(id)sender;
+- (IBAction)buyAcao:(id)sender;
+- (IBAction)retirar:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *playerLabel;
+- (IBAction)buyCripto:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *mancheteLabel;
 @property (weak, nonatomic) IBOutlet UIProgressView *granaBarra;
 @property (weak, nonatomic) IBOutlet UIProgressView *turnoBarra;

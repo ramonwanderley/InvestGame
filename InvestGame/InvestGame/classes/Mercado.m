@@ -21,6 +21,19 @@
         return self;
     }
 
+-(instancetype)initMercadocomTaxa:(float) taxa{
+    self = [super init];
+    if(self){
+        self.taxa = taxa;
+        self.valorHoje = 1;
+    }
+    return self;
+}
+
+
+    -(void)calcularValorHojeFixo{
+        self.valorHoje = self.valorHoje + self.valorHoje* self.taxa;
+    }
 
     -(void)mudarOferta:(int) quantidade{
         self.oferta = self.oferta + quantidade;

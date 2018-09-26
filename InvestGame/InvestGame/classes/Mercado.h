@@ -15,10 +15,12 @@
     @property int demanda;
     @property double mudancaDia;
     @property double valorHoje;
+    @property float taxa;
 
 -(instancetype)initMercadoComRisco:(double)risco comOferta:(int)oferta eDemanda:(int)demanda;
     - (void)mudarOferta:(int) quantidade;
     - (void)mudarDemanda: (int) quantidade;
     - (void)calcularValorHoje;
-
+- (void)calcularValorHojeFixo;  
+-(instancetype)initMercadocomTaxa:(float) taxa;
 @end

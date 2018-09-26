@@ -34,7 +34,7 @@
     }
     
 }
--(float)TotalvalorMercado:(float) valorMercado {
+-(float)TotalvalorMercadoCripto:(float) valorMercadoCripto eValorMercadoAcao:(float) valorMercadoAcao eFixo:(float) valorMercadoFixo {
     float montante = 0;
     montante = self.saldo;
     for(int i = 0; i < self.investimentos.count ; i++ ){

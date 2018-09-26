@@ -12,4 +12,6 @@
 
 @implementation cellInvest
 
+- (IBAction)vender:(id)sender {
+}
 @end

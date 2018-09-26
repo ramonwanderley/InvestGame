@@ -11,5 +11,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *quantidadeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *valorAtivoLabel;
+- (IBAction)vender:(id)sender;
 
 @end
