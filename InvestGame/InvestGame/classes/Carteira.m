@@ -21,12 +21,12 @@
     return self;
 }
 
--(void) comprarInvestimento:(Investimento *) novoInvestimento {
+-(void) comprarInvestimento:(Investimento *) novoInvestimento eValorMercado:(float)valorMercado{
    
-    if (self.saldo >= novoInvestimento.valorDeInicio) {
+    if (self.saldo >= novoInvestimento.quantidade * valorMercado) {
         [self.investimentos addObject:(novoInvestimento)];
-        self.saldo = self.saldo - novoInvestimento.valorDeInicio;
-        NSLog(@"%lf", self.investimentos[0].valorDeInicio);  // %lf - tipo de dado float
+        self.saldo = self.saldo -  novoInvestimento.quantidade * valorMercado;
+       // NSLog(@"%lf", self.investimentos[0].valorDeInicio);  // %lf - tipo de dado float
     
     }
     else{
@@ -34,11 +34,11 @@
     }
     
 }
--(float)Total{
+-(float)TotalvalorMercado:(float) valorMercado {
     float montante = 0;
     montante = self.saldo;
     for(int i = 0; i < self.investimentos.count ; i++ ){
-        montante = montante + self.investimentos[i].valorDeInicio;
+        montante = montante + self.investimentos[i].quantidade*valorMercado;
         
     }
     return montante;

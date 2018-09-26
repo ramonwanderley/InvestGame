@@ -29,7 +29,7 @@
         self.demanda = self.demanda + quantidade;
     }
     -(void)calcularValorHoje{
-        self.valorHoje = self.valorHoje + (self.demanda - self.oferta)/100;
+        self.valorHoje = self.valorHoje + self.valorHoje *(self.demanda - self.oferta)/100;
     }
 
 @end

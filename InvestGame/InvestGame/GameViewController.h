@@ -10,7 +10,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import <GameplayKit/GameplayKit.h>
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDataSource>
     @property NSMutableArray <NSString*> * nomesJogadores;
 @property (weak, nonatomic) IBOutlet UILabel *noticiaLabel;
 - (IBAction)buttonOne:(id)sender;
@@ -25,7 +25,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *pandeiroIcon;
 @property (weak, nonatomic) IBOutlet UIImageView *tecladoIcon;
 - (UIImage *)imageWithImage:(UIImage *)image convertToSize:(CGSize)size ;
+@property (weak, nonatomic) IBOutlet UIView *admView;
+@property (strong, nonatomic) IBOutlet UICollectionView *investCollection;
 -(void)SetarTurno;
+-(void)mudarCanl;
 -(void)SetarNoticias;
 -(void)atualizarBarras;
 -(void)SetarNoticiasDaVez;

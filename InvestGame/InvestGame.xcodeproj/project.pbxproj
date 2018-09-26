@@ -16,6 +16,7 @@
 		80020623215400FC00B77B50 /* Carteira.m in Sources */ = {isa = PBXBuildFile; fileRef = 80020622215400FC00B77B50 /* Carteira.m */; };
 		80020625215404F400B77B50 /* Investimento.m in Sources */ = {isa = PBXBuildFile; fileRef = 80020624215404F400B77B50 /* Investimento.m */; };
 		8002062921540DFE00B77B50 /* Mercado.m in Sources */ = {isa = PBXBuildFile; fileRef = 8002062821540DFE00B77B50 /* Mercado.m */; };
+		803414A0215BDD6A00256FF6 /* cellInvest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8034149F215BDD6A00256FF6 /* cellInvest.m */; };
 		803D72252151746100B13BB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D72242151746100B13BB0 /* AppDelegate.m */; };
 		803D72272151746100B13BB0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 803D72262151746100B13BB0 /* GameScene.sks */; };
 		803D72292151746100B13BB0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 803D72282151746100B13BB0 /* Actions.sks */; };
@@ -101,6 +102,8 @@
 		800206262154050400B77B50 /* Investimento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Investimento.h; sourceTree = "<group>"; };
 		8002062721540DF000B77B50 /* Mercado.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mercado.h; sourceTree = "<group>"; };
 		8002062821540DFE00B77B50 /* Mercado.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mercado.m; sourceTree = "<group>"; };
+		8034149E215BDD5D00256FF6 /* cellInvest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cellInvest.h; sourceTree = "<group>"; };
+		8034149F215BDD6A00256FF6 /* cellInvest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cellInvest.m; sourceTree = "<group>"; };
 		803D72202151746100B13BB0 /* InvestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803D72232151746100B13BB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		803D72242151746100B13BB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -292,6 +295,8 @@
 				8002062821540DFE00B77B50 /* Mercado.m */,
 				80DFF34B215981C7002CB612 /* Noticia.h */,
 				80DFF34C215981D8002CB612 /* Noticia.m */,
+				8034149E215BDD5D00256FF6 /* cellInvest.h */,
+				8034149F215BDD6A00256FF6 /* cellInvest.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -848,6 +853,7 @@
 				803D722F2151746100B13BB0 /* GameViewController.m in Sources */,
 				803D72372151746300B13BB0 /* main.m in Sources */,
 				80DFF34721596A1F002CB612 /* popupInvestir.m in Sources */,
+				803414A0215BDD6A00256FF6 /* cellInvest.m in Sources */,
 				8002061B2153BFD500B77B50 /* SelectViewController.m in Sources */,
 				80020625215404F400B77B50 /* Investimento.m in Sources */,
 				803D72252151746100B13BB0 /* AppDelegate.m in Sources */,

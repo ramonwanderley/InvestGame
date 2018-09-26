@@ -14,9 +14,9 @@
     @property double saldo;
     @property double valorTotal;
 
--(void)comprarInvestimento:(Investimento *) novoInvestimento;
+-(void)comprarInvestimento:(Investimento *) novoInvestimento eValorMercado:(float) valorMercado;
 
 -(instancetype)initComSaldo:(double)saldo;
 
--(float)Total;
+-(float)TotalvalorMercado:(float) valorMercado;
 @end
