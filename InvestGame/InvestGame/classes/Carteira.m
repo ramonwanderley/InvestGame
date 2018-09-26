@@ -16,6 +16,7 @@
     self = [super init];
     if(self) {
         self.saldo = saldo;
+        self.investimentos = [NSMutableArray arrayWithObjects: nil];
     }
     return self;
 }
@@ -25,7 +26,8 @@
     if (self.saldo >= novoInvestimento.valorDeInicio) {
         [self.investimentos addObject:(novoInvestimento)];
         self.saldo = self.saldo - novoInvestimento.valorDeInicio;
-        NSLog(@"%lf", self.saldo);  // %lf - tipo de dado float
+        NSLog(@"%lf", self.investimentos[0].valorDeInicio);  // %lf - tipo de dado float
+    
     }
     else{
          NSLog(@"saldo insuficiente!");

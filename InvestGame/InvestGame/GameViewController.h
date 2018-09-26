@@ -20,9 +20,15 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *granaBarra;
 @property (weak, nonatomic) IBOutlet UIProgressView *turnoBarra;
 @property (weak, nonatomic) IBOutlet UIButton *proximoCanal;
+@property (weak, nonatomic) IBOutlet UIImageView *microfoneIcon;
+@property (weak, nonatomic) IBOutlet UIImageView *violaoIcon;
+@property (weak, nonatomic) IBOutlet UIImageView *pandeiroIcon;
+@property (weak, nonatomic) IBOutlet UIImageView *tecladoIcon;
+- (UIImage *)imageWithImage:(UIImage *)image convertToSize:(CGSize)size ;
 -(void)SetarTurno;
 -(void)SetarNoticias;
 -(void)atualizarBarras;
 -(void)SetarNoticiasDaVez;
+-(void)SetarIcons;
 //- (void)swipeRight:(UISwipeGestureRecognizer *)sender;
 @end

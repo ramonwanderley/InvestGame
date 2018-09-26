@@ -155,17 +155,6 @@
                                 <rect key="frame" x="141" y="68" width="1642" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="xPA-1x-6Nk">
-                                <rect key="frame" x="141" y="118" width="1642" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anna" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUy-vR-f5h">
-                                <rect key="frame" x="1502" y="280" width="152" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="microfonedeselecionado" translatesAutoresizingMaskIntoConstraints="NO" id="nsM-nl-f3m" userLabel="1-vocal-icon">
                                 <rect key="frame" x="1674" y="208" width="180" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -187,8 +176,8 @@
                                 <rect key="frame" x="1674" y="840" width="180" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="violaoemevidencia" translatesAutoresizingMaskIntoConstraints="NO" id="DHh-uH-XiO" userLabel="2-cavaco-icon">
-                                <rect key="frame" x="1537" y="366" width="291" height="291"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="violaodeselecionado" translatesAutoresizingMaskIntoConstraints="NO" id="DHh-uH-XiO" userLabel="2-cavaco-icon">
+                                <rect key="frame" x="1674" y="421" width="180" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="APPLE TV" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-jP-XJ2">
@@ -230,6 +219,17 @@
                                     <action selector="buttonOne:" destination="rV6-Qf-Ld6" eventType="primaryActionTriggered" id="PRj-Hj-EEa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anna" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUy-vR-f5h">
+                                <rect key="frame" x="1166" y="187" width="152" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="am8-hE-UtG">
+                                <rect key="frame" x="141" y="86" width="1642" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="0.98999999999999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1rJ-zY-27b"/>
@@ -237,9 +237,13 @@
                     <connections>
                         <outlet property="granaBarra" destination="DpP-ai-peO" id="slf-mz-FGU"/>
                         <outlet property="mancheteLabel" destination="obb-tG-MBp" id="PD6-jo-cvd"/>
+                        <outlet property="microfoneIcon" destination="nsM-nl-f3m" id="68Y-bG-TBg"/>
                         <outlet property="noticiaLabel" destination="G0C-WJ-Brv" id="Uja-5O-q65"/>
+                        <outlet property="pandeiroIcon" destination="bXE-q4-9BQ" id="nWb-nu-bV2"/>
                         <outlet property="playerLabel" destination="fUy-vR-f5h" id="haQ-lL-w83"/>
-                        <outlet property="turnoBarra" destination="xPA-1x-6Nk" id="CyR-mn-BVq"/>
+                        <outlet property="tecladoIcon" destination="azl-mL-0nZ" id="sws-b4-6Pm"/>
+                        <outlet property="turnoBarra" destination="am8-hE-UtG" id="hK0-Dp-ZPe"/>
+                        <outlet property="violaoIcon" destination="DHh-uH-XiO" id="aws-eJ-ar3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MaJ-nG-PNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -370,6 +374,7 @@
         <image name="textfield-deselected" width="296" height="70"/>
         <image name="textfield-selected" width="312" height="86"/>
         <image name="tutorial-deselected" width="363" height="105"/>
+        <image name="violaodeselecionado" width="172" height="172"/>
         <image name="violaoemevidencia" width="281" height="281"/>
     </resources>
 </document>
