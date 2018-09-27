@@ -182,10 +182,9 @@
                                 <rect key="frame" x="490" y="314" width="1032" height="662"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="S80-v5-E6E">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="journal 1" highlighted="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S80-v5-E6E" customClass="FLAnimatedImageView">
                                 <rect key="frame" x="523" y="351" width="960" height="509"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="arqui vai criar sua própria bitcoin" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0C-WJ-Brv">
                                 <rect key="frame" x="571" y="473" width="846" height="195"/>
@@ -317,7 +316,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I0U-qe-5nA">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I0U-qe-5nA">
                                 <rect key="frame" x="523" y="351" width="960" height="509"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -543,6 +542,7 @@
                     </view>
                     <connections>
                         <outlet property="admView" destination="Vlm-vk-ye5" id="NA7-Dx-zr0"/>
+                        <outlet property="backgroundTV" destination="S80-v5-E6E" id="rBf-Vm-Xdm"/>
                         <outlet property="buttonOne" destination="B8a-F0-6X8" id="06i-4L-nUm"/>
                         <outlet property="granaBarra" destination="DpP-ai-peO" id="slf-mz-FGU"/>
                         <outlet property="investCollection" destination="hOj-QM-4x6" id="GhS-3Y-8hz"/>
@@ -686,6 +686,7 @@
         <image name="fundo" width="3320" height="1867"/>
         <image name="hoje nao" width="1143" height="425"/>
         <image name="invest!" width="873" height="414"/>
+        <image name="journal 1" width="1377" height="885"/>
         <image name="microfone" width="343" height="343"/>
         <image name="microfonedeselecionado" width="171" height="172"/>
         <image name="pandeiro" width="343" height="343"/>

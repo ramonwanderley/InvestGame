@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 #import <GameplayKit/GameplayKit.h>
-
+#import "FLAnimatedImageView.h"
 @interface GameViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDataSource>
 
 // contém os nomes que os jogadores digitarem na tela anterior (SelectViewControler)
@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *noticiaLabel;
 - (IBAction)buttonOne:(id)sender;
 - (IBAction)proximo:(id)sender;
+@property (weak, nonatomic) IBOutlet FLAnimatedImageView *backgroundTV;
+
 @property (weak, nonatomic) IBOutlet UIButton *buttonOne;
 - (IBAction)passar:(id)sender;
 - (IBAction)buyFixo:(id)sender;

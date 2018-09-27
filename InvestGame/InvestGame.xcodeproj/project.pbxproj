@@ -38,6 +38,9 @@
 		80DFF34721596A1F002CB612 /* popupInvestir.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DFF34621596A1F002CB612 /* popupInvestir.m */; };
 		80DFF34921596B4D002CB612 /* popupinvestir.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DFF34821596B4D002CB612 /* popupinvestir.xib */; };
 		80DFF34D215981D8002CB612 /* Noticia.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DFF34C215981D8002CB612 /* Noticia.m */; };
+		80E6ACA3215D416600348D3C /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6ACA2215D416600348D3C /* FLAnimatedImage.m */; };
+		80E6ACA5215D418B00348D3C /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6ACA4215D418B00348D3C /* FLAnimatedImageView.m */; };
+		80E6ACA7215D435400348D3C /* journal 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80E6ACA6215D435000348D3C /* journal 1.gif */; };
 		88BCA213DD4818AAE9277B82 /* libPods-mobileInvestGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF914DC535A37795AAA9B870 /* libPods-mobileInvestGameTests.a */; };
 		90C4EF7D3B94D41E0260ABF5 /* libPods-mobileInvestGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F799332A250D28557E75575C /* libPods-mobileInvestGame.a */; };
 		BD8F221B53ED6C39CD5A54BE /* Pods_testeTibeiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7DE1FF0C0E54A9643CA94B /* Pods_testeTibeiTests.framework */; };
@@ -146,6 +149,11 @@
 		80DFF34C215981D8002CB612 /* Noticia.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Noticia.m; sourceTree = "<group>"; };
 		80E09D4E2152AF8F007B15DC /* testeTibeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeTibeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E09D592152AF90007B15DC /* testeTibeiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeTibeiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E6ACA0215D40EB00348D3C /* FLAnimatedImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		80E6ACA1215D413100348D3C /* FLAnimatedImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		80E6ACA2215D416600348D3C /* FLAnimatedImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		80E6ACA4215D418B00348D3C /* FLAnimatedImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		80E6ACA6215D435000348D3C /* journal 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "journal 1.gif"; path = "../../../../Dropbox (DeveloperAcademy-BR)/Corrente de Blocos/Vídeo das notícias/journal 1.gif"; sourceTree = "<group>"; };
 		879C7709C2CDB7ADFF6E623C /* libPods-InvestGameiOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8935A3EBF72D5538A310418B /* libPods-InvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A3B9461FC1506B9115B313 /* Pods-InvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameUITests/Pods-InvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +305,10 @@
 				80DFF34C215981D8002CB612 /* Noticia.m */,
 				8034149E215BDD5D00256FF6 /* cellInvest.h */,
 				8034149F215BDD6A00256FF6 /* cellInvest.m */,
+				80E6ACA2215D416600348D3C /* FLAnimatedImage.m */,
+				80E6ACA4215D418B00348D3C /* FLAnimatedImageView.m */,
+				80E6ACA0215D40EB00348D3C /* FLAnimatedImage.h */,
+				80E6ACA1215D413100348D3C /* FLAnimatedImageView.h */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -340,6 +352,7 @@
 				803D72282151746100B13BB0 /* Actions.sks */,
 				803D722A2151746100B13BB0 /* GameScene.h */,
 				803D722B2151746100B13BB0 /* GameScene.m */,
+				80E6ACA6215D435000348D3C /* journal 1.gif */,
 				8002061C2153BFEF00B77B50 /* SelectViewController.h */,
 				8002061A2153BFD500B77B50 /* SelectViewController.m */,
 				803D722D2151746100B13BB0 /* GameViewController.h */,
@@ -571,6 +584,7 @@
 				TargetAttributes = {
 					803D721F2151746100B13BB0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					803D723B2151746300B13BB0 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -632,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				803D72322151746100B13BB0 /* Main.storyboard in Resources */,
+				80E6ACA7215D435400348D3C /* journal 1.gif in Resources */,
 				803D72272151746100B13BB0 /* GameScene.sks in Resources */,
 				803D72342151746300B13BB0 /* Assets.xcassets in Resources */,
 				803D72292151746100B13BB0 /* Actions.sks in Resources */,
@@ -852,8 +867,10 @@
 				80DFF34D215981D8002CB612 /* Noticia.m in Sources */,
 				803D722F2151746100B13BB0 /* GameViewController.m in Sources */,
 				803D72372151746300B13BB0 /* main.m in Sources */,
+				80E6ACA5215D418B00348D3C /* FLAnimatedImageView.m in Sources */,
 				80DFF34721596A1F002CB612 /* popupInvestir.m in Sources */,
 				803414A0215BDD6A00256FF6 /* cellInvest.m in Sources */,
+				80E6ACA3215D416600348D3C /* FLAnimatedImage.m in Sources */,
 				8002061B2153BFD500B77B50 /* SelectViewController.m in Sources */,
 				80020625215404F400B77B50 /* Investimento.m in Sources */,
 				803D72252151746100B13BB0 /* AppDelegate.m in Sources */,
@@ -1087,6 +1104,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGame/Info.plist;
@@ -1097,6 +1115,8 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InvestGame/classes/InvestGame-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				sadsa = "";
@@ -1109,6 +1129,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGame/Info.plist;
@@ -1119,6 +1140,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "InvestGame/classes/InvestGame-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				sadsa = "";

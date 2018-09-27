@@ -18,6 +18,8 @@
             self.demanda = demanda;
             self.valorHoje = 1;
             self.valorOntem = 1;
+            self.marketCap = 1000;
+            self.acoesDisponiveis = 1000;
         }
         return self;
     }
@@ -31,7 +33,7 @@
     return self;
 }
 
-    
+
     -(void)calcularValorHojeFixo{
         self.valorHoje = self.valorHoje + self.valorHoje* self.taxa;
     }
@@ -45,6 +47,9 @@
     -(void)calcularValorHoje{
         self.valorOntem = self.valorHoje;
         self.valorHoje = self.valorHoje + self.valorHoje *(self.demanda - self.oferta)/100;
+        if(self.valorHoje <= 0 ){
+            self.valorHoje = 0;
+        }
     }
 
 @end

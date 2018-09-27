@@ -17,6 +17,8 @@
     @property double valorHoje;
     @property float taxa;
     @property double valorOntem;
+    @property double marketCap;
+    @property int acoesDisponiveis;
 -(instancetype)initMercadoComRisco:(double)risco comOferta:(int)oferta eDemanda:(int)demanda;
     - (void)mudarOferta:(int) quantidade;
     - (void)mudarDemanda: (int) quantidade;

@@ -7,6 +7,7 @@ target 'InvestGame' do
 
   # Pods for InvestGame
 	pod 'Merhaba', '~> 1.2.1'
+	pod 'FLAnimatedImage', '~> 1.0'
   target 'InvestGameTests' do
     inherit! :search_paths
     # Pods for testing
@@ -19,38 +20,4 @@ target 'InvestGame' do
 
 end
 
-target 'mobileInvestGame' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
 
-  # Pods for mobileInvestGame
-	pod 'Merhaba', '~> 1.2.1'
-  target 'mobileInvestGameTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'mobileInvestGameUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
-
-target 'testeTibei' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for testeTibei
-
-  target 'testeTibeiTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'testeTibeiUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
