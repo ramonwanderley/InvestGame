@@ -543,6 +543,8 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 - (IBAction)passar:(id)sender {
     estado = estado + 1;
     [self SetarTurno];
+    estadoTV = 0;
+    [self mudarCanal];
 }
 
 - (IBAction)buyFixo:(id)sender {
