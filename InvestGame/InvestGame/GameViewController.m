@@ -392,6 +392,7 @@ NSInteger noticiasPassadas[24];
 
 -(void)mudarCanal{
     if(estadoTV == 0 ){
+        
         _investView.hidden = YES;
         _mercadoView.hidden = YES;
         _buttonOne.hidden = YES; // escondido enquando nao precisa
@@ -620,6 +621,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
 }
 
+
 - (IBAction)investir:(id)sender {
       NSString *valorTexto = [_valorInvestido titleForSegmentAtIndex:_valorInvestido.selectedSegmentIndex];
        _quantidadeLabel.text = valorTexto;
@@ -637,8 +639,8 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     }
     NSLog(@"Compra nome:%@ posicao:%@ saldo: %lf",jogadores[estado%4].nome, jogadores[estado%4].posicao, jogadores[estado%4].carteira.saldo);
     NSLog(@"%d",jogadores[estado%4].carteira.investimentos[jogadores[estado%4].carteira.investimentos.count -1].quantidade);
-    estado = 0;
-    
+    estadoTV = 0;
+    estado = estado + 1;
     [self SetarTurno];
     
 }

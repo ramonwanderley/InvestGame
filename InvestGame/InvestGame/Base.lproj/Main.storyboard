@@ -695,6 +695,7 @@
                         <outlet property="valorCripto" destination="yZL-32-gCz" id="HEj-Ao-ES2"/>
                         <outlet property="valorDoinvestimento" destination="fPj-f2-Fbd" id="AUe-J3-gC7"/>
                         <outlet property="valorFixo" destination="Hil-di-m0R" id="wnR-I0-QRe"/>
+                        <outlet property="valorInvestido" destination="w3l-sN-VZs" id="als-aC-Uye"/>
                         <outlet property="variacaoACAO" destination="88i-2a-Rrt" id="6kc-1o-oNX"/>
                         <outlet property="variacaoCripto" destination="MAJ-gB-4xx" id="TKD-0W-DfT"/>
                         <outlet property="variacaoFixo" destination="CNU-Cu-2C6" id="5e3-Pc-F94"/>

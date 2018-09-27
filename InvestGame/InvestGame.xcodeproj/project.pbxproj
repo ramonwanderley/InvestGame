@@ -355,12 +355,9 @@
 				803D72282151746100B13BB0 /* Actions.sks */,
 				803D722A2151746100B13BB0 /* GameScene.h */,
 				803D722B2151746100B13BB0 /* GameScene.m */,
-
 				80E6ACA6215D435000348D3C /* journal 1.gif */,
-
 				18DCC6C6215D393E009BB738 /* StartViewController.h */,
 				18DCC6C4215D392C009BB738 /* StartViewController.m */,
-
 				8002061C2153BFEF00B77B50 /* SelectViewController.h */,
 				8002061A2153BFD500B77B50 /* SelectViewController.m */,
 				803D722D2151746100B13BB0 /* GameViewController.h */,
