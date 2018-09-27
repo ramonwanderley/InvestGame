@@ -13,12 +13,19 @@
 @interface GameViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDataSource>
 
 // contém os nomes que os jogadores digitarem na tela anterior (SelectViewControler)
+@property (weak, nonatomic) IBOutlet UISegmentedControl *valorInvestido;
 @property NSMutableArray <NSString*> * nomesJogadores;
 
 @property (weak, nonatomic) IBOutlet UILabel *noticiaLabel;
 - (IBAction)buttonOne:(id)sender;
 - (IBAction)proximo:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *investView;
 @property (weak, nonatomic) IBOutlet FLAnimatedImageView *backgroundTV;
+@property (weak, nonatomic) IBOutlet UILabel *quantidadeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *valorDoinvestimento;
+- (IBAction)quantidadeInvestida:(id)sender;
+- (IBAction)investir:(id)sender;
+- (IBAction)cancelarInvest:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonOne;
 - (IBAction)passar:(id)sender;
@@ -54,6 +61,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *valorAcao;
 @property (weak, nonatomic) IBOutlet UILabel *variacaoACAO;
 @property (weak, nonatomic) IBOutlet UILabel *tendenciaAcao;
+
+// tendência - setas
+@property (weak, nonatomic) IBOutlet UIImageView *tendenciaAcaoSeta;
+@property (weak, nonatomic) IBOutlet UIImageView *tendenciaCryptoSeta;
 
 // canal do mercado (TV)
 @property (weak, nonatomic) IBOutlet UIView *mercadoView;

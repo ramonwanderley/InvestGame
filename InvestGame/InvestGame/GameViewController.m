@@ -24,7 +24,8 @@ NSMutableArray<Jogador*>  *jogadores;
 int estado = 0;
 int estadoTV = 0;
 int jogadorVez = 0;
-
+double valorInvestir = 0;
+NSString *tipoInvestimento = @"Cripto";
 Mercado* mercadoAcao;
 Mercado* mercadoCripto;
 Mercado* mercadoFixo;
@@ -229,8 +230,10 @@ NSInteger noticiasPassadas[24];
 -(void)SetarTurno {
     if(estado%4 == 0 ){
         [self SetarNoticiasDaVez];
-        _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
+        _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
+        // uppercase funciona no debug mas não na execução, sei la pq
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
+        _noticiaLabel.hidden = YES; // textão escondido, precisa mesmo dele?
         [self atualizarBarras];
         [self SetarIcons];
         estadoTV = 0;
@@ -242,8 +245,9 @@ NSInteger noticiasPassadas[24];
     else if(estado%4 == 1){
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
-        _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
+        _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
+        _noticiaLabel.hidden = YES; // escondendo o textão
         [self atualizarBarras];
         [self SetarIcons];
         estadoTV = 0;
@@ -253,8 +257,9 @@ NSInteger noticiasPassadas[24];
     else if(estado%4 == 2){
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
-        _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
+        _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
+        _noticiaLabel.hidden = YES; // escondendo o textão
         [self atualizarBarras];
         [self SetarIcons];
         estadoTV = 0;
@@ -264,8 +269,9 @@ NSInteger noticiasPassadas[24];
     else{
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
-        _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
+        _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
+        _noticiaLabel.hidden = YES; // escondendo o textão
         [self atualizarBarras];
         estadoTV = 0;
         [self SetarIcons];
@@ -386,6 +392,7 @@ NSInteger noticiasPassadas[24];
 
 -(void)mudarCanal{
     if(estadoTV == 0 ){
+        _investView.hidden = YES;
         _mercadoView.hidden = YES;
         _buttonOne.hidden = YES; // escondido enquando nao precisa
         _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
@@ -393,12 +400,14 @@ NSInteger noticiasPassadas[24];
         estadoTV = estadoTV + 1;
     }
     else if(estadoTV == 1){
+        _investView.hidden = YES;
         _mancheteLabel.text = noticias[noticiaDaVez[1]].titulo;
         _noticiaLabel.text = noticias[noticiaDaVez[1]].texto;
         estadoTV = estadoTV + 1;
         
     }
     else if(estadoTV == 2){
+        _investView.hidden = YES;
         _admView.hidden = NO;
         _buttonOne.hidden = YES;
         
@@ -406,6 +415,8 @@ NSInteger noticiasPassadas[24];
         estadoTV = estadoTV + 1;
     }
     else if(estadoTV == 3){
+       
+        _investView.hidden = YES;
         _mercadoView.hidden = NO;
         _admView.hidden = YES;
         estadoTV = 0;
@@ -414,21 +425,27 @@ NSInteger noticiasPassadas[24];
         _valorAcao.text = valorAcaoTexto;
         _valorCripto.text = valorCriptoTexto;
         if( mercadoCripto.oferta > mercadoCripto.demanda){
-            _tendenciaCripto.text = @"Baixa";
-            _tendenciaCripto.textColor = UIColor.redColor;
+//            _tendenciaCripto.text = @"Baixa";
+//            _tendenciaCripto.textColor = UIColor.redColor;
+            _tendenciaCryptoSeta.image = [UIImage imageNamed:@"em-queda"]; //
         }
         else{
-            _tendenciaCripto.text = @"Alta";
-            _tendenciaCripto.textColor = UIColor.greenColor;
+//            _tendenciaCripto.text = @"Alta";
+//            _tendenciaCripto.textColor = UIColor.greenColor;
+            _tendenciaCryptoSeta.image = [UIImage imageNamed:@"em-alta"]; //
         }
         if( mercadoAcao.oferta > mercadoAcao.demanda){
-            _tendenciaAcao.text = @"Baixa";
-            _tendenciaAcao.textColor = UIColor.redColor;
+//            _tendenciaAcao.text = @"Baixa";
+//            _tendenciaAcao.textColor = UIColor.redColor;
+            _tendenciaAcaoSeta.image = [UIImage imageNamed:@"em-queda"]; //
+            
         }
         else{
-            _tendenciaAcao.text = @"Alta";
-            _tendenciaAcao.textColor = UIColor.greenColor;
+//            _tendenciaAcao.text = @"Alta";
+//            _tendenciaAcao.textColor = UIColor.greenColor;
+            _tendenciaAcaoSeta.image = [UIImage imageNamed:@"em-alta"]; //
         }
+        
         float inicioDoCalculoCripto = mercadoCripto.valorHoje - mercadoCripto.valorOntem;
         if(mercadoCripto.valorOntem == 0){
             inicioDoCalculoCripto = (inicioDoCalculoCripto/mercadoCripto.valorOntem) * 100;
@@ -449,6 +466,13 @@ NSInteger noticiasPassadas[24];
         
         
     }
+    else if(estadoTV == 4){
+        _mercadoView.hidden = YES;
+        _admView.hidden = YES;
+        _investView.hidden = NO;
+        estadoTV = 0;
+        
+    }
 }
 
 
@@ -464,10 +488,10 @@ canFocusItemAtIndexPath:(NSIndexPath *)indexPath{
     NSString *tipo = jogadores[estado%4].carteira.investimentos[indexPath.row].tipo;
     int quantidade = jogadores[estado%4].carteira.investimentos[indexPath.row].quantidade;
     float valor;
-    if(jogadores[estado%4].carteira.investimentos[indexPath.row].tipo == @"Cripto" ){
+    if([jogadores[estado%4].carteira.investimentos[indexPath.row].tipo  isEqual: @"Cripto"] ){
         valor = jogadores[estado%4].carteira.investimentos[indexPath.row].quantidade * mercadoCripto.valorHoje;
     }
-    else if(jogadores[estado%4].carteira.investimentos[indexPath.row].tipo == @"Ação"){
+    else if([jogadores[estado%4].carteira.investimentos[indexPath.row].tipo  isEqual: @"Ação"]){
         valor = jogadores[estado%4].carteira.investimentos[indexPath.row].quantidade * mercadoAcao.valorHoje;
     }
     else{
@@ -530,15 +554,18 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 //}
 
 - (IBAction)buyCripto:(id)sender {
-    int quantidadeDeAtivo = 100/mercadoCripto.valorHoje;
-    
-    [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Cripto" comValor: 100 eQuantidade:quantidadeDeAtivo] eValorMercado:mercadoCripto.valorHoje];
-    
-    NSLog(@"Compra nome:%@ posicao:%@ saldo: %lf",jogadores[estado%4].nome, jogadores[estado%4].posicao, jogadores[estado%4].carteira.saldo);
-    NSLog(@"%d",jogadores[estado%4].carteira.investimentos[jogadores[estado%4].carteira.investimentos.count -1].quantidade);
-    estado = estado + 1;
-    
-    [self SetarTurno];
+    tipoInvestimento = @"Cripto";
+    estadoTV = 4;
+    [self mudarCanal];
+//    int quantidadeDeAtivo = 100/mercadoCripto.valorHoje;
+//     tipoInvestimento = @"Cripto";
+//    [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Cripto" comValor: 100 eQuantidade:quantidadeDeAtivo] eValorMercado:mercadoCripto.valorHoje];
+//
+//    NSLog(@"Compra nome:%@ posicao:%@ saldo: %lf",jogadores[estado%4].nome, jogadores[estado%4].posicao, jogadores[estado%4].carteira.saldo);
+//    NSLog(@"%d",jogadores[estado%4].carteira.investimentos[jogadores[estado%4].carteira.investimentos.count -1].quantidade);
+//    estado = estado + 1;
+//
+//    [self SetarTurno];
 }
 - (IBAction)passar:(id)sender {
     estado = estado + 1;
@@ -548,25 +575,31 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 }
 
 - (IBAction)buyFixo:(id)sender {
-    int quantidadeDeAtivo = 100;
-    [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Fixo" comValor: 100 eQuantidade:quantidadeDeAtivo] eValorMercado:mercadoFixo.valorHoje];
-    
-    NSLog(@"%d",jogadores[estado%4].carteira.investimentos[jogadores[estado%4].carteira.investimentos.count -1].quantidade);
-  NSLog(@"Compra nome:%@ posicao:%@ saldo: %lf",jogadores[estado%4].nome, jogadores[estado%4].posicao, jogadores[estado%4].carteira.saldo);
-    estado = estado + 1;
-    [self SetarTurno];
+    tipoInvestimento = @"Fixo";
+    estadoTV = 4;
+    [self mudarCanal];
+//    int quantidadeDeAtivo = 100;
+//    [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Fixo" comValor: 100 eQuantidade:quantidadeDeAtivo] eValorMercado:mercadoFixo.valorHoje];
+//
+//    NSLog(@"%d",jogadores[estado%4].carteira.investimentos[jogadores[estado%4].carteira.investimentos.count -1].quantidade);
+//  NSLog(@"Compra nome:%@ posicao:%@ saldo: %lf",jogadores[estado%4].nome, jogadores[estado%4].posicao, jogadores[estado%4].carteira.saldo);
+//    estado = estado + 1;
+//    [self SetarTurno];
 }
 
 - (IBAction)buyAcao:(id)sender {
-    int quantidadeDeAtivo = 100/mercadoAcao.valorHoje;
-    
-    [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Ação" comValor: 100 eQuantidade:quantidadeDeAtivo] eValorMercado:mercadoAcao.valorHoje];
-    
-    NSLog(@"Compra nome:%@ posicao:%@ saldo: %lf",jogadores[estado%4].nome, jogadores[estado%4].posicao, jogadores[estado%4].carteira.saldo);
-    NSLog(@"%d",jogadores[estado%4].carteira.investimentos[jogadores[estado%4].carteira.investimentos.count -1].quantidade);
-    estado = estado + 1;
-    
-    [self SetarTurno];
+    tipoInvestimento = @"Ação";
+    estadoTV = 4;
+    [self mudarCanal];
+//    int quantidadeDeAtivo = 100/mercadoAcao.valorHoje;
+//    tipoInvestimento = @"Ação";
+//    [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Ação" comValor: 100 eQuantidade:quantidadeDeAtivo] eValorMercado:mercadoAcao.valorHoje];
+//
+//    NSLog(@"Compra nome:%@ posicao:%@ saldo: %lf",jogadores[estado%4].nome, jogadores[estado%4].posicao, jogadores[estado%4].carteira.saldo);
+//    NSLog(@"%d",jogadores[estado%4].carteira.investimentos[jogadores[estado%4].carteira.investimentos.count -1].quantidade);
+//    estado = estado + 1;
+//
+//    [self SetarTurno];
 }
 
 - (IBAction)retirar:(id)sender {
@@ -574,4 +607,44 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     [self mudarCanal];
 }
 
+- (IBAction)quantidadeInvestida:(id)sender {
+    NSString *title = [_valorInvestido titleForSegmentAtIndex:_valorInvestido.selectedSegmentIndex];
+    _quantidadeLabel.text = title;
+    if([tipoInvestimento  isEqual: @"Cripto"]){
+        _valorDoinvestimento.text = [NSString stringWithFormat:@"%0.2lf",[title intValue] * mercadoCripto.valorHoje];
+        
+    }
+    else{
+        _valorDoinvestimento.text = [NSString stringWithFormat:@"%0.2lf",[title intValue] * mercadoAcao.valorHoje];
+    }
+    
+}
+
+- (IBAction)investir:(id)sender {
+      NSString *valorTexto = [_valorInvestido titleForSegmentAtIndex:_valorInvestido.selectedSegmentIndex];
+       _quantidadeLabel.text = valorTexto;
+    if([tipoInvestimento  isEqual: @"Cripto"]){
+        _valorDoinvestimento.text = [NSString stringWithFormat:@"%lf",[valorTexto intValue] * mercadoCripto.valorHoje];
+        [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Cripto" comValor: 100 eQuantidade:[valorTexto intValue]] eValorMercado:mercadoCripto.valorHoje];
+    }
+    else if([tipoInvestimento  isEqual:  @"Ação"]){
+        _valorDoinvestimento.text = [NSString stringWithFormat:@"%lf",[valorTexto intValue] * mercadoAcao.valorHoje];
+        [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Ação" comValor: 100 eQuantidade:[valorTexto intValue]] eValorMercado:mercadoAcao.valorHoje];
+    }
+    else{
+         _valorDoinvestimento.text = [NSString stringWithFormat:@"%lf",[valorTexto intValue] * mercadoFixo.valorHoje];
+        [jogadores[estado%4].carteira comprarInvestimento: [[Investimento alloc]initComTipo:@"Fixo" comValor: 100 eQuantidade:[valorTexto intValue]] eValorMercado:mercadoFixo.valorHoje];
+    }
+    NSLog(@"Compra nome:%@ posicao:%@ saldo: %lf",jogadores[estado%4].nome, jogadores[estado%4].posicao, jogadores[estado%4].carteira.saldo);
+    NSLog(@"%d",jogadores[estado%4].carteira.investimentos[jogadores[estado%4].carteira.investimentos.count -1].quantidade);
+    estado = 0;
+    
+    [self SetarTurno];
+    
+}
+
+- (IBAction)cancelarInvest:(id)sender {
+    estadoTV = 0;
+    [self mudarCanal];
+}
 @end

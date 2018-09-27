@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		001D6E4955BAA6B70BC8B350 /* libPods-mobileInvestGameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1678CD7C51EE7109BACF122 /* libPods-mobileInvestGameUITests.a */; };
 		11525D9115EFC1917E80884D /* Pods_testeTibeiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6EF3B7184EA52FDBB51BB0 /* Pods_testeTibeiUITests.framework */; };
+		18DCC6C5215D392C009BB738 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCC6C4215D392C009BB738 /* StartViewController.m */; };
 		2F3F91BC01CC6FA803D10AF2 /* libPods-InvestGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8935A3EBF72D5538A310418B /* libPods-InvestGame.a */; };
 		4A870C911E8685C66CD9B93F /* libPods-InvestGameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E913249A7178C06C195676 /* libPods-InvestGameUITests.a */; };
 		8002061B2153BFD500B77B50 /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8002061A2153BFD500B77B50 /* SelectViewController.m */; };
@@ -82,6 +83,8 @@
 		06E08E4447A6540C29187197 /* Pods-testeTibeiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeTibeiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testeTibeiUITests/Pods-testeTibeiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0C13A1F2CF6B940AE6093A88 /* Pods-testeTibei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeTibei.release.xcconfig"; path = "Pods/Target Support Files/Pods-testeTibei/Pods-testeTibei.release.xcconfig"; sourceTree = "<group>"; };
 		13D8D341D23A5A71C3BF95FC /* Pods-mobileInvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGame/Pods-mobileInvestGame.release.xcconfig"; sourceTree = "<group>"; };
+		18DCC6C4215D392C009BB738 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		18DCC6C6215D393E009BB738 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		2877D49A9114F7608E7D32A2 /* libPods-InvestGameiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A85D2DDB35CF4A175776AC0 /* Pods-mobileInvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameTests/Pods-mobileInvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B521EB21091A6729FD5C0A1 /* Pods-InvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameTests/Pods-InvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -352,7 +355,12 @@
 				803D72282151746100B13BB0 /* Actions.sks */,
 				803D722A2151746100B13BB0 /* GameScene.h */,
 				803D722B2151746100B13BB0 /* GameScene.m */,
+
 				80E6ACA6215D435000348D3C /* journal 1.gif */,
+
+				18DCC6C6215D393E009BB738 /* StartViewController.h */,
+				18DCC6C4215D392C009BB738 /* StartViewController.m */,
+
 				8002061C2153BFEF00B77B50 /* SelectViewController.h */,
 				8002061A2153BFD500B77B50 /* SelectViewController.m */,
 				803D722D2151746100B13BB0 /* GameViewController.h */,
@@ -860,6 +868,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DCC6C5215D392C009BB738 /* StartViewController.m in Sources */,
 				8002062921540DFE00B77B50 /* Mercado.m in Sources */,
 				80020623215400FC00B77B50 /* Carteira.m in Sources */,
 				8002061F2153CA3F00B77B50 /* Jogador.m in Sources */,
