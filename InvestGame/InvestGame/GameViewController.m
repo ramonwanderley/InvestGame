@@ -118,21 +118,48 @@ NSInteger noticiasPassadas[24];
     [self SetarTurno];
     
     
-    // aparência da progress view (a altura ta por constraint)
-    _granaBarra.layer.cornerRadius = 12;
+    //MARK: Aparência Progress Views
     
+    // progress view GRANA
+    // o insets é pra que a imagem se repita em vez de esticar toda
+    UIImage *granaProgresso = [[UIImage imageNamed:@"moeda-raport"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 1, 0, 1)];
+    // UIEdgeInsetsMake(float top, float left, float botton, float right)
+    [_granaBarra setProgressImage: granaProgresso];
     
+    // pra setar a altura da progress view - de acordo com a da moeda (outras medidas colocadas no "olho")
+    // CGRectMake(float x, float y, float width, float height)
+    _granaBarra.frame = CGRectMake(140, 60, 1640, 47);
+    // arredondou sozinha, não sei porque
+    _granaBarra.layer.cornerRadius = 2;
+    _granaBarra.clipsToBounds = YES;
+    _granaBarra.layer.sublayers[1].cornerRadius = 2;
+    _granaBarra.subviews[1].clipsToBounds = YES;
+
     
-}
+    // progress view TEMPO / TURNO
+    _turnoBarra.frame = CGRectMake(140, 130, 1640, 20);
+    
+    // arredondando a borda do progress view
+    _turnoBarra.layer.cornerRadius = 10; // metade da altura
+    _turnoBarra.clipsToBounds = YES;
+    // arredondando a borda da subview dela (tint?) também
+    _turnoBarra.layer.sublayers[1].cornerRadius = 10;
+    _turnoBarra.subviews[1].clipsToBounds = YES;
+    
 
 
-//varia toda a tela para o novo jeito
+}   // fim do viewDidLoad()
+
+
+// varia toda a tela para o novo jeito
+// antes 291 em evidencia, e 180 fora do turno
+// CGRectMake(float x, float y, float width, float height)
 -(void)SetarIcons{
     if(estado%4 == 0){
         UIImage *imageFocus = [UIImage imageNamed:@"microfoneemevidencia"];
         _microfoneIcon.frame = CGRectMake(
                                           1537,
-                                          _microfoneIcon.frame.origin.y, 291, 291);
+                                          _microfoneIcon.frame.origin.y, 250, 250);
         _microfoneIcon.image = imageFocus;
         UIImage *imageDiFocus = [UIImage imageNamed:@"pandeirodeselecionado"];
         _pandeiroIcon.frame = CGRectMake(
@@ -148,7 +175,7 @@ NSInteger noticiasPassadas[24];
         UIImage *imageFocus = [UIImage imageNamed:@"violaoemevidencia"];
         _violaoIcon.frame = CGRectMake(
                                        1537,
-                                       _violaoIcon.frame.origin.y, 291, 291);
+                                       _violaoIcon.frame.origin.y, 250, 250);
         _violaoIcon.image = imageFocus;
         UIImage *imageDiFocus = [UIImage imageNamed:@"microfonedeselecionado"];
         _microfoneIcon.frame = CGRectMake(
@@ -163,7 +190,7 @@ NSInteger noticiasPassadas[24];
         UIImage *imageFocus = [UIImage imageNamed:@"tecladoemevidencia"];
         _tecladoIcon.frame = CGRectMake(
                                         1537,
-                                        _tecladoIcon.frame.origin.y, 291, 291);
+                                        _tecladoIcon.frame.origin.y, 250, 250);
         _tecladoIcon.image = imageFocus;
         UIImage *imageDiFocus = [UIImage imageNamed:@"violaodeselecionado"];
         _violaoIcon.frame = CGRectMake(
@@ -177,7 +204,7 @@ NSInteger noticiasPassadas[24];
         UIImage *imageFocus = [UIImage imageNamed:@"pandeiroemevidencia"];
         _pandeiroIcon.frame = CGRectMake(
                                          1537,
-                                         _pandeiroIcon.frame.origin.y, 291, 291);
+                                         _pandeiroIcon.frame.origin.y, 250, 250);
         _pandeiroIcon.image = imageFocus;
         UIImage *imageDiFocus = [UIImage imageNamed:@"tecladodeselecionado"];
         _tecladoIcon.frame = CGRectMake(
@@ -330,6 +357,7 @@ NSInteger noticiasPassadas[24];
     
 }
 
+// vai usar ainda?
 - (IBAction)buttonOne:(id)sender {
     
     int quantidadeDeAtivo = 100/mercadoCripto.valorHoje;
@@ -347,7 +375,7 @@ NSInteger noticiasPassadas[24];
 -(void)mudarCanal{
     if(estadoTV == 0 ){
         _mercadoView.hidden = YES;
-        _buttonOne.hidden = NO;
+        _buttonOne.hidden = YES; // escondido enquando nao precisa
         _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
         estadoTV = estadoTV + 1;
