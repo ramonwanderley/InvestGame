@@ -218,8 +218,10 @@ NSInteger noticiasPassadas[24];
 -(void)SetarTurno {
     if(estado%4 == 0 ){
         [self SetarNoticiasDaVez];
-        _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
+        _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
+        // uppercase funciona no debug mas não na execução, sei la pq
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
+        _noticiaLabel.hidden = YES; // textão escondido, precisa mesmo dele?
         [self atualizarBarras];
         [self SetarIcons];
         estadoTV = 0;
@@ -231,8 +233,9 @@ NSInteger noticiasPassadas[24];
     else if(estado%4 == 1){
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
-        _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
+        _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
+        _noticiaLabel.hidden = YES; // escondendo o textão
         [self atualizarBarras];
         [self SetarIcons];
         estadoTV = 0;
@@ -242,8 +245,9 @@ NSInteger noticiasPassadas[24];
     else if(estado%4 == 2){
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
-        _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
+        _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
+        _noticiaLabel.hidden = YES; // escondendo o textão
         [self atualizarBarras];
         [self SetarIcons];
         estadoTV = 0;
@@ -253,8 +257,9 @@ NSInteger noticiasPassadas[24];
     else{
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
-        _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
+        _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
+        _noticiaLabel.hidden = YES; // escondendo o textão
         [self atualizarBarras];
         estadoTV = 0;
         [self SetarIcons];
@@ -402,21 +407,27 @@ NSInteger noticiasPassadas[24];
         _valorAcao.text = valorAcaoTexto;
         _valorCripto.text = valorCriptoTexto;
         if( mercadoCripto.oferta > mercadoCripto.demanda){
-            _tendenciaCripto.text = @"Baixa";
-            _tendenciaCripto.textColor = UIColor.redColor;
+//            _tendenciaCripto.text = @"Baixa";
+//            _tendenciaCripto.textColor = UIColor.redColor;
+            _tendenciaCryptoSeta.image = [UIImage imageNamed:@"em-queda"]; //
         }
         else{
-            _tendenciaCripto.text = @"Alta";
-            _tendenciaCripto.textColor = UIColor.greenColor;
+//            _tendenciaCripto.text = @"Alta";
+//            _tendenciaCripto.textColor = UIColor.greenColor;
+            _tendenciaCryptoSeta.image = [UIImage imageNamed:@"em-alta"]; //
         }
         if( mercadoAcao.oferta > mercadoAcao.demanda){
-            _tendenciaAcao.text = @"Baixa";
-            _tendenciaAcao.textColor = UIColor.redColor;
+//            _tendenciaAcao.text = @"Baixa";
+//            _tendenciaAcao.textColor = UIColor.redColor;
+            _tendenciaAcaoSeta.image = [UIImage imageNamed:@"em-queda"]; //
+            
         }
         else{
-            _tendenciaAcao.text = @"Alta";
-            _tendenciaAcao.textColor = UIColor.greenColor;
+//            _tendenciaAcao.text = @"Alta";
+//            _tendenciaAcao.textColor = UIColor.greenColor;
+            _tendenciaAcaoSeta.image = [UIImage imageNamed:@"em-alta"]; //
         }
+        
         float inicioDoCalculoCripto = mercadoCripto.valorHoje - mercadoCripto.valorOntem;
         inicioDoCalculoCripto = inicioDoCalculoCripto/mercadoCripto.valorOntem;
         NSString *variacaoCriptoTexto =  [NSString stringWithFormat:@"%0.2lf %%",inicioDoCalculoCripto];

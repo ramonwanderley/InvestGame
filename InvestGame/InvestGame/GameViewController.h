@@ -53,6 +53,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *variacaoACAO;
 @property (weak, nonatomic) IBOutlet UILabel *tendenciaAcao;
 
+// tendência - setas
+@property (weak, nonatomic) IBOutlet UIImageView *tendenciaAcaoSeta;
+@property (weak, nonatomic) IBOutlet UIImageView *tendenciaCryptoSeta;
+
 // canal do mercado (TV)
 @property (weak, nonatomic) IBOutlet UIView *mercadoView;
 
