@@ -16,14 +16,19 @@
 #import "Noticia.h"
 #import "cellInvest.h"
 #include <stdlib.h>
+
 @implementation GameViewController
+
 NSMutableArray<Jogador*>  *jogadores;
+
 int estado = 0;
 int estadoTV = 0;
 int jogadorVez = 0;
+
 Mercado* mercadoAcao;
 Mercado* mercadoCripto;
 Mercado* mercadoFixo;
+
 NSMutableArray<Noticia*> *noticias;
 NSInteger noticiaDaVez[2];
 NSInteger noticiasPassadas[24];
@@ -79,42 +84,82 @@ NSInteger noticiasPassadas[24];
     tapGestureRec.allowedPressTypes = @[@(UIPressTypePlayPause)];
     [self.view addGestureRecognizer:tapGestureRec];
     [self.investCollection hasUncommittedUpdates];
+    
+    // [protocolos] collection view da carteira do jogador (canal na tv)
     self.investCollection.delegate = self;
     self.investCollection.dataSource = self;
+    
+    // iniciando as carteiras dos jogadores com 1k cavacoins cada
     Carteira* carteiraInicio = [[Carteira alloc] initComSaldo:1000];
     Carteira* carteiraInicio2 = [[Carteira alloc] initComSaldo:1000];
     Carteira* carteiraInicio3 = [[Carteira alloc] initComSaldo:1000];
     Carteira* carteiraInicio4 = [[Carteira alloc] initComSaldo:1000];
     
+    // iniciando os 4 jogadores com o nome escolhido, vaga na banda e 1k cavacoins
     Jogador* jogador1 = [[Jogador alloc] initComNome: _nomesJogadores[0] comPosicao:@"Vocalista" andCarteira: carteiraInicio];
     Jogador* jogador2 = [[Jogador alloc] initComNome: _nomesJogadores[1] comPosicao:@"Cavaco" andCarteira: carteiraInicio2];
     Jogador* jogador3 = [[Jogador alloc] initComNome: _nomesJogadores[2] comPosicao:@"Pandeiro" andCarteira: carteiraInicio3];
     Jogador* jogador4 = [[Jogador alloc] initComNome: _nomesJogadores[3] comPosicao:@"Percussão" andCarteira: carteiraInicio4];
     jogadores = [NSMutableArray arrayWithObjects: jogador1, jogador2, jogador3, jogador4, nil];
     
-    
+    // print de teste
     for(int i = 0; i < 4; i++) {
         NSLog(@"jogador%d nome:%@ posicao:%@ saldo: %lf", i,jogadores[i].nome, jogadores[i].posicao, jogadores[i].carteira.saldo);
     }
     
-    //estabelecendo Mercados
+    //estabelecendo Mercados iniciais
     mercadoCripto = [[Mercado alloc] initMercadoComRisco:0.55 comOferta:0 eDemanda:0];
     mercadoAcao = [[Mercado alloc] initMercadoComRisco:0.25 comOferta:0 eDemanda:0];
     mercadoFixo  = [[Mercado alloc] initMercadocomTaxa:0.005];
+    
+    // canal da carteira
     _mercadoView.hidden = YES;
     _admView.hidden = YES;
     [self SetarTurno];
     
-}
+    
+    //MARK: Aparência Progress Views
+    
+    // progress view GRANA
+    // o insets é pra que a imagem se repita em vez de esticar toda
+    UIImage *granaProgresso = [[UIImage imageNamed:@"moeda-raport"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 1, 0, 1)];
+    // UIEdgeInsetsMake(float top, float left, float botton, float right)
+    [_granaBarra setProgressImage: granaProgresso];
+    
+    // pra setar a altura da progress view - de acordo com a da moeda (outras medidas colocadas no "olho")
+    // CGRectMake(float x, float y, float width, float height)
+    _granaBarra.frame = CGRectMake(140, 60, 1640, 47);
+    // arredondou sozinha, não sei porque
+    _granaBarra.layer.cornerRadius = 2;
+    _granaBarra.clipsToBounds = YES;
+    _granaBarra.layer.sublayers[1].cornerRadius = 2;
+    _granaBarra.subviews[1].clipsToBounds = YES;
+
+    
+    // progress view TEMPO / TURNO
+    _turnoBarra.frame = CGRectMake(140, 130, 1640, 20);
+    
+    // arredondando a borda do progress view
+    _turnoBarra.layer.cornerRadius = 10; // metade da altura
+    _turnoBarra.clipsToBounds = YES;
+    // arredondando a borda da subview dela (tint?) também
+    _turnoBarra.layer.sublayers[1].cornerRadius = 10;
+    _turnoBarra.subviews[1].clipsToBounds = YES;
+    
 
 
-//varia toda a tela para o novo jeito
+}   // fim do viewDidLoad()
+
+
+// varia toda a tela para o novo jeito
+// antes 291 em evidencia, e 180 fora do turno
+// CGRectMake(float x, float y, float width, float height)
 -(void)SetarIcons{
     if(estado%4 == 0){
         UIImage *imageFocus = [UIImage imageNamed:@"microfoneemevidencia"];
         _microfoneIcon.frame = CGRectMake(
                                           1537,
-                                          _microfoneIcon.frame.origin.y, 291, 291);
+                                          _microfoneIcon.frame.origin.y, 250, 250);
         _microfoneIcon.image = imageFocus;
         UIImage *imageDiFocus = [UIImage imageNamed:@"pandeirodeselecionado"];
         _pandeiroIcon.frame = CGRectMake(
@@ -130,7 +175,7 @@ NSInteger noticiasPassadas[24];
         UIImage *imageFocus = [UIImage imageNamed:@"violaoemevidencia"];
         _violaoIcon.frame = CGRectMake(
                                        1537,
-                                       _violaoIcon.frame.origin.y, 291, 291);
+                                       _violaoIcon.frame.origin.y, 250, 250);
         _violaoIcon.image = imageFocus;
         UIImage *imageDiFocus = [UIImage imageNamed:@"microfonedeselecionado"];
         _microfoneIcon.frame = CGRectMake(
@@ -145,7 +190,7 @@ NSInteger noticiasPassadas[24];
         UIImage *imageFocus = [UIImage imageNamed:@"tecladoemevidencia"];
         _tecladoIcon.frame = CGRectMake(
                                         1537,
-                                        _tecladoIcon.frame.origin.y, 291, 291);
+                                        _tecladoIcon.frame.origin.y, 250, 250);
         _tecladoIcon.image = imageFocus;
         UIImage *imageDiFocus = [UIImage imageNamed:@"violaodeselecionado"];
         _violaoIcon.frame = CGRectMake(
@@ -159,7 +204,7 @@ NSInteger noticiasPassadas[24];
         UIImage *imageFocus = [UIImage imageNamed:@"pandeiroemevidencia"];
         _pandeiroIcon.frame = CGRectMake(
                                          1537,
-                                         _pandeiroIcon.frame.origin.y, 291, 291);
+                                         _pandeiroIcon.frame.origin.y, 250, 250);
         _pandeiroIcon.image = imageFocus;
         UIImage *imageDiFocus = [UIImage imageNamed:@"tecladodeselecionado"];
         _tecladoIcon.frame = CGRectMake(
@@ -285,6 +330,8 @@ NSInteger noticiasPassadas[24];
         
     }
 }
+
+
 -(void)atualizarBarras{
     float montante = 0;
     for(int i = 0; i < 4; i++){
@@ -311,6 +358,7 @@ NSInteger noticiasPassadas[24];
     
 }
 
+// vai usar ainda?
 - (IBAction)buttonOne:(id)sender {
     
     int quantidadeDeAtivo = 100/mercadoCripto.valorHoje;
@@ -328,7 +376,7 @@ NSInteger noticiasPassadas[24];
 -(void)mudarCanal{
     if(estadoTV == 0 ){
         _mercadoView.hidden = YES;
-        _buttonOne.hidden = NO;
+        _buttonOne.hidden = YES; // escondido enquando nao precisa
         _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
         estadoTV = estadoTV + 1;
