@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001D6E4955BAA6B70BC8B350 /* libPods-mobileInvestGameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1678CD7C51EE7109BACF122 /* libPods-mobileInvestGameUITests.a */; };
-		11525D9115EFC1917E80884D /* Pods_testeTibeiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6EF3B7184EA52FDBB51BB0 /* Pods_testeTibeiUITests.framework */; };
 		18DCC6C5215D392C009BB738 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCC6C4215D392C009BB738 /* StartViewController.m */; };
 		2F3F91BC01CC6FA803D10AF2 /* libPods-InvestGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8935A3EBF72D5538A310418B /* libPods-InvestGame.a */; };
 		4A870C911E8685C66CD9B93F /* libPods-InvestGameUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E913249A7178C06C195676 /* libPods-InvestGameUITests.a */; };
@@ -42,9 +40,6 @@
 		80E6ACA3215D416600348D3C /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6ACA2215D416600348D3C /* FLAnimatedImage.m */; };
 		80E6ACA5215D418B00348D3C /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6ACA4215D418B00348D3C /* FLAnimatedImageView.m */; };
 		80E6ACA7215D435400348D3C /* journal 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80E6ACA6215D435000348D3C /* journal 1.gif */; };
-		88BCA213DD4818AAE9277B82 /* libPods-mobileInvestGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF914DC535A37795AAA9B870 /* libPods-mobileInvestGameTests.a */; };
-		90C4EF7D3B94D41E0260ABF5 /* libPods-mobileInvestGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F799332A250D28557E75575C /* libPods-mobileInvestGame.a */; };
-		BD8F221B53ED6C39CD5A54BE /* Pods_testeTibeiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7DE1FF0C0E54A9643CA94B /* Pods_testeTibeiTests.framework */; };
 		D22B0A0B0CAF837E4D4A968B /* libPods-InvestGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF112FBFF7B1A74EE893B00E /* libPods-InvestGameTests.a */; };
 /* End PBXBuildFile section */
 
@@ -80,22 +75,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06E08E4447A6540C29187197 /* Pods-testeTibeiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeTibeiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testeTibeiUITests/Pods-testeTibeiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0C13A1F2CF6B940AE6093A88 /* Pods-testeTibei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeTibei.release.xcconfig"; path = "Pods/Target Support Files/Pods-testeTibei/Pods-testeTibei.release.xcconfig"; sourceTree = "<group>"; };
-		13D8D341D23A5A71C3BF95FC /* Pods-mobileInvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGame/Pods-mobileInvestGame.release.xcconfig"; sourceTree = "<group>"; };
 		18DCC6C4215D392C009BB738 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		18DCC6C6215D393E009BB738 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		2877D49A9114F7608E7D32A2 /* libPods-InvestGameiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A85D2DDB35CF4A175776AC0 /* Pods-mobileInvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameTests/Pods-mobileInvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B521EB21091A6729FD5C0A1 /* Pods-InvestGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameTests/Pods-InvestGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		39334330F523E87BBE9A45B6 /* Pods-InvestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGame/Pods-InvestGame.debug.xcconfig"; sourceTree = "<group>"; };
 		3F7DE1FF0C0E54A9643CA94B /* Pods_testeTibeiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testeTibeiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6EF3B7184EA52FDBB51BB0 /* Pods_testeTibeiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testeTibeiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5435B0774DB8AA8B359F37F0 /* Pods-InvestGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameTests/Pods-InvestGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		5ADCE7D16032233F2A039067 /* Pods_testeTibei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testeTibei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CFE30A9ADD13E831172CEF1 /* Pods-testeTibeiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeTibeiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testeTibeiTests/Pods-testeTibeiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		78223C9E41D762072B50BD1B /* Pods-InvestGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameUITests/Pods-InvestGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		79CB19E568F6B5AE63C850EF /* Pods-mobileInvestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGame/Pods-mobileInvestGame.debug.xcconfig"; sourceTree = "<group>"; };
 		7A5EA6330DF4F27E4F26A999 /* Pods-InvestGameiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameiOSTests/Pods-InvestGameiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E920C713D0898370ACE6791 /* Pods-InvestGameiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameiOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameiOSUITests/Pods-InvestGameiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8002061A2153BFD500B77B50 /* SelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
@@ -161,19 +151,14 @@
 		8935A3EBF72D5538A310418B /* libPods-InvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A3B9461FC1506B9115B313 /* Pods-InvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameUITests/Pods-InvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
 		906DE287F674D52DF8E5291A /* libPods-InvestGameiOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3985D75597F4939DD1F152A /* Pods-mobileInvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameUITests/Pods-mobileInvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A63FA6EBA5B543D7AC9D11BB /* Pods-testeTibeiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeTibeiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testeTibeiUITests/Pods-testeTibeiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1351DCFA869609C0CE4D543 /* Pods-InvestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGame/Pods-InvestGame.release.xcconfig"; sourceTree = "<group>"; };
 		B1678CD7C51EE7109BACF122 /* libPods-mobileInvestGameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D24AAD719159A5B333589232 /* Pods-mobileInvestGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameUITests/Pods-mobileInvestGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE86E79B45F6B88E1A14C3B2 /* Pods-testeTibei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeTibei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testeTibei/Pods-testeTibei.debug.xcconfig"; sourceTree = "<group>"; };
-		E63AA559B7D39693A0AD53F9 /* Pods-testeTibeiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeTibeiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testeTibeiTests/Pods-testeTibeiTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9E913249A7178C06C195676 /* libPods-InvestGameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF112FBFF7B1A74EE893B00E /* libPods-InvestGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF914DC535A37795AAA9B870 /* libPods-mobileInvestGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DB3ACC745FB5B5E561DFBC /* Pods-InvestGameiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameiOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameiOSUITests/Pods-InvestGameiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F799332A250D28557E75575C /* libPods-mobileInvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobileInvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7B77F23E513E38783A370AF /* Pods-mobileInvestGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileInvestGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileInvestGameTests/Pods-mobileInvestGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE9AB327BE49E1DD453CC312 /* Pods-InvestGameiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameiOSTests/Pods-InvestGameiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,7 +191,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90C4EF7D3B94D41E0260ABF5 /* libPods-mobileInvestGame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +198,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BCA213DD4818AAE9277B82 /* libPods-mobileInvestGameTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +205,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001D6E4955BAA6B70BC8B350 /* libPods-mobileInvestGameUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +212,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8F221B53ED6C39CD5A54BE /* Pods_testeTibeiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +219,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11525D9115EFC1917E80884D /* Pods_testeTibeiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,18 +257,8 @@
 				7A5EA6330DF4F27E4F26A999 /* Pods-InvestGameiOSTests.release.xcconfig */,
 				7E920C713D0898370ACE6791 /* Pods-InvestGameiOSUITests.debug.xcconfig */,
 				F1DB3ACC745FB5B5E561DFBC /* Pods-InvestGameiOSUITests.release.xcconfig */,
-				79CB19E568F6B5AE63C850EF /* Pods-mobileInvestGame.debug.xcconfig */,
-				13D8D341D23A5A71C3BF95FC /* Pods-mobileInvestGame.release.xcconfig */,
-				2A85D2DDB35CF4A175776AC0 /* Pods-mobileInvestGameTests.debug.xcconfig */,
-				F7B77F23E513E38783A370AF /* Pods-mobileInvestGameTests.release.xcconfig */,
-				D24AAD719159A5B333589232 /* Pods-mobileInvestGameUITests.debug.xcconfig */,
-				A3985D75597F4939DD1F152A /* Pods-mobileInvestGameUITests.release.xcconfig */,
 				DE86E79B45F6B88E1A14C3B2 /* Pods-testeTibei.debug.xcconfig */,
 				0C13A1F2CF6B940AE6093A88 /* Pods-testeTibei.release.xcconfig */,
-				6CFE30A9ADD13E831172CEF1 /* Pods-testeTibeiTests.debug.xcconfig */,
-				E63AA559B7D39693A0AD53F9 /* Pods-testeTibeiTests.release.xcconfig */,
-				A63FA6EBA5B543D7AC9D11BB /* Pods-testeTibeiUITests.debug.xcconfig */,
-				06E08E4447A6540C29187197 /* Pods-testeTibeiUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -489,7 +459,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 806BFE13215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGame" */;
 			buildPhases = (
-				6024F7BB428328348A0F7537 /* [CP] Check Pods Manifest.lock */,
 				806BFDE6215186EA000BA5A7 /* Sources */,
 				806BFDE7215186EA000BA5A7 /* Frameworks */,
 				806BFDE8215186EA000BA5A7 /* Resources */,
@@ -507,7 +476,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 806BFE16215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGameTests" */;
 			buildPhases = (
-				9EFEC6CC685D2BE5114950AE /* [CP] Check Pods Manifest.lock */,
 				806BFDFD215186EB000BA5A7 /* Sources */,
 				806BFDFE215186EB000BA5A7 /* Frameworks */,
 				806BFDFF215186EB000BA5A7 /* Resources */,
@@ -526,7 +494,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 806BFE19215186EB000BA5A7 /* Build configuration list for PBXNativeTarget "mobileInvestGameUITests" */;
 			buildPhases = (
-				071DC90320F150CFC1A80B9F /* [CP] Check Pods Manifest.lock */,
 				806BFE08215186EB000BA5A7 /* Sources */,
 				806BFE09215186EB000BA5A7 /* Frameworks */,
 				806BFE0A215186EB000BA5A7 /* Resources */,
@@ -545,7 +512,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80E09D632152AF90007B15DC /* Build configuration list for PBXNativeTarget "testeTibeiTests" */;
 			buildPhases = (
-				F41D2A4F7DBFCF04A7CE27EB /* [CP] Check Pods Manifest.lock */,
 				80E09D4A2152AF8F007B15DC /* Sources */,
 				80E09D4B2152AF8F007B15DC /* Frameworks */,
 				80E09D4C2152AF8F007B15DC /* Resources */,
@@ -563,7 +529,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80E09D662152AF90007B15DC /* Build configuration list for PBXNativeTarget "testeTibeiUITests" */;
 			buildPhases = (
-				076E02FEF5745F1BF4B8A3F0 /* [CP] Check Pods Manifest.lock */,
 				80E09D552152AF90007B15DC /* Sources */,
 				80E09D562152AF90007B15DC /* Frameworks */,
 				80E09D572152AF90007B15DC /* Resources */,
@@ -714,42 +679,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		071DC90320F150CFC1A80B9F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mobileInvestGameUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		076E02FEF5745F1BF4B8A3F0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-testeTibeiUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		429E8F42DE6BDEFEB6B11976 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -762,24 +691,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-InvestGameUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6024F7BB428328348A0F7537 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mobileInvestGame-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -804,24 +715,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9EFEC6CC685D2BE5114950AE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mobileInvestGameTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C672ECD7146E20221AE92936 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -834,24 +727,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-InvestGame-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F41D2A4F7DBFCF04A7CE27EB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-testeTibeiTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1114,10 +989,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGame/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1139,10 +1011,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGame/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1161,11 +1030,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGameTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1181,11 +1046,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGameTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1200,11 +1061,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGameUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1219,11 +1076,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGameUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1233,7 +1086,6 @@
 		};
 		806BFE14215186EB000BA5A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79CB19E568F6B5AE63C850EF /* Pods-mobileInvestGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1241,10 +1093,7 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1255,7 +1104,6 @@
 		};
 		806BFE15215186EB000BA5A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13D8D341D23A5A71C3BF95FC /* Pods-mobileInvestGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1263,10 +1111,7 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1277,7 +1122,6 @@
 		};
 		806BFE17215186EB000BA5A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A85D2DDB35CF4A175776AC0 /* Pods-mobileInvestGameTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1285,11 +1129,7 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGameTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1300,7 +1140,6 @@
 		};
 		806BFE18215186EB000BA5A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7B77F23E513E38783A370AF /* Pods-mobileInvestGameTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1308,11 +1147,7 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGameTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1323,18 +1158,13 @@
 		};
 		806BFE1A215186EB000BA5A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D24AAD719159A5B333589232 /* Pods-mobileInvestGameUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGameUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1345,18 +1175,13 @@
 		};
 		806BFE1B215186EB000BA5A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3985D75597F4939DD1F152A /* Pods-mobileInvestGameUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGameUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1367,7 +1192,6 @@
 		};
 		80E09D642152AF90007B15DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CFE30A9ADD13E831172CEF1 /* Pods-testeTibeiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1376,11 +1200,7 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = testeTibeiTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.testeTibeiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1394,7 +1214,6 @@
 		};
 		80E09D652152AF90007B15DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E63AA559B7D39693A0AD53F9 /* Pods-testeTibeiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1403,11 +1222,7 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = testeTibeiTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.testeTibeiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1421,7 +1236,6 @@
 		};
 		80E09D672152AF90007B15DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A63FA6EBA5B543D7AC9D11BB /* Pods-testeTibeiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1429,11 +1243,7 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = testeTibeiUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.testeTibeiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1447,7 +1257,6 @@
 		};
 		80E09D682152AF90007B15DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06E08E4447A6540C29187197 /* Pods-testeTibeiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1455,11 +1264,7 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = testeTibeiUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.testeTibeiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

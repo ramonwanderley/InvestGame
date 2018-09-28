@@ -7,6 +7,11 @@
 //
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-@interface PopupInvestir: UIViewController
+#import <PopupKit/PopupView.h>
+@interface PopupInvestir: PopupView
+
+@property (nonatomic, weak) IBOutlet  UIButton* botao;
+//-(instancetype)initWithCreator:();
+- (IBAction)chamarProximo:(id)sender;
 
 @end

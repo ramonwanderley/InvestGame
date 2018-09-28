@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C853F40A24B384F3999CD17621C64D8D"
-               BlueprintName = "Pods-InvestGame"
+               BlueprintIdentifier = "CA1BE485CF434B893BED9F153CD8777A"
+               BlueprintName = "PopupKit"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-InvestGame.a">
+               BuildableName = "libPopupKit.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

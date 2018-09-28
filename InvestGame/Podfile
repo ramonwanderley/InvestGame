@@ -6,8 +6,9 @@ target 'InvestGame' do
   # use_frameworks!
 
   # Pods for InvestGame
-	pod 'Merhaba', '~> 1.2.1'
-	pod 'FLAnimatedImage', '~> 1.0'
+
+	#pod 'FLAnimatedImage', '~> 1.0'
+	pod 'PopupKit'
   target 'InvestGameTests' do
     inherit! :search_paths
     # Pods for testing

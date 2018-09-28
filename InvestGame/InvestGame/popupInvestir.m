@@ -8,23 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "popupInvestir.h"
+#import <PopupKit/PopupView.h>
 @implementation PopupInvestir
 
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
+//-(instancetype)initWithCreator:(){
+//   self = [super init];
+//    return self;
+//}
+
+
+- (IBAction)chamarProximo:(id)sender {
+    [self dismiss:YES];
     
 }
-
-
--(void)viewDidAppear:(BOOL)animated{
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
-
 @end
