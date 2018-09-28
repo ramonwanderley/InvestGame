@@ -390,58 +390,77 @@ NSInteger noticiasPassadas[24];
     
 }
 
+
+
+// MARK: mudar canal (funcão) declaração
 -(void)mudarCanal{
+    
+    // canal noticias azul
     if(estadoTV == 0 ){
-        
-        _investView.hidden = YES;
-        _mercadoView.hidden = YES;
-        _buttonOne.hidden = YES; // escondido enquando nao precisa
+        [self formatar:_mercadoView hidden:YES];  // esconde 5
+        [self formatar:_canalNoticiasAzulView hidden:NO];  // mostra 1
+//        _investView.hidden = YES;
+//        _mercadoView.hidden = YES;
+//        _buttonOne.hidden = YES; // escondido enquando nao precisa
         _mancheteLabel.text = noticias[noticiaDaVez[0]].titulo;
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
         estadoTV = estadoTV + 1;
     }
+    
+    // canal noticias verde
     else if(estadoTV == 1){
-        _investView.hidden = YES;
+        [self formatar:_canalNoticiasAzulView hidden:YES]; // esconde 1
+        [self formatar:_canalNoticiasVerdeView hidden:NO]; // mostra 2
+//        _investView.hidden = YES;
         _mancheteLabel.text = noticias[noticiaDaVez[1]].titulo;
         _noticiaLabel.text = noticias[noticiaDaVez[1]].texto;
         estadoTV = estadoTV + 1;
         
     }
+    
+    // canal carteira
     else if(estadoTV == 2){
-        _investView.hidden = YES;
-        _admView.hidden = NO;
-        _buttonOne.hidden = YES;
-        
+        [self formatar:_canalNoticiasVerdeView hidden:YES]; // esconde 2
+        [self formatar:_admView hidden:NO]; // mostra 3
+//        _investView.hidden = YES;
+//        _admView.hidden = NO;
+//        _buttonOne.hidden = YES;
         [self.investCollection reloadData];
         estadoTV = estadoTV + 1;
     }
+    
+    // canal mercado
     else if(estadoTV == 3){
-       
-        _investView.hidden = YES;
-        _mercadoView.hidden = NO;
-        _admView.hidden = YES;
+        [self formatar:_admView hidden:YES]; // esconde 3
+        [self formatar:_mercadoView hidden:NO]; // mostra
+//        _investView.hidden = YES;
+//        _mercadoView.hidden = NO;
+//        _admView.hidden = YES;
         estadoTV = 0;
          NSString *valorCriptoTexto =  [NSString stringWithFormat:@"%0.2lf",mercadoCripto.valorHoje];
             NSString *valorAcaoTexto =  [NSString stringWithFormat:@"%0.2lf",mercadoAcao.valorHoje];
         _valorAcao.text = valorAcaoTexto;
         _valorCripto.text = valorCriptoTexto;
+        
+        // tendência de alta e queda (setinhas)
+        // criptocoin
         if( mercadoCripto.oferta > mercadoCripto.demanda){
 //            _tendenciaCripto.text = @"Baixa";
 //            _tendenciaCripto.textColor = UIColor.redColor;
             _tendenciaCryptoSeta.image = [UIImage imageNamed:@"em-queda"]; //
-        }
-        else{
+        } else{
 //            _tendenciaCripto.text = @"Alta";
 //            _tendenciaCripto.textColor = UIColor.greenColor;
             _tendenciaCryptoSeta.image = [UIImage imageNamed:@"em-alta"]; //
         }
+        
+        // açoes orange
         if( mercadoAcao.oferta > mercadoAcao.demanda){
 //            _tendenciaAcao.text = @"Baixa";
 //            _tendenciaAcao.textColor = UIColor.redColor;
             _tendenciaAcaoSeta.image = [UIImage imageNamed:@"em-queda"]; //
             
-        }
-        else{
+        } else{
 //            _tendenciaAcao.text = @"Alta";
 //            _tendenciaAcao.textColor = UIColor.greenColor;
             _tendenciaAcaoSeta.image = [UIImage imageNamed:@"em-alta"]; //
@@ -451,26 +470,30 @@ NSInteger noticiasPassadas[24];
         if(mercadoCripto.valorOntem == 0){
             inicioDoCalculoCripto = (inicioDoCalculoCripto/mercadoCripto.valorOntem) * 100;
             
-
         }
-                NSString *variacaoCriptoTexto =  [NSString stringWithFormat:@"%0.2lf %%",inicioDoCalculoCripto];
+        
+        NSString *variacaoCriptoTexto = [NSString stringWithFormat:@"%0.2lf %%",inicioDoCalculoCripto];
         _variacaoCripto.text = variacaoCriptoTexto;
         float inicioDoCalculoAcao = mercadoAcao.valorHoje - mercadoAcao.valorOntem;
         inicioDoCalculoAcao = (inicioDoCalculoAcao/mercadoAcao.valorOntem) * 100;
-        NSString *variacaoAcaoTexto =  [NSString stringWithFormat:@"%0.2lf %%",inicioDoCalculoAcao];
+        NSString *variacaoAcaoTexto = [NSString stringWithFormat:@"%0.2lf %%",inicioDoCalculoAcao];
         _variacaoACAO.text = variacaoAcaoTexto;
         
-        NSString *variacaoFixoTexto =  [NSString stringWithFormat:@"%0.3lf %%", mercadoFixo.taxa];
-        NSString *valorFixoTexto =  [NSString stringWithFormat:@"%0.3lf", mercadoFixo.valorHoje];
+        NSString *variacaoFixoTexto = [NSString stringWithFormat:@"%0.3lf %%", mercadoFixo.taxa];
+        NSString *valorFixoTexto = [NSString stringWithFormat:@"%0.3lf", mercadoFixo.valorHoje];
         _valorFixo.text = valorFixoTexto;
         _variacaoFixo.text = variacaoFixoTexto;
         
-        
     }
+    
+    // canal especial: INVEST!
     else if(estadoTV == 4){
-        _mercadoView.hidden = YES;
-        _admView.hidden = YES;
-        _investView.hidden = NO;
+        // mostra esse canal por cima do que tiver vindo antes
+        // quando ele for escondido pelos botoes invest ou cancelar, aparece o que ja tava embaixo
+        [self formatar:_investView hidden:NO];
+//        _mercadoView.hidden = YES;
+//        _admView.hidden = YES;
+//        _investView.hidden = NO;
         estadoTV = 0;
         
     }
@@ -649,4 +672,31 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     estadoTV = 0;
     [self mudarCanal];
 }
+
+
+
+
+
+
+////MARK: Formatar Canais de TV (popups externos) (func)
+- (void) formatar:(UIView *)canalDeTV hidden:(BOOL)hidden{
+    
+    CGFloat cornerRadius = 2.0;
+    canalDeTV.center = _tamanhoDaTVref.center;
+    
+    [self.view  addSubview: canalDeTV];
+    canalDeTV.layer.cornerRadius = cornerRadius;
+    
+    if (hidden) {
+        canalDeTV.hidden = YES;
+    } else {
+        canalDeTV.hidden = NO;
+    }
+}
+
+
+
+
+
+
 @end
