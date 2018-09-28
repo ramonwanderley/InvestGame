@@ -9,12 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "StartViewController.h"
 #import "SelectViewController.h"
-
+#import <AVFoundation/AvFoundation.h>
 @implementation StartViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"Intro" ofType:@"wav"];
+
+    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    self.playerSound = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+    self.playerSound.numberOfLoops = -1;
+    [self.playerSound play];
     
 }
 
@@ -25,6 +30,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([[segue identifier] isEqualToString:@"chamaTelaJogadores"]) {
+        [self.playerSound stop];
         SelectViewController *selectVC = segue.destinationViewController;
     }
     

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SelectViewController.h"
 #import "GameViewController.h"
-
+#import <AVFoundation/AvFoundation.h>
 @implementation SelectViewController
 
 
@@ -20,11 +20,14 @@
     _pandeiristaField.text = @"Cris";
     _cavacoField.text = @"Sérgio";
     _percussaoField.text = @"Ana";
+    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"Intro" ofType:@"wav"];
     
+    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    self.playerSound = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+    self.playerSound.numberOfLoops = -1;
+    [self.playerSound play];
 }
-//- (IBAction)iniciaGame:(id)sender {
-//    [self performSegueWithIdentifier:@"chamaJogo" sender:sender];
-//}
+\
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

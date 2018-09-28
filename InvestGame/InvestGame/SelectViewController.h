@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 #import <GameplayKit/GameplayKit.h>
-
+#import <AVFoundation/AvFoundation.h>
 @interface SelectViewController : UIViewController
     @property (weak, nonatomic) IBOutlet UITextField *vocalistaField;
     @property (weak, nonatomic) IBOutlet UITextField *pandeiristaField;
     @property (weak, nonatomic) IBOutlet UITextField *cavacoField;
     @property (weak, nonatomic) IBOutlet UITextField *percussaoField;
+    @property (nonatomic) AVAudioPlayer *playerSound;
+
 
 @end

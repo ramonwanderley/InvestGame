@@ -26,6 +26,15 @@
 		803D72372151746300B13BB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D72362151746300B13BB0 /* main.m */; };
 		803D72412151746300B13BB0 /* InvestGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D72402151746300B13BB0 /* InvestGameTests.m */; };
 		803D724C2151746300B13BB0 /* InvestGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 803D724B2151746300B13BB0 /* InvestGameUITests.m */; };
+		805BC7CB215E522000E46A0C /* swipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C2215E522000E46A0C /* swipe.wav */; };
+		805BC7CC215E522000E46A0C /* Intro.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C3215E522000E46A0C /* Intro.wav */; };
+		805BC7CD215E522000E46A0C /* Percussao.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C4215E522000E46A0C /* Percussao.wav */; };
+		805BC7CE215E522000E46A0C /* vocal.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C5215E522000E46A0C /* vocal.wav */; };
+		805BC7CF215E522000E46A0C /* Notícias.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C6215E522000E46A0C /* Notícias.wav */; };
+		805BC7D0215E522000E46A0C /* cavaquinho.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C7215E522000E46A0C /* cavaquinho.wav */; };
+		805BC7D1215E522000E46A0C /* Cavacoin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C8215E522000E46A0C /* Cavacoin.wav */; };
+		805BC7D2215E522000E46A0C /* select.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C9215E522000E46A0C /* select.wav */; };
+		805BC7D3215E522000E46A0C /* Teclado.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7CA215E522000E46A0C /* Teclado.wav */; };
 		806BFDEE215186EA000BA5A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFDED215186EA000BA5A7 /* AppDelegate.m */; };
 		806BFDF1215186EA000BA5A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFDF0215186EA000BA5A7 /* ViewController.m */; };
 		806BFDF4215186EA000BA5A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806BFDF2215186EA000BA5A7 /* Main.storyboard */; };
@@ -119,6 +128,15 @@
 		803D72472151746300B13BB0 /* InvestGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		803D724B2151746300B13BB0 /* InvestGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestGameUITests.m; sourceTree = "<group>"; };
 		803D724D2151746300B13BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		805BC7C2215E522000E46A0C /* swipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swipe.wav; sourceTree = "<group>"; };
+		805BC7C3215E522000E46A0C /* Intro.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Intro.wav; sourceTree = "<group>"; };
+		805BC7C4215E522000E46A0C /* Percussao.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Percussao.wav; sourceTree = "<group>"; };
+		805BC7C5215E522000E46A0C /* vocal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vocal.wav; sourceTree = "<group>"; };
+		805BC7C6215E522000E46A0C /* Notícias.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Notícias.wav"; sourceTree = "<group>"; };
+		805BC7C7215E522000E46A0C /* cavaquinho.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cavaquinho.wav; sourceTree = "<group>"; };
+		805BC7C8215E522000E46A0C /* Cavacoin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cavacoin.wav; sourceTree = "<group>"; };
+		805BC7C9215E522000E46A0C /* select.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = select.wav; sourceTree = "<group>"; };
+		805BC7CA215E522000E46A0C /* Teclado.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Teclado.wav; sourceTree = "<group>"; };
 		806BFDEA215186EA000BA5A7 /* mobileInvestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobileInvestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806BFDEC215186EA000BA5A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		806BFDED215186EA000BA5A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -332,6 +350,7 @@
 				8002061A2153BFD500B77B50 /* SelectViewController.m */,
 				803D722D2151746100B13BB0 /* GameViewController.h */,
 				803D722E2151746100B13BB0 /* GameViewController.m */,
+				805BC7C1215E522000E46A0C /* Audios */,
 				8002061D2153CA1D00B77B50 /* classes */,
 				803D72302151746100B13BB0 /* Main.storyboard */,
 				803D72332151746300B13BB0 /* Assets.xcassets */,
@@ -360,6 +379,22 @@
 				803D724D2151746300B13BB0 /* Info.plist */,
 			);
 			path = InvestGameUITests;
+			sourceTree = "<group>";
+		};
+		805BC7C1215E522000E46A0C /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				805BC7C2215E522000E46A0C /* swipe.wav */,
+				805BC7C3215E522000E46A0C /* Intro.wav */,
+				805BC7C4215E522000E46A0C /* Percussao.wav */,
+				805BC7C5215E522000E46A0C /* vocal.wav */,
+				805BC7C6215E522000E46A0C /* Notícias.wav */,
+				805BC7C7215E522000E46A0C /* cavaquinho.wav */,
+				805BC7C8215E522000E46A0C /* Cavacoin.wav */,
+				805BC7C9215E522000E46A0C /* select.wav */,
+				805BC7CA215E522000E46A0C /* Teclado.wav */,
+			);
+			path = Audios;
 			sourceTree = "<group>";
 		};
 		806BFDEB215186EA000BA5A7 /* mobileInvestGame */ = {
@@ -615,11 +650,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				805BC7D2215E522000E46A0C /* select.wav in Resources */,
 				803D72322151746100B13BB0 /* Main.storyboard in Resources */,
+				805BC7D0215E522000E46A0C /* cavaquinho.wav in Resources */,
+				805BC7CD215E522000E46A0C /* Percussao.wav in Resources */,
+				805BC7CC215E522000E46A0C /* Intro.wav in Resources */,
+				805BC7CB215E522000E46A0C /* swipe.wav in Resources */,
+				805BC7CE215E522000E46A0C /* vocal.wav in Resources */,
 				80E6ACA7215D435400348D3C /* journal 1.gif in Resources */,
 				803D72272151746100B13BB0 /* GameScene.sks in Resources */,
 				803D72342151746300B13BB0 /* Assets.xcassets in Resources */,
+				805BC7D3215E522000E46A0C /* Teclado.wav in Resources */,
 				803D72292151746100B13BB0 /* Actions.sks in Resources */,
+				805BC7D1215E522000E46A0C /* Cavacoin.wav in Resources */,
+				805BC7CF215E522000E46A0C /* Notícias.wav in Resources */,
 				80DFF34921596B4D002CB612 /* popupinvestir.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -989,7 +1033,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGame/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1011,7 +1058,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGame/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1030,7 +1080,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGameTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1046,7 +1100,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGameTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1061,7 +1119,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGameUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1076,7 +1138,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = InvestGameUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.InvestGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1093,7 +1159,10 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1111,7 +1180,10 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1129,7 +1201,11 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGameTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1147,7 +1223,11 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGameTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1164,7 +1244,11 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGameUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1181,7 +1265,11 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = mobileInvestGameUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.mobileInvestGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1200,7 +1288,11 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = testeTibeiTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.testeTibeiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1222,7 +1314,11 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = testeTibeiTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.testeTibeiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1243,7 +1339,11 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = testeTibeiUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.testeTibeiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1264,7 +1364,11 @@
 				DEVELOPMENT_TEAM = QVX28XD5JA;
 				INFOPLIST_FILE = testeTibeiUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CorrenteDeBlocos.testeTibeiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

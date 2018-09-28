@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AVFoundation/AvFoundation.h>
+#import <AVFoundation/AvFoundation.h>
 @interface StartViewController : UIViewController
 
 - (IBAction)startGameButton:(id)sender;
-
+  @property (nonatomic) AVAudioPlayer *playerSound;
 
 @end
