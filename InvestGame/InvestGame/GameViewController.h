@@ -115,5 +115,5 @@
 
 //SOUNDS
 @property (nonatomic)   AVAudioPlayer *playerEfectsTurno;
-
+@property (nonatomic)   AVAudioPlayer *playerSound;
 @end

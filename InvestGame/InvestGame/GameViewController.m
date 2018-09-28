@@ -50,7 +50,12 @@ NSInteger noticiasPassadas[24];
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"Intro" ofType:@"wav"];
     
+    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    self.playerSound = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+    self.playerSound.numberOfLoops = -1;
+    [self.playerSound play];
     
     FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile: [[NSBundle mainBundle]pathForResource:@"Jornalistas 720 canal1" ofType:@"gif"]]];
     
@@ -461,13 +466,13 @@ NSInteger noticiasPassadas[24];
 
 // MARK: mudar canal (funcão) declaração
 -(void)mudarCanal{
-    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"mp3static" ofType:@"mp3"];
-    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
-    self.playerEfectsTurno.volume = 0.5;
-    self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
-    //self.playerEfectsTurno.numberOfLoops = 1;
-    [self.playerEfectsTurno play];
-    
+//    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"mp3static" ofType:@"mp3"];
+//    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+//    self.playerEfectsTurno.volume = 0.5;
+//    self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+//    //self.playerEfectsTurno.numberOfLoops = 1;
+//    [self.playerEfectsTurno play];
+//    
     // canal noticias azul
     if(estadoTV == 0 ){
         FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile: [[NSBundle mainBundle]pathForResource:@"Jornalistas 720 canal1" ofType:@"gif"]]];
