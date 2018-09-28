@@ -340,10 +340,10 @@ NSInteger noticiasPassadas[24];
     _mancheteLabelPopup1.text = noticias[noticiaDaVez[0]].titulo;
     _mancheteLabelPopup2.text = noticias[noticiaDaVez[1]].titulo;
     if(noticias[noticiaDaVez[0]].feedback != nil){
-        _feedbackLabelPopup1.text = noticias[noticiaDaVez[0]].feedback;
+        _feedbackLabelPopup1.text = [noticias[noticiaDaVez[0]].feedback uppercaseString];
     }
     if(noticias[noticiaDaVez[1]].feedback != nil){
-        _feedbackLabelPopup2.text = noticias[noticiaDaVez[1]].feedback;
+        _feedbackLabelPopup2.text = [noticias[noticiaDaVez[1]].feedback uppercaseString];
     }
     if(estado%4 == 0){
         UIImage *imageFocus = [UIImage imageNamed:@"microfonedeselecionado"];
