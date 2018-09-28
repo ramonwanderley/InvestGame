@@ -35,7 +35,7 @@
     if ([[segue identifier] isEqualToString:@"chamaJogo"]) {
         // Get reference to the destination view controller
         GameViewController *vc = segue.destinationViewController;
-        
+        [self.playerSound stop];
         // Pass any objects to the view controller here, like...
         // [vc setMyObjectHere:@"hola"];
         // passa o nome de todos pra próxima tela
