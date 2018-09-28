@@ -99,6 +99,8 @@
 -(void)SetarNoticiasDaVez;
 -(void)SetarIcons;
 -(void)mudarCanl;
+@property (weak, nonatomic) IBOutlet UILabel *cavacoinLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cavacoinInvestidoLabel;
 
 //POPUPFEEDBACK
 @property (strong, nonatomic) IBOutlet UIView *popupFeedback;

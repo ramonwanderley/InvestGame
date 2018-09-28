@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // default pros nomes
-    _vocalistaField.text = @"Bruno";
+    _vocalistaField.text = @"Lilian";
     _pandeiristaField.text = @"Cris";
     _cavacoField.text = @"Sérgio";
     _percussaoField.text = @"Ana";

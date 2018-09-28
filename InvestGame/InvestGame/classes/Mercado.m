@@ -46,7 +46,7 @@
     }
     -(void)calcularValorHoje{
         self.valorOntem = self.valorHoje;
-        self.valorHoje = self.valorHoje + self.valorHoje *(self.demanda - self.oferta)/100;
+        self.valorHoje = self.valorHoje + (self.valorHoje *(self.demanda - self.oferta)/300);
         if(self.valorHoje <= 0 ){
             self.valorHoje = 0;
         }

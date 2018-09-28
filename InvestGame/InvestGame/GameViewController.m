@@ -226,13 +226,14 @@ NSInteger noticiasPassadas[24];
         // uppercase funciona no debug mas não na execução, sei la pq
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
         _noticiaLabel.hidden = YES; // textão escondido, precisa mesmo dele?
-        [self atualizarBarras];
+        
         [self SetarIcons];
         estadoTV = 0;
         [self mudarCanal];
         if(estado != 0){
             [self atualizarMercado];
         }
+        [self atualizarBarras];
     }
     else if(estado%4 == 1){
         NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"cavaquinho" ofType:@"wav"];
@@ -251,6 +252,7 @@ NSInteger noticiasPassadas[24];
         estadoTV = 0;
         [self mudarCanal];
         [self atualizarMercado];
+        [self atualizarBarras];
     }
     else if(estado%4 == 2){
         NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"Teclado" ofType:@"wav"];
@@ -265,11 +267,12 @@ NSInteger noticiasPassadas[24];
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
         _noticiaLabel.hidden = YES; // escondendo o textão
-        [self atualizarBarras];
+    
         [self SetarIcons];
         estadoTV = 0;
         [self mudarCanal];
         [self atualizarMercado];
+        [self atualizarBarras];
     }
     else{
         NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"Percussao" ofType:@"wav"];
@@ -284,11 +287,12 @@ NSInteger noticiasPassadas[24];
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
         _noticiaLabel.hidden = YES; // escondendo o textão
-        [self atualizarBarras];
+        
         estadoTV = 0;
         [self SetarIcons];
         [self mudarCanal];
         [self atualizarMercado];
+         [self atualizarBarras];
     }
     
 }
@@ -405,7 +409,7 @@ NSInteger noticiasPassadas[24];
     for(int i = 0; i < 4; i++){
         montante = montante + [jogadores[i].carteira TotalvalorMercadoCripto:mercadoCripto.valorHoje eValorMercadoAcao:mercadoAcao.valorHoje eFixo:mercadoFixo.valorHoje];
     }
-    _granaBarra.progress = montante/10000;
+    _granaBarra.progress = montante/25000;
     _turnoBarra.progress = estado/12;
     
 }
@@ -427,7 +431,7 @@ NSInteger noticiasPassadas[24];
                 [[Noticia alloc]initNoticiacomTexto:@"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Damian colocou à venda seu lote de 6 mil cryptoscoins, abaixando seu valor intensamente" comTitulo:@"Milionário vende todas as suas cryptos" comOfertaMax:65 comOfertaMin:50 comDemandaMax:20 eComDemandaMin:10 tipo:@"Cripto" eFeedback:@"Aumento da oferta com queda de preço iminente"],
                 [[Noticia alloc]initNoticiacomTexto:@"Valor total das moedas no mercado subiu em 34 bilhões em 6 dias" comTitulo:@"Marketcap da criptocoin em alta essa semana" comOfertaMax:15 comOfertaMin:5 comDemandaMax:5 eComDemandaMin:1 tipo:@"Cripto" eFeedback:@"Valorização da criptomoeda e crescimento do ativo"] ,
                 [[Noticia alloc]initNoticiacomTexto:@"A empresa de comércio eletrônico passa a aceitar a cryptocoin a partir de hoje" comTitulo:@"Mercado Aberto reconhece a crypto como meio de pagamento" comOfertaMax:12 comOfertaMin:2 comDemandaMax:28 eComDemandaMin:25 tipo:@"Cripto" eFeedback:@"maior uso da criptomoeda e maior aceitação"],
-                [[Noticia alloc]initNoticiacomTexto:@"O continente considera a cryptocoin a partir deste mês como o equivalente a uma moeda legal para fins fiscais quando usada como meio de pagamento" comTitulo:@"União Europeia legaliza a cryptocoin" comOfertaMax:30 comOfertaMin:20 comDemandaMax:50 eComDemandaMin:30 tipo:@"Cripto" eFeedback:@"Enorme visibilidade e aceitação da criptomoeda"],
+                [[Noticia alloc]initNoticiacomTexto:@"O continente considera a cryptocoin a partir deste mês como o equivalente a uma moeda legal para fins fiscais quando usada como meio de pagamento" comTitulo:@"União Europeia legaliza a cryptocoin" comOfertaMax:5 comOfertaMin:0 comDemandaMax:50 eComDemandaMin:30 tipo:@"Cripto" eFeedback:@"Enorme visibilidade e aceitação da criptomoeda"],
                 [[Noticia alloc]initNoticiacomTexto:@"Ações americanas estão perto de terem o pior início de trimestre da história." comTitulo:@"Guerra comercial com a Ásia e críticas dos governos à Orange derrubam os mercados" comOfertaMax:80 comOfertaMin:40 comDemandaMax:4 eComDemandaMin:0 tipo:@"Ação" eFeedback:@"mau resultado das ações desestimula os investidores e traz má-publicidade para a empresa"],
                 [[Noticia alloc]initNoticiacomTexto:@"A Orange se tornou nesta quinta-feira a primeira empresa com ações na Bolsa de Nova York a ultrapassar a marca de CC 1 quadrilhão em valor de mercado." comTitulo:@"1º a passar de CC 1 quadri nos EUA, Orange vale mais que a Bolsa americana" comOfertaMax:20 comOfertaMin:2 comDemandaMax:100 eComDemandaMin:30 tipo:@"Ação" eFeedback:@"recorde em valor de mercado anima os investidores a comprarem mais ações"],
                 [[Noticia alloc]initNoticiacomTexto:@"Os ataques de hackers  triplicaram nos últimos meses. Esse aumento representou mais 5 milhões de novas tentativas em roubar criptomoedas." comTitulo:@"Diversos novos ataques a plataformas de criptomoedas nos últimos 4 meses" comOfertaMax:100 comOfertaMin:80 comDemandaMax:0 eComDemandaMin:0 tipo:@"Cripto" eFeedback:@"insegurança gera muito receio nas pessoas para investimentos digitais"],
@@ -499,6 +503,21 @@ NSInteger noticiasPassadas[24];
 //        _investView.hidden = YES;
 //        _admView.hidden = NO;
 //        _buttonOne.hidden = YES;
+        _cavacoinLabel.text =[NSString stringWithFormat:@"%0.2lf",jogadores[estado%4].carteira.saldo];
+        double valorParaExibir = 0;
+        for (int i = 0; i < [jogadores[estado%4].carteira.investimentos count]; i++){
+            if(jogadores[estado%4].carteira.investimentos[i].tipo == @"Cripto"){
+               valorParaExibir = valorParaExibir + jogadores[estado%4].carteira.investimentos[i].quantidade * mercadoCripto.valorHoje;
+            }
+            else if(jogadores[estado%4].carteira.investimentos[i].tipo == @"Ação"){
+                valorParaExibir = valorParaExibir + jogadores[estado%4].carteira.investimentos[i].quantidade * mercadoAcao.valorHoje;
+            }
+            else{
+               valorParaExibir = valorParaExibir + jogadores[estado%4].carteira.investimentos[i].quantidade * mercadoFixo.valorHoje;
+            }
+            
+        }
+        _cavacoinInvestidoLabel.text =[NSString stringWithFormat:@"%0.2lf",valorParaExibir];
         [self.investCollection reloadData];
         estadoTV = estadoTV + 1;
     }
@@ -541,6 +560,7 @@ NSInteger noticiasPassadas[24];
         }
         
         float inicioDoCalculoCripto = mercadoCripto.valorHoje - mercadoCripto.valorOntem;
+        inicioDoCalculoCripto = (inicioDoCalculoCripto/mercadoCripto.valorOntem) * 100;
         if(mercadoCripto.valorOntem == 0){
             inicioDoCalculoCripto = (inicioDoCalculoCripto/mercadoCripto.valorOntem) * 100;
             
@@ -553,7 +573,7 @@ NSInteger noticiasPassadas[24];
         NSString *variacaoAcaoTexto = [NSString stringWithFormat:@"%0.2lf %%",inicioDoCalculoAcao];
         _variacaoACAO.text = variacaoAcaoTexto;
         
-        NSString *variacaoFixoTexto = [NSString stringWithFormat:@"%0.3lf %%", mercadoFixo.taxa];
+        NSString *variacaoFixoTexto = [NSString stringWithFormat:@"%0.3lf %%", mercadoFixo.taxa * 100];
         NSString *valorFixoTexto = [NSString stringWithFormat:@"%0.3lf", mercadoFixo.valorHoje];
         _valorFixo.text = valorFixoTexto;
         _variacaoFixo.text = variacaoFixoTexto;

@@ -321,6 +321,8 @@
                         <outlet property="backgroundTV" destination="S80-v5-E6E" id="rBf-Vm-Xdm"/>
                         <outlet property="canalNoticiasAzulView" destination="z8Q-bT-VW7" id="58P-dt-KvE"/>
                         <outlet property="canalNoticiasVerdeView" destination="wZh-IP-lGF" id="3yX-sN-GQv"/>
+                        <outlet property="cavacoinInvestidoLabel" destination="86C-1z-QAE" id="IWy-o2-0mQ"/>
+                        <outlet property="cavacoinLabel" destination="iD8-Pg-D1P" id="4QS-RH-kOt"/>
                         <outlet property="feedbackLabelPopup1" destination="YNw-1n-Pl0" id="uaq-Cg-b9C"/>
                         <outlet property="feedbackLabelPopup2" destination="tgK-IY-Ar7" id="vW1-vb-sfA"/>
                         <outlet property="granaBarra" destination="DpP-ai-peO" id="slf-mz-FGU"/>
@@ -428,14 +430,14 @@
                             <color key="textColor" red="0.61176472900000001" green="0.0039215688589999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C$1.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD8-Pg-D1P" userLabel="C$valor">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C$1.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD8-Pg-D1P" userLabel="C$valor">
                             <rect key="frame" x="111" y="150" width="197" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                             <color key="textColor" red="1" green="0.47058823700000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C$2.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86C-1z-QAE" userLabel="Investidovalor">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C$2.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86C-1z-QAE" userLabel="Investidovalor">
                             <rect key="frame" x="671" y="150" width="204" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
