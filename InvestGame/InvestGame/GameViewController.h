@@ -10,7 +10,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import <GameplayKit/GameplayKit.h>
 #import "FLAnimatedImageView.h"
-
+#import <AVFoundation/AvFoundation.h>
 @interface GameViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDataSource, UIFocusEnvironment>
 
 // contém os nomes que os jogadores digitarem na tela anterior (SelectViewControler)
@@ -111,5 +111,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *pularFeedbackBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *imageJogador;
 
+//SOUNDS
+@property (nonatomic)   AVAudioPlayer *playerEfectsTurno;
 
 @end

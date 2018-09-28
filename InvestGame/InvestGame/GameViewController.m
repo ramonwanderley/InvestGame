@@ -213,8 +213,13 @@ NSInteger noticiasPassadas[24];
     }
 }
 -(void)SetarTurno {
-//    [popupFeed dismiss:YES ];
+
     if(estado%4 == 0 ){
+        NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"vocal" ofType:@"wav"];
+        NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+        self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+        //self.playerEfectsTurno.numberOfLoops = 1;
+        [self.playerEfectsTurno play];
         [self SetarNoticiasDaVez];
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         // uppercase funciona no debug mas não na execução, sei la pq
@@ -229,6 +234,11 @@ NSInteger noticiasPassadas[24];
         }
     }
     else if(estado%4 == 1){
+        NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"cavaquinho" ofType:@"wav"];
+        NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+        self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+        //self.playerEfectsTurno.numberOfLoops = 1;
+        [self.playerEfectsTurno play];
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
@@ -241,6 +251,11 @@ NSInteger noticiasPassadas[24];
         [self atualizarMercado];
     }
     else if(estado%4 == 2){
+        NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"Teclado" ofType:@"wav"];
+        NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+        self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+        //self.playerEfectsTurno.numberOfLoops = 1;
+        [self.playerEfectsTurno play];
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
@@ -253,6 +268,11 @@ NSInteger noticiasPassadas[24];
         [self atualizarMercado];
     }
     else{
+        NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"Percussao" ofType:@"wav"];
+        NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+        self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+        //self.playerEfectsTurno.numberOfLoops = 1;
+        [self.playerEfectsTurno play];
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
@@ -661,8 +681,11 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
         _valorDoinvestimento.text = [NSString stringWithFormat:@"%0.2lf",[title intValue] * mercadoCripto.valorHoje];
         
     }
-    else{
+    else if ([tipoInvestimento  isEqual: @"Ação"]){
         _valorDoinvestimento.text = [NSString stringWithFormat:@"%0.2lf",[title intValue] * mercadoAcao.valorHoje];
+    }
+    else{
+        _valorDoinvestimento.text = [NSString stringWithFormat:@"%0.2lf",[title intValue] * mercadoFixo.valorHoje];
     }
     
 }
