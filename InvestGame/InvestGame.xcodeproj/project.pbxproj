@@ -35,6 +35,9 @@
 		805BC7D1215E522000E46A0C /* Cavacoin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C8215E522000E46A0C /* Cavacoin.wav */; };
 		805BC7D2215E522000E46A0C /* select.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7C9215E522000E46A0C /* select.wav */; };
 		805BC7D3215E522000E46A0C /* Teclado.wav in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7CA215E522000E46A0C /* Teclado.wav */; };
+		805BC7D8215E7F4100E46A0C /* Jornalistas 720 canal2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7D6215E7F4100E46A0C /* Jornalistas 720 canal2.gif */; };
+		805BC7D9215E7F4100E46A0C /* Jornalistas 720 canal1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7D7215E7F4100E46A0C /* Jornalistas 720 canal1.gif */; };
+		805BC7DC215E814E00E46A0C /* mp3static.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 805BC7DB215E814E00E46A0C /* mp3static.mp3 */; };
 		806BFDEE215186EA000BA5A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFDED215186EA000BA5A7 /* AppDelegate.m */; };
 		806BFDF1215186EA000BA5A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806BFDF0215186EA000BA5A7 /* ViewController.m */; };
 		806BFDF4215186EA000BA5A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806BFDF2215186EA000BA5A7 /* Main.storyboard */; };
@@ -137,6 +140,10 @@
 		805BC7C8215E522000E46A0C /* Cavacoin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cavacoin.wav; sourceTree = "<group>"; };
 		805BC7C9215E522000E46A0C /* select.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = select.wav; sourceTree = "<group>"; };
 		805BC7CA215E522000E46A0C /* Teclado.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Teclado.wav; sourceTree = "<group>"; };
+		805BC7D6215E7F4100E46A0C /* Jornalistas 720 canal2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Jornalistas 720 canal2.gif"; sourceTree = "<group>"; };
+		805BC7D7215E7F4100E46A0C /* Jornalistas 720 canal1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Jornalistas 720 canal1.gif"; sourceTree = "<group>"; };
+		805BC7DA215E801100E46A0C /* sound effect static.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sound effect static.aac"; sourceTree = "<group>"; };
+		805BC7DB215E814E00E46A0C /* mp3static.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3static.mp3; sourceTree = "<group>"; };
 		806BFDEA215186EA000BA5A7 /* mobileInvestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobileInvestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806BFDEC215186EA000BA5A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		806BFDED215186EA000BA5A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -356,6 +363,7 @@
 				803D72332151746300B13BB0 /* Assets.xcassets */,
 				803D72352151746300B13BB0 /* Info.plist */,
 				803D72362151746300B13BB0 /* main.m */,
+				805BC7D5215E7F4100E46A0C /* gifs */,
 				80DFF34621596A1F002CB612 /* popupInvestir.m */,
 				80DFF34A21596FB8002CB612 /* popupInvestir.h */,
 				80DFF34821596B4D002CB612 /* popupinvestir.xib */,
@@ -388,13 +396,24 @@
 				805BC7C3215E522000E46A0C /* Intro.wav */,
 				805BC7C4215E522000E46A0C /* Percussao.wav */,
 				805BC7C5215E522000E46A0C /* vocal.wav */,
+				805BC7DB215E814E00E46A0C /* mp3static.mp3 */,
 				805BC7C6215E522000E46A0C /* Notícias.wav */,
+				805BC7DA215E801100E46A0C /* sound effect static.aac */,
 				805BC7C7215E522000E46A0C /* cavaquinho.wav */,
 				805BC7C8215E522000E46A0C /* Cavacoin.wav */,
 				805BC7C9215E522000E46A0C /* select.wav */,
 				805BC7CA215E522000E46A0C /* Teclado.wav */,
 			);
 			path = Audios;
+			sourceTree = "<group>";
+		};
+		805BC7D5215E7F4100E46A0C /* gifs */ = {
+			isa = PBXGroup;
+			children = (
+				805BC7D6215E7F4100E46A0C /* Jornalistas 720 canal2.gif */,
+				805BC7D7215E7F4100E46A0C /* Jornalistas 720 canal1.gif */,
+			);
+			path = gifs;
 			sourceTree = "<group>";
 		};
 		806BFDEB215186EA000BA5A7 /* mobileInvestGame */ = {
@@ -652,6 +671,8 @@
 			files = (
 				805BC7D2215E522000E46A0C /* select.wav in Resources */,
 				803D72322151746100B13BB0 /* Main.storyboard in Resources */,
+				805BC7D8215E7F4100E46A0C /* Jornalistas 720 canal2.gif in Resources */,
+				805BC7DC215E814E00E46A0C /* mp3static.mp3 in Resources */,
 				805BC7D0215E522000E46A0C /* cavaquinho.wav in Resources */,
 				805BC7CD215E522000E46A0C /* Percussao.wav in Resources */,
 				805BC7CC215E522000E46A0C /* Intro.wav in Resources */,
@@ -663,6 +684,7 @@
 				805BC7D3215E522000E46A0C /* Teclado.wav in Resources */,
 				803D72292151746100B13BB0 /* Actions.sks in Resources */,
 				805BC7D1215E522000E46A0C /* Cavacoin.wav in Resources */,
+				805BC7D9215E7F4100E46A0C /* Jornalistas 720 canal1.gif in Resources */,
 				805BC7CF215E522000E46A0C /* Notícias.wav in Resources */,
 				80DFF34921596B4D002CB612 /* popupinvestir.xib in Resources */,
 			);

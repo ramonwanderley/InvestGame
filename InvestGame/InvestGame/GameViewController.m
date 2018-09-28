@@ -52,7 +52,7 @@ NSInteger noticiasPassadas[24];
     [super viewDidLoad];
     
     
-    FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile: [[NSBundle mainBundle]pathForResource:@"journal 1" ofType:@"gif"]]];
+    FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile: [[NSBundle mainBundle]pathForResource:@"Jornalistas 720 canal1" ofType:@"gif"]]];
     
     _backgroundTV.animatedImage = image;
 //    FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
@@ -219,6 +219,7 @@ NSInteger noticiasPassadas[24];
         NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
         self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
         //self.playerEfectsTurno.numberOfLoops = 1;
+        self.playerEfectsTurno.volume = 1;
         [self.playerEfectsTurno play];
         [self SetarNoticiasDaVez];
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
@@ -238,6 +239,7 @@ NSInteger noticiasPassadas[24];
         NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
         self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
         //self.playerEfectsTurno.numberOfLoops = 1;
+        self.playerEfectsTurno.volume = 1;
         [self.playerEfectsTurno play];
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
@@ -255,9 +257,11 @@ NSInteger noticiasPassadas[24];
         NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
         self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
         //self.playerEfectsTurno.numberOfLoops = 1;
+         self.playerEfectsTurno.volume = 1;
         [self.playerEfectsTurno play];
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
+        
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
         _noticiaLabel.text = noticias[noticiaDaVez[0]].texto;
         _noticiaLabel.hidden = YES; // escondendo o textão
@@ -272,7 +276,9 @@ NSInteger noticiasPassadas[24];
         NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
         self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
         //self.playerEfectsTurno.numberOfLoops = 1;
+        self.playerEfectsTurno.volume = 1;
         [self.playerEfectsTurno play];
+        
         _playerLabel.text = jogadores[estado%4].nome;
         [self SetarNoticiasDaVez];
         _mancheteLabel.text = [noticias[noticiaDaVez[0]].titulo uppercaseString];
@@ -450,9 +456,18 @@ NSInteger noticiasPassadas[24];
 
 // MARK: mudar canal (funcão) declaração
 -(void)mudarCanal{
+    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"mp3static" ofType:@"mp3"];
+    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    self.playerEfectsTurno.volume = 0.5;
+    self.playerEfectsTurno = [[AVAudioPlayer alloc ] initWithContentsOfURL:soundFileURL error:nil];
+    //self.playerEfectsTurno.numberOfLoops = 1;
+    [self.playerEfectsTurno play];
     
     // canal noticias azul
     if(estadoTV == 0 ){
+        FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile: [[NSBundle mainBundle]pathForResource:@"Jornalistas 720 canal1" ofType:@"gif"]]];
+        
+        _backgroundTV.animatedImage = image;
         [self formatar:_mercadoView hidden:YES];  // esconde 5
         [self formatar:_canalNoticiasAzulView hidden:NO];  // mostra 1
 //        _investView.hidden = YES;
@@ -465,8 +480,11 @@ NSInteger noticiasPassadas[24];
     
     // canal noticias verde
     else if(estadoTV == 1){
-        [self formatar:_canalNoticiasAzulView hidden:YES]; // esconde 1
-        [self formatar:_canalNoticiasVerdeView hidden:NO]; // mostra 2
+        FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfFile: [[NSBundle mainBundle]pathForResource:@"Jornalistas 720 canal2" ofType:@"gif"]]];
+        
+        _backgroundTV.animatedImage = image;
+        //[self formatar:_canalNoticiasAzulView hidden:YES]; // esconde 1
+        //[self formatar:_canalNoticiasVerdeView hidden:NO]; // mostra 2
 //        _investView.hidden = YES;
         _mancheteLabel.text = noticias[noticiaDaVez[1]].titulo;
         _noticiaLabel.text = noticias[noticiaDaVez[1]].texto;
