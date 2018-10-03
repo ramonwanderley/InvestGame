@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "tv",
-      "filename" : "iconsAppleTV_Prancheta 1.png",
+      "filename" : "Top Shelf.png",
       "scale" : "1x"
     },
     {
       "idiom" : "tv",
-      "filename" : "iconsAppleTV_Prancheta 1-1.png",
+      "filename" : "Top Shelf@2x.png",
       "scale" : "2x"
     },
     {

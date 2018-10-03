@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "tv",
-      "filename" : "iconsAppleTV-4.png",
+      "filename" : "Top Shelf Wide.png",
       "scale" : "1x"
     },
     {
       "idiom" : "tv",
-      "filename" : "iconsAppleTV-5.png",
+      "filename" : "Top Shelf Wide@2x.png",
       "scale" : "2x"
     },
     {

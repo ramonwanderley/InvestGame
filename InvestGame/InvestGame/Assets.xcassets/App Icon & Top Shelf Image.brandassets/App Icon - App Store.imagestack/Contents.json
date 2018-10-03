@@ -1,13 +1,19 @@
 {
   "layers" : [
     {
-      "filename" : "Front.imagestacklayer"
+      "filename" : "cavacoin.imagestacklayer"
     },
     {
-      "filename" : "Middle.imagestacklayer"
+      "filename" : "nome.imagestacklayer"
     },
     {
-      "filename" : "Back.imagestacklayer"
+      "filename" : "instrumentos.imagestacklayer"
+    },
+    {
+      "filename" : "branco.imagestacklayer"
+    },
+    {
+      "filename" : "amarelo.imagestacklayer"
     }
   ],
   "info" : {
