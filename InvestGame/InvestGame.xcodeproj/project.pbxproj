@@ -51,7 +51,6 @@
 		80DFF34D215981D8002CB612 /* Noticia.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DFF34C215981D8002CB612 /* Noticia.m */; };
 		80E6ACA3215D416600348D3C /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6ACA2215D416600348D3C /* FLAnimatedImage.m */; };
 		80E6ACA5215D418B00348D3C /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6ACA4215D418B00348D3C /* FLAnimatedImageView.m */; };
-		80E6ACA7215D435400348D3C /* journal 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 80E6ACA6215D435000348D3C /* journal 1.gif */; };
 		D22B0A0B0CAF837E4D4A968B /* libPods-InvestGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF112FBFF7B1A74EE893B00E /* libPods-InvestGameTests.a */; };
 /* End PBXBuildFile section */
 
@@ -171,7 +170,6 @@
 		80E6ACA1215D413100348D3C /* FLAnimatedImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
 		80E6ACA2215D416600348D3C /* FLAnimatedImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
 		80E6ACA4215D418B00348D3C /* FLAnimatedImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
-		80E6ACA6215D435000348D3C /* journal 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "journal 1.gif"; path = "../../../../Dropbox (DeveloperAcademy-BR)/Corrente de Blocos/Vídeo das notícias/journal 1.gif"; sourceTree = "<group>"; };
 		879C7709C2CDB7ADFF6E623C /* libPods-InvestGameiOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGameiOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8935A3EBF72D5538A310418B /* libPods-InvestGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A3B9461FC1506B9115B313 /* Pods-InvestGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestGameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestGameUITests/Pods-InvestGameUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -350,7 +348,6 @@
 				803D72282151746100B13BB0 /* Actions.sks */,
 				803D722A2151746100B13BB0 /* GameScene.h */,
 				803D722B2151746100B13BB0 /* GameScene.m */,
-				80E6ACA6215D435000348D3C /* journal 1.gif */,
 				18DCC6C6215D393E009BB738 /* StartViewController.h */,
 				18DCC6C4215D392C009BB738 /* StartViewController.m */,
 				8002061C2153BFEF00B77B50 /* SelectViewController.h */,
@@ -678,7 +675,6 @@
 				805BC7CC215E522000E46A0C /* Intro.wav in Resources */,
 				805BC7CB215E522000E46A0C /* swipe.wav in Resources */,
 				805BC7CE215E522000E46A0C /* vocal.wav in Resources */,
-				80E6ACA7215D435400348D3C /* journal 1.gif in Resources */,
 				803D72272151746100B13BB0 /* GameScene.sks in Resources */,
 				803D72342151746300B13BB0 /* Assets.xcassets in Resources */,
 				805BC7D3215E522000E46A0C /* Teclado.wav in Resources */,
