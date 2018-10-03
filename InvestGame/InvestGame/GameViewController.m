@@ -17,15 +17,18 @@
 #include <stdlib.h>
 #import "FLAnimatedImage.h"
 #import <PopupKit/PopupView.h>
+
 @implementation GameViewController
 
 NSMutableArray<Jogador*>  *jogadores;
+
 
 int estado = 0;
 int estadoTV = 0;
 int jogadorVez = 0;
 double valorInvestir = 0;
 NSString *tipoInvestimento = @"Cripto";
+
 Mercado* mercadoAcao;
 Mercado* mercadoCripto;
 Mercado* mercadoFixo;
@@ -34,20 +37,22 @@ NSMutableArray<Noticia*> *noticias;
 NSInteger noticiaDaVez[2];
 NSInteger noticiasPassadas[24];
 
+
 - (void)setNeedsFocusUpdate {
     [_pularFeedbackBtn setNeedsFocusUpdate];
 }
 
+// do protocolo da engine de foco (UIFocusEnvironment)
 - (BOOL)shouldUpdateFocusInContext:(nonnull UIFocusUpdateContext *)context {
-    return YES;
+    return YES; // permite a troca de foco entre os botões
 }
-
 
 //- (void)updateFocusIfNeeded {
 //    <#code#>
 //}
 
 
+// VIEW DID LOAD ()
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"Intro" ofType:@"wav"];
@@ -125,19 +130,19 @@ NSInteger noticiasPassadas[24];
     _granaBarra.subviews[1].clipsToBounds = YES;
 
     
-    // progress view TEMPO / TURNO
-    _turnoBarra.frame = CGRectMake(140, 130, 1640, 20);
-    
-    // arredondando a borda do progress view
-    _turnoBarra.layer.cornerRadius = 10; // metade da altura
-    _turnoBarra.clipsToBounds = YES;
-    // arredondando a borda da subview dela (tint?) também
-    _turnoBarra.layer.sublayers[1].cornerRadius = 10;
-    _turnoBarra.subviews[1].clipsToBounds = YES;
+//    // progress view TEMPO / TURNO
+//    _turnoBarra.frame = CGRectMake(140, 130, 1640, 20);
+//
+//    // arredondando a borda do progress view
+//    _turnoBarra.layer.cornerRadius = 10; // metade da altura
+//    _turnoBarra.clipsToBounds = YES;
+//    // arredondando a borda da subview dela (tint?) também
+//    _turnoBarra.layer.sublayers[1].cornerRadius = 10;
+//    _turnoBarra.subviews[1].clipsToBounds = YES;
     
 
+}   // fim do VIEW DID LOAD ()
 
-}   // fim do viewDidLoad()
 
 -(void)viewWillAppear:(BOOL)animated{
 //    PopupInvestir* contentView =  (PopupInvestir*)[[[NSBundle mainBundle] loadNibNamed:@"popupinvestir" owner:self options:nil] lastObject];  //[[UIView alloc] init];
@@ -415,7 +420,7 @@ NSInteger noticiasPassadas[24];
         montante = montante + [jogadores[i].carteira TotalvalorMercadoCripto:mercadoCripto.valorHoje eValorMercadoAcao:mercadoAcao.valorHoje eFixo:mercadoFixo.valorHoje];
     }
     _granaBarra.progress = montante/25000;
-    _turnoBarra.progress = estado/12;
+   // _turnoBarra.progress = estado/12;
     
 }
 -(void)viewDidAppear:(BOOL)animated{

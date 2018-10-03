@@ -11,7 +11,8 @@
 #import <GameplayKit/GameplayKit.h>
 #import "FLAnimatedImageView.h"
 #import <AVFoundation/AvFoundation.h>
-@interface GameViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDataSource, UIFocusEnvironment>
+
+@interface GameViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDataSource, UIFocusEnvironment>
 
 // contém os nomes que os jogadores digitarem na tela anterior (SelectViewControler)
 @property (weak, nonatomic) IBOutlet UISegmentedControl *valorInvestido; //
@@ -55,6 +56,7 @@
 
 // canal investir 5 - Outlets e Actions
 @property (weak, nonatomic) IBOutlet UILabel *valorDoinvestimento;
+@property (weak, nonatomic) IBOutlet UILabel *quantidadeLabel; // desativado no storyboard
 - (IBAction)investir:(id)sender;
 - (IBAction)cancelarInvest:(id)sender;
 
@@ -86,8 +88,7 @@
 //
 //
 // NAO SEI (coloca na categoria delas plz)
-@property (weak, nonatomic) IBOutlet UILabel *quantidadeLabel; // da collection view da carteira ou da tela de investir?
-- (IBAction)quantidadeInvestida:(id)sender; // onde ta esse botao? nunca ta vi
+- (IBAction)quantidadeInvestida:(id)sender; // onde ta esse botao? nunca nem vi
 - (UIImage *)imageWithImage:(UIImage *)image convertToSize:(CGSize)size ;
 //
 //

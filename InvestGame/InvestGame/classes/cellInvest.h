@@ -7,7 +7,9 @@
 //
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
 @interface cellInvest: UICollectionViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *tipoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *quantidadeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *valorAtivoLabel;
